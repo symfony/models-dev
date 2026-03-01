@@ -28,16 +28,23 @@ jobs:
         run: |
           git diff --quiet models-dev.json && exit 0
           python3 bin/diff_models.py models-dev.old.json models-dev.json > /tmp/release_notes.md
+          BREAKING=$(python3 bin/diff_models.py --breaking models-dev.old.json models-dev.json)
           git config user.name "Fabien Potencier"
           git config user.email "fabien@potencier.org"
           git add models-dev.json
           git commit -m "Update models-dev.json"
           LAST_TAG=$(git tag -l 'v*' --sort=-v:refname | head -n 1)
           if [ -z "$LAST_TAG" ]; then
-            NEXT_TAG="v1"
+            NEXT_TAG="v1.0"
           else
-            LAST_VERSION=${LAST_TAG#v}
-            NEXT_TAG="v$((LAST_VERSION + 1))"
+            VERSION=${LAST_TAG#v}
+            MAJOR=${VERSION%%.*}
+            MINOR=${VERSION#*.}
+            if [ "$BREAKING" = "true" ]; then
+              NEXT_TAG="v$((MAJOR + 1)).0"
+            else
+              NEXT_TAG="v${MAJOR}.$((MINOR + 1))"
+            fi
           fi
           git push
           gh release create "$NEXT_TAG" --title "$NEXT_TAG" --notes-file /tmp/release_notes.md
