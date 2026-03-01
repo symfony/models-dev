@@ -21,16 +21,6 @@ def diff(old, new):
     added_models = {}
     removed_models = {}
 
-    for p in added_providers:
-        models = sorted(new[p].get("models", {}).keys())
-        if models:
-            added_models[p] = models
-
-    for p in removed_providers:
-        models = sorted(old[p].get("models", {}).keys())
-        if models:
-            removed_models[p] = models
-
     for p in common_providers:
         old_m = set(old[p].get("models", {}).keys())
         new_m = set(new[p].get("models", {}).keys())
