@@ -10,18 +10,17 @@ def load(path):
         return json.load(f)
 
 
-def diff(old, new):
+def compute_diff(old, new):
     old_providers = set(old.keys())
     new_providers = set(new.keys())
 
     added_providers = sorted(new_providers - old_providers)
     removed_providers = sorted(old_providers - new_providers)
-    common_providers = sorted(old_providers & new_providers)
 
     added_models = {}
     removed_models = {}
 
-    for p in common_providers:
+    for p in sorted(old_providers & new_providers):
         old_m = set(old[p].get("models", {}).keys())
         new_m = set(new[p].get("models", {}).keys())
         added = sorted(new_m - old_m)
@@ -30,6 +29,24 @@ def diff(old, new):
             added_models[p] = added
         if removed:
             removed_models[p] = removed
+
+    return {
+        "added_providers": added_providers,
+        "removed_providers": removed_providers,
+        "added_models": added_models,
+        "removed_models": removed_models,
+    }
+
+
+def is_breaking(result):
+    return bool(result["removed_providers"] or result["removed_models"])
+
+
+def format_diff(result, old, new):
+    added_providers = result["added_providers"]
+    removed_providers = result["removed_providers"]
+    added_models = result["added_models"]
+    removed_models = result["removed_models"]
 
     total_added = sum(len(m) for m in added_models.values())
     total_removed = sum(len(m) for m in removed_models.values())
@@ -76,13 +93,25 @@ def diff(old, new):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print(f"Usage: {sys.argv[0]} <old.json> <new.json>", file=sys.stderr)
+    usage = f"Usage: {sys.argv[0]} [--breaking] <old.json> <new.json>"
+
+    args = sys.argv[1:]
+    breaking_mode = False
+    if args and args[0] == "--breaking":
+        breaking_mode = True
+        args = args[1:]
+
+    if len(args) != 2:
+        print(usage, file=sys.stderr)
         sys.exit(1)
 
-    old = load(sys.argv[1])
-    new = load(sys.argv[2])
-    result = diff(old, new)
+    old = load(args[0])
+    new = load(args[1])
+    result = compute_diff(old, new)
 
-    if result:
-        print(result)
+    if breaking_mode:
+        print("true" if is_breaking(result) else "false")
+    else:
+        output = format_diff(result, old, new)
+        if output:
+            print(output)
