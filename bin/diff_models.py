@@ -71,13 +71,13 @@ def diff(old, new):
         lines = []
         for p in sorted(added_models.keys()):
             lines.append(f"- **{p}**: " + ", ".join(f"`{m}`" for m in added_models[p]))
-        sections.append("### New Models\n\n" + "\n".join(lines))
+        sections.append("### New Models\n\nThe following models have been added, grouped by provider:\n\n" + "\n".join(lines))
 
     if removed_models:
         lines = []
         for p in sorted(removed_models.keys()):
             lines.append(f"- **{p}**: " + ", ".join(f"`{m}`" for m in removed_models[p]))
-        sections.append("### Removed Models\n\n" + "\n".join(lines))
+        sections.append("### Removed Models\n\nThe following models have been removed, grouped by provider:\n\n" + "\n".join(lines))
 
     return "\n\n".join(sections)
 
