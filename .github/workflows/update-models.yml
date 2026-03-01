@@ -22,15 +22,16 @@ jobs:
       - name: Run get_models.sh
         run: bash bin/get_models.sh
 
-      - name: Commit and tag if changed
+      - name: Commit and release if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git diff --quiet models-dev.json && exit 0
-          DIFF=$(python3 bin/diff_models.py models-dev.old.json models-dev.json)
-          COMMIT_MSG=$(printf "Update models-dev.json\n\n%s" "$DIFF")
+          python3 bin/diff_models.py models-dev.old.json models-dev.json > /tmp/release_notes.md
           git config user.name "Fabien Potencier"
           git config user.email "fabien@potencier.org"
           git add models-dev.json
-          git commit -m "$COMMIT_MSG"
+          git commit -m "Update models-dev.json"
           LAST_TAG=$(git tag -l 'v*' --sort=-v:refname | head -n 1)
           if [ -z "$LAST_TAG" ]; then
             NEXT_TAG="v1"
@@ -38,6 +39,5 @@ jobs:
             LAST_VERSION=${LAST_TAG#v}
             NEXT_TAG="v$((LAST_VERSION + 1))"
           fi
-          git tag "$NEXT_TAG"
           git push
-          git push origin "$NEXT_TAG"
+          gh release create "$NEXT_TAG" --title "$NEXT_TAG" --notes-file /tmp/release_notes.md
