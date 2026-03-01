@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare two models-dev.json files and output a semantic commit message."""
+"""Compare two models-dev.json files and output a semantic changelog in Markdown."""
 
 import json
 import sys
@@ -32,36 +32,54 @@ def diff(old, new):
             removed_models[p] = models
 
     for p in common_providers:
-        old_models = set(old[p].get("models", {}).keys())
-        new_models = set(new[p].get("models", {}).keys())
-        added = sorted(new_models - old_models)
-        removed = sorted(old_models - new_models)
+        old_m = set(old[p].get("models", {}).keys())
+        new_m = set(new[p].get("models", {}).keys())
+        added = sorted(new_m - old_m)
+        removed = sorted(old_m - new_m)
         if added:
             added_models[p] = added
         if removed:
             removed_models[p] = removed
 
-    lines = []
+    total_added = sum(len(m) for m in added_models.values())
+    total_removed = sum(len(m) for m in removed_models.values())
 
+    sections = []
+
+    # Summary line
+    parts = []
     if added_providers:
-        lines.append("Added providers: " + ", ".join(added_providers))
+        parts.append(f"{len(added_providers)} new provider(s)")
+    if removed_providers:
+        parts.append(f"{len(removed_providers)} removed provider(s)")
+    if total_added:
+        parts.append(f"{total_added} new model(s)")
+    if total_removed:
+        parts.append(f"{total_removed} removed model(s)")
+    if parts:
+        sections.append(", ".join(parts) + ".")
+
+    # Providers
+    if added_providers:
+        sections.append("### New Providers\n\n" + "\n".join(f"- **{p}**" for p in added_providers))
 
     if removed_providers:
-        lines.append("Removed providers: " + ", ".join(removed_providers))
+        sections.append("### Removed Providers\n\n" + "\n".join(f"- **{p}**" for p in removed_providers))
 
+    # Models
     if added_models:
-        lines.append("")
-        lines.append("Added models:")
+        lines = []
         for p in sorted(added_models.keys()):
-            lines.append(f"  {p}: " + ", ".join(added_models[p]))
+            lines.append(f"- **{p}**: " + ", ".join(f"`{m}`" for m in added_models[p]))
+        sections.append("### New Models\n\n" + "\n".join(lines))
 
     if removed_models:
-        lines.append("")
-        lines.append("Removed models:")
+        lines = []
         for p in sorted(removed_models.keys()):
-            lines.append(f"  {p}: " + ", ".join(removed_models[p]))
+            lines.append(f"- **{p}**: " + ", ".join(f"`{m}`" for m in removed_models[p]))
+        sections.append("### Removed Models\n\n" + "\n".join(lines))
 
-    return "\n".join(lines)
+    return "\n\n".join(sections)
 
 
 if __name__ == "__main__":
