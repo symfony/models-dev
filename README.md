@@ -12,10 +12,9 @@ How it works
 A GitHub Actions workflow runs every day at 06:00 UTC:
 
 1. It fetches the latest data from `https://models.dev/api.json`.
-2. If the data has changed, it commits the updated `models-dev.json` file with a
-   semantic commit message describing added/removed providers and models.
-3. It creates an incremented tag (`v1`, `v2`, …) and pushes it, which publishes a
-   new version on Packagist.
+2. If the data has changed, it commits the updated `models-dev.json` file.
+3. It creates a GitHub Release with an incremented tag (`v1`, `v2`, …) and a
+   changelog describing added/removed providers and models.
 
 Installation
 ------------
@@ -28,8 +27,8 @@ version:
 composer require symfony/models-dev:v42
 ```
 
-Upgrading to a newer version is always an intentional step: review the commit
-message of the target version to see what changed before bumping.
+Upgrading to a newer version is always an intentional step: review the release
+notes of the target version to see what changed before bumping.
 
 The `models-dev.json` file at the root of the package contains the full dataset.
 
