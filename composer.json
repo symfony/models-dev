@@ -1,6 +1,6 @@
 {
     "name": "symfony/models-dev",
-    "description": "Provides the models.json data as a Packagist package",
+    "description": "Provides the models.dev data as a Composer package",
     "type": "library",
     "license": "MIT",
     "authors": [
