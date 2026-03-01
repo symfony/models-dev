@@ -1,3 +1,4 @@
+__pycache__/
 /composer.lock
 /models-dev.json.tmp
 /vendor/
