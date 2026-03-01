@@ -40,7 +40,7 @@ This package can be used in conjunction with the
 which provides a universal platform giving access to all AI providers available on
 models.dev with automatic capability discovery, pricing, and routing to specialized
 bridges. See the
-[full documentation](https://github.com/symfony/ai/blob/main/docs/components/platform/models-dev.rst)
+[full documentation](https://symfony.com/doc/current/ai/components/platform/models-dev.html)
 for details.
 
 You can also use the JSON data directly:
