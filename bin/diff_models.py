@@ -79,6 +79,9 @@ def diff(old, new):
             lines.append(f"- **{p}**: " + ", ".join(f"`{m}`" for m in removed_models[p]))
         sections.append("### Removed Models\n\nThe following models have been removed, grouped by provider:\n\n" + "\n".join(lines))
 
+    if not sections:
+        sections.append("Model metadata updated (no providers or models added/removed).")
+
     return "\n\n".join(sections)
 
 
