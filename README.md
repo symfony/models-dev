@@ -13,22 +13,24 @@ A GitHub Actions workflow runs every day at 06:00 UTC:
 
 1. It fetches the latest data from `https://models.dev/api.json`.
 2. If the data has changed, it commits the updated `models-dev.json` file.
-3. It creates a GitHub Release with an incremented tag (`v1`, `v2`, …) and a
-   changelog describing added/removed providers and models.
+3. It creates a GitHub Release with a new version tag and a changelog describing
+   added/removed providers and models. The version follows semver: minor bumps
+   for additions and metadata updates (`v1.0` → `v1.1`), major bumps when
+   models or providers are removed (`v1.3` → `v2.0`).
 
 Installation
 ------------
 
-Every update is released as a new major version because the dataset can change in
-breaking ways (models or providers may be removed). Always require a specific
-version:
+Releases follow semver: minor versions add new models or providers, major versions
+indicate removals. Use the `^` constraint to automatically receive new
+models/providers while staying protected from removals:
 
 ```bash
-composer require symfony/models-dev:v42
+composer require symfony/models-dev:^1.0
 ```
 
-Upgrading to a newer version is always an intentional step: review the release
-notes of the target version to see what changed before bumping.
+When a new major version is released, review the release notes to see what was
+removed before upgrading.
 
 The `models-dev.json` file at the root of the package contains the full dataset.
 
