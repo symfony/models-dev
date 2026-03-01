@@ -1,0 +1,38 @@
+name: Update models-dev.json
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+
+      - name: Run get_models.sh
+        run: bash bin/get_models.sh
+
+      - name: Commit and tag if changed
+        run: |
+          git diff --quiet models-dev.json && exit 0
+          git config user.name "Fabien Potencier"
+          git config user.email "fabien@potencier.org"
+          git add models-dev.json
+          git commit -m "Update models-dev.json"
+          LAST_TAG=$(git tag -l 'v*' --sort=-v:refname | head -n 1)
+          if [ -z "$LAST_TAG" ]; then
+            NEXT_TAG="v1"
+          else
+            LAST_VERSION=${LAST_TAG#v}
+            NEXT_TAG="v$((LAST_VERSION + 1))"
+          fi
+          git tag "$NEXT_TAG"
+          git push
+          git push origin "$NEXT_TAG"

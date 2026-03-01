@@ -1,0 +1,13 @@
+{
+    "name": "symfony/models-dev",
+    "description": "Provides the models.json data as a Packagist package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@potencier.org"
+        }
+    ],
+    "require": {}
+}
