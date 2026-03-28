@@ -35754,6 +35754,93 @@
     ],
     "id": "groq",
     "models": {
+      "allam-2-7b": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "family": "allam",
+        "id": "allam-2-7b",
+        "knowledge": "2024-09",
+        "last_updated": "2024-09",
+        "limit": {
+          "context": 4096,
+          "output": 4096
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "ALLaM-2-7b",
+        "open_weights": false,
+        "reasoning": false,
+        "release_date": "2024-09",
+        "temperature": true,
+        "tool_call": false
+      },
+      "canopylabs/orpheus-arabic-saudi": {
+        "attachment": false,
+        "cost": {
+          "input": 40,
+          "output": 0
+        },
+        "family": "canopylabs",
+        "id": "canopylabs/orpheus-arabic-saudi",
+        "knowledge": "2025-12-16",
+        "last_updated": "2025-12-16",
+        "limit": {
+          "context": 4000,
+          "output": 50000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "audio"
+          ]
+        },
+        "name": "Orpheus Arabic Saudi",
+        "open_weights": false,
+        "reasoning": false,
+        "release_date": "2025-12-16",
+        "temperature": true,
+        "tool_call": false
+      },
+      "canopylabs/orpheus-v1-english": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "family": "canopylabs",
+        "id": "canopylabs/orpheus-v1-english",
+        "knowledge": "2025-12-19",
+        "last_updated": "2025-12-19",
+        "limit": {
+          "context": 4000,
+          "output": 50000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "audio"
+          ]
+        },
+        "name": "Orpheus V1 English",
+        "open_weights": false,
+        "reasoning": false,
+        "release_date": "2025-12-19",
+        "temperature": true,
+        "tool_call": false
+      },
       "deepseek-r1-distill-llama-70b": {
         "attachment": false,
         "cost": {
@@ -35811,6 +35898,64 @@
         "reasoning": false,
         "release_date": "2024-06-27",
         "status": "deprecated",
+        "temperature": true,
+        "tool_call": true
+      },
+      "groq/compound": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "family": "groq",
+        "id": "groq/compound",
+        "knowledge": "2025-09-04",
+        "last_updated": "2025-09-04",
+        "limit": {
+          "context": 131072,
+          "output": 8192
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Compound",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2025-09-04",
+        "temperature": true,
+        "tool_call": true
+      },
+      "groq/compound-mini": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "family": "groq",
+        "id": "groq/compound-mini",
+        "knowledge": "2025-09-04",
+        "last_updated": "2025-09-04",
+        "limit": {
+          "context": 131072,
+          "output": 8192
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Compound Mini",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2025-09-04",
         "temperature": true,
         "tool_call": true
       },
@@ -35988,6 +36133,7 @@
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-04-05",
+        "status": "deprecated",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -36049,6 +36195,65 @@
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-04-05",
+        "status": "deprecated",
+        "temperature": true,
+        "tool_call": false
+      },
+      "meta-llama/llama-prompt-guard-2-22m": {
+        "attachment": false,
+        "cost": {
+          "input": 0.03,
+          "output": 0.03
+        },
+        "family": "llama",
+        "id": "meta-llama/llama-prompt-guard-2-22m",
+        "knowledge": "2024-10",
+        "last_updated": "2024-10-01",
+        "limit": {
+          "context": 512,
+          "output": 512
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Llama Prompt Guard 2 22M",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2024-10-01",
+        "temperature": true,
+        "tool_call": false
+      },
+      "meta-llama/llama-prompt-guard-2-86m": {
+        "attachment": false,
+        "cost": {
+          "input": 0.04,
+          "output": 0.04
+        },
+        "family": "llama",
+        "id": "meta-llama/llama-prompt-guard-2-86m",
+        "knowledge": "2024-10",
+        "last_updated": "2024-10-01",
+        "limit": {
+          "context": 512,
+          "output": 512
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Llama Prompt Guard 2 86M",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2024-10-01",
         "temperature": true,
         "tool_call": false
       },
@@ -36200,6 +36405,35 @@
         "temperature": true,
         "tool_call": true
       },
+      "openai/gpt-oss-safeguard-20b": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.037,
+          "input": 0.075,
+          "output": 0.3
+        },
+        "family": "gpt-oss",
+        "id": "openai/gpt-oss-safeguard-20b",
+        "last_updated": "2025-03-05",
+        "limit": {
+          "context": 131072,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Safety GPT OSS 20B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2025-03-05",
+        "temperature": true,
+        "tool_call": true
+      },
       "qwen-qwq-32b": {
         "attachment": false,
         "cost": {
@@ -36242,7 +36476,7 @@
         "last_updated": "2024-12-23",
         "limit": {
           "context": 131072,
-          "output": 16384
+          "output": 40960
         },
         "modalities": {
           "input": [
@@ -36258,6 +36492,64 @@
         "release_date": "2024-12-23",
         "temperature": true,
         "tool_call": true
+      },
+      "whisper-large-v3": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "family": "whisper",
+        "id": "whisper-large-v3",
+        "knowledge": "2023-09",
+        "last_updated": "2025-09-05",
+        "limit": {
+          "context": 448,
+          "output": 448
+        },
+        "modalities": {
+          "input": [
+            "audio"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Whisper Large V3",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2023-09-01",
+        "temperature": true,
+        "tool_call": false
+      },
+      "whisper-large-v3-turbo": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "family": "whisper",
+        "id": "whisper-large-v3-turbo",
+        "knowledge": "2024-10",
+        "last_updated": "2024-10-01",
+        "limit": {
+          "context": 448,
+          "output": 448
+        },
+        "modalities": {
+          "input": [
+            "audio"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Whisper Large v3 Turbo",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2024-10-01",
+        "temperature": true,
+        "tool_call": false
       }
     },
     "name": "Groq",
@@ -94905,6 +95197,34 @@
         "temperature": false,
         "tool_call": true
       },
+      "novita/deepseek-v3.2": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.13,
+          "input": 0.27,
+          "output": 0.4
+        },
+        "id": "novita/deepseek-v3.2",
+        "last_updated": "2025-12-01",
+        "limit": {
+          "context": 128000,
+          "output": 0
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek-V3.2",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2025-12-01",
+        "temperature": true,
+        "tool_call": true
+      },
       "novita/glm-4.6": {
         "attachment": true,
         "family": "glm",
@@ -96900,6 +97220,35 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-11-19",
+        "temperature": false,
+        "tool_call": true
+      },
+      "xai/grok-4.20-multi-agent": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.2,
+          "input": 2,
+          "output": 6
+        },
+        "id": "xai/grok-4.20-multi-agent",
+        "last_updated": "2026-03-13",
+        "limit": {
+          "context": 128000,
+          "output": 0
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Grok-4.20-Multi-Agent",
+        "open_weights": false,
+        "reasoning": false,
+        "release_date": "2026-03-13",
         "temperature": false,
         "tool_call": true
       },
@@ -109031,6 +109380,35 @@
     ],
     "id": "venice",
     "models": {
+      "aion-labs.aion-2-0": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.25,
+          "input": 1,
+          "output": 2
+        },
+        "family": "o",
+        "id": "aion-labs.aion-2-0",
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 128000,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Aion 2.0",
+        "open_weights": false,
+        "reasoning": false,
+        "release_date": "2026-03-24",
+        "temperature": true,
+        "tool_call": false
+      },
       "claude-opus-4-6": {
         "attachment": true,
         "cost": {
@@ -109175,7 +109553,7 @@
         "family": "deepseek",
         "id": "deepseek-v3.2",
         "knowledge": "2025-10",
-        "last_updated": "2026-03-18",
+        "last_updated": "2026-03-24",
         "limit": {
           "context": 160000,
           "output": 32768
@@ -109192,8 +109570,9 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2025-12-04",
+        "structured_output": true,
         "temperature": true,
-        "tool_call": false
+        "tool_call": true
       },
       "gemini-3-1-pro-preview": {
         "attachment": true,
@@ -109268,40 +109647,6 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-12-19",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "gemini-3-pro-preview": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.625,
-          "input": 2.5,
-          "output": 15
-        },
-        "family": "gemini-pro",
-        "id": "gemini-3-pro-preview",
-        "knowledge": "2024-04",
-        "last_updated": "2026-03-12",
-        "limit": {
-          "context": 198000,
-          "output": 32768
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "audio",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Gemini 3 Pro Preview",
-        "open_weights": false,
-        "reasoning": true,
-        "release_date": "2025-12-02",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -120054,6 +120399,40 @@
         "structured_output": true,
         "temperature": true,
         "tool_call": true
+      },
+      "glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0,
+          "cache_write": 0,
+          "input": 0,
+          "output": 0
+        },
+        "family": "glm",
+        "id": "glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 200000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-03-27",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
       }
     },
     "name": "Z.AI Coding Plan",
@@ -123415,6 +123794,40 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-03-16",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0,
+          "cache_write": 0,
+          "input": 0,
+          "output": 0
+        },
+        "family": "glm",
+        "id": "glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 200000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-03-27",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
