@@ -27253,6 +27253,40 @@
         "release_date": "2026-02-12",
         "temperature": true,
         "tool_call": true
+      },
+      "zai-org/GLM-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.26,
+          "input": 1.4,
+          "output": 4.4
+        },
+        "family": "glm",
+        "id": "zai-org/GLM-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-04",
+        "last_updated": "2026-04-07",
+        "limit": {
+          "context": 202752,
+          "output": 16384
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-07",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
       }
     },
     "name": "Deep Infra",
@@ -46734,15 +46768,16 @@
         "temperature": true,
         "tool_call": true
       },
-      "minimax/minimax-m2.5:free": {
+      "minimax/minimax-m2.7": {
         "attachment": false,
         "cost": {
-          "cache_read": 0,
-          "input": 0,
-          "output": 0
+          "cache_read": 0.06,
+          "input": 0.3,
+          "output": 1.2
         },
-        "id": "minimax/minimax-m2.5:free",
-        "last_updated": "2026-02-12",
+        "family": "minimax-m2.7",
+        "id": "minimax/minimax-m2.7",
+        "last_updated": "2026-03-18",
         "limit": {
           "context": 204800,
           "output": 131072
@@ -46755,10 +46790,10 @@
             "text"
           ]
         },
-        "name": "MiniMax: MiniMax M2.5 (free)",
+        "name": "MiniMax: MiniMax M2.7",
         "open_weights": true,
         "reasoning": true,
-        "release_date": "2026-02-12",
+        "release_date": "2026-03-18",
         "temperature": true,
         "tool_call": true
       },
@@ -52337,6 +52372,33 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-02-12",
+        "temperature": true,
+        "tool_call": true
+      },
+      "z-ai/glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "input": 1.26,
+          "output": 3.96
+        },
+        "id": "z-ai/glm-5.1",
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 202752,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Z.ai: GLM 5.1",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-03-27",
         "temperature": true,
         "tool_call": true
       }
@@ -79385,6 +79447,64 @@
         "temperature": true,
         "tool_call": false
       },
+      "google/gemma-4-26b-a4b-it": {
+        "attachment": true,
+        "cost": {
+          "input": 0.13,
+          "output": 0.4
+        },
+        "family": "gemma",
+        "id": "google/gemma-4-26b-a4b-it",
+        "last_updated": "2026-04-02",
+        "limit": {
+          "context": 262144,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Gemma 4 26B A4B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-02",
+        "temperature": true,
+        "tool_call": true
+      },
+      "google/gemma-4-31b-it": {
+        "attachment": true,
+        "cost": {
+          "input": 0.14,
+          "output": 0.4
+        },
+        "family": "gemma",
+        "id": "google/gemma-4-31b-it",
+        "last_updated": "2026-04-02",
+        "limit": {
+          "context": 262144,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Gemma 4 31B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-02",
+        "temperature": true,
+        "tool_call": true
+      },
       "gryphe/mythomax-l2-13b": {
         "attachment": false,
         "cost": {
@@ -79411,34 +79531,6 @@
         "release_date": "2024-04-25",
         "temperature": true,
         "tool_call": false
-      },
-      "kwaipilot/kat-coder": {
-        "attachment": false,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "id": "kwaipilot/kat-coder",
-        "last_updated": "2025-09-30",
-        "limit": {
-          "context": 256000,
-          "output": 32000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "KAT-Coder-Pro V1(Free)",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-09-30",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
       },
       "kwaipilot/kat-coder-pro": {
         "attachment": false,
@@ -79760,6 +79852,72 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-12",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "minimax/minimax-m2.5-highspeed": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.03,
+          "input": 0.6,
+          "output": 2.4
+        },
+        "family": "minimax-m2.5",
+        "id": "minimax/minimax-m2.5-highspeed",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-02-12",
+        "limit": {
+          "context": 204800,
+          "output": 131100
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax M2.5 Highspeed",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-02-12",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "minimax/minimax-m2.7": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.06,
+          "input": 0.3,
+          "output": 1.2
+        },
+        "family": "minimax-m2.7",
+        "id": "minimax/minimax-m2.7",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-18",
+        "limit": {
+          "context": 204800,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax M2.7",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-03-18",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -80761,6 +80919,99 @@
         "temperature": true,
         "tool_call": true
       },
+      "qwen/qwen3.5-122b-a10b": {
+        "attachment": true,
+        "cost": {
+          "input": 0.4,
+          "output": 3.2
+        },
+        "family": "qwen",
+        "id": "qwen/qwen3.5-122b-a10b",
+        "last_updated": "2026-02-26",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.5-122B-A10B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-26",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen/qwen3.5-27b": {
+        "attachment": true,
+        "cost": {
+          "input": 0.3,
+          "output": 2.4
+        },
+        "family": "qwen",
+        "id": "qwen/qwen3.5-27b",
+        "last_updated": "2026-02-26",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.5-27B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-26",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen/qwen3.5-35b-a3b": {
+        "attachment": true,
+        "cost": {
+          "input": 0.25,
+          "output": 2
+        },
+        "family": "qwen",
+        "id": "qwen/qwen3.5-35b-a3b",
+        "last_updated": "2026-02-26",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.5-35B-A3B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-26",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "qwen/qwen3.5-397b-a17b": {
         "attachment": true,
         "cost": {
@@ -80900,36 +81151,6 @@
         "release_date": "2024-09-19",
         "temperature": true,
         "tool_call": true
-      },
-      "skywork/r1v4-lite": {
-        "attachment": true,
-        "cost": {
-          "input": 0.2,
-          "output": 0.6
-        },
-        "family": "skywork",
-        "id": "skywork/r1v4-lite",
-        "last_updated": "2025-11-18",
-        "limit": {
-          "context": 262144,
-          "output": 65536
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Skywork R1V4-Lite",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-11-18",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": false
       },
       "xiaomimimo/mimo-v2-flash": {
         "attachment": false,
@@ -81243,6 +81464,39 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-02-11",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "zai-org/glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.26,
+          "input": 1.4,
+          "output": 4.4
+        },
+        "family": "glm",
+        "id": "zai-org/glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 204800,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-03-27",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -90123,6 +90377,38 @@
         "temperature": true,
         "tool_call": true
       },
+      "minimax/minimax-m2.5:free": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "family": "minimax",
+        "id": "minimax/minimax-m2.5:free",
+        "interleaved": {
+          "field": "reasoning_details"
+        },
+        "last_updated": "2026-02-12",
+        "limit": {
+          "context": 204800,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax M2.5 (free)",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-12",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "minimax/minimax-m2.7": {
         "attachment": false,
         "cost": {
@@ -92454,6 +92740,37 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-02-16",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen/qwen3.5-flash-02-23": {
+        "attachment": true,
+        "cost": {
+          "input": 0.065,
+          "output": 0.26
+        },
+        "family": "qwen",
+        "id": "qwen/qwen3.5-flash-02-23",
+        "last_updated": "2026-02-25",
+        "limit": {
+          "context": 1000000,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen: Qwen3.5-Flash",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-02-25",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -96063,6 +96380,29 @@
         "reasoning": true,
         "release_date": "2025-12-22",
         "temperature": false,
+        "tool_call": true
+      },
+      "novita/glm-5": {
+        "attachment": true,
+        "id": "novita/glm-5",
+        "last_updated": "2026-02-11",
+        "limit": {
+          "context": 205000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "glm-5",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-02-11",
+        "temperature": true,
         "tool_call": true
       },
       "novita/kimi-k2-thinking": {
@@ -105377,6 +105717,72 @@
         "structured_output": true,
         "temperature": true,
         "tool_call": true
+      },
+      "zai-org/GLM-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_write": 0,
+          "input": 1.4,
+          "output": 4.4
+        },
+        "family": "glm",
+        "id": "zai-org/GLM-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-08",
+        "limit": {
+          "context": 205000,
+          "output": 205000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "zai-org/GLM-5.1",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-08",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "zai-org/GLM-5V-Turbo": {
+        "attachment": true,
+        "cost": {
+          "cache_write": 0,
+          "input": 1.2,
+          "output": 4
+        },
+        "family": "glm",
+        "id": "zai-org/GLM-5V-Turbo",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-01",
+        "limit": {
+          "context": 200000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "zai-org/GLM-5V-Turbo",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-04-01",
+        "temperature": true,
+        "tool_call": true
       }
     },
     "name": "SiliconFlow",
@@ -105829,6 +106235,39 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-02-12",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "Pro/zai-org/GLM-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_write": 0,
+          "input": 1.4,
+          "output": 4.4
+        },
+        "family": "glm",
+        "id": "Pro/zai-org/GLM-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-08",
+        "limit": {
+          "context": 205000,
+          "output": 205000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Pro/zai-org/GLM-5.1",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-08",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
