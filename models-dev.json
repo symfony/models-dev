@@ -4235,6 +4235,37 @@
         "temperature": true,
         "tool_call": true
       },
+      "coding-glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "input": 0.06,
+          "output": 0.22
+        },
+        "family": "glm",
+        "id": "coding-glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-11",
+        "limit": {
+          "context": 200000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Coding-GLM-5.1",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-04-11",
+        "temperature": true,
+        "tool_call": true
+      },
       "coding-minimax-m2.1-free": {
         "attachment": false,
         "cost": {
@@ -4576,6 +4607,37 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-11",
+        "temperature": true,
+        "tool_call": true
+      },
+      "glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "input": 0.84,
+          "output": 3.38
+        },
+        "family": "glm",
+        "id": "glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-11",
+        "limit": {
+          "context": 200000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-04-11",
         "temperature": true,
         "tool_call": true
       },
@@ -28864,6 +28926,38 @@
         "temperature": true,
         "tool_call": true
       },
+      "accounts/fireworks/models/minimax-m2p7": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.03,
+          "input": 0.3,
+          "output": 1.2
+        },
+        "family": "minimax",
+        "id": "accounts/fireworks/models/minimax-m2p7",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-12",
+        "limit": {
+          "context": 196608,
+          "output": 196608
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M2.7",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-12",
+        "temperature": true,
+        "tool_call": true
+      },
       "accounts/fireworks/models/qwen3p6-plus": {
         "attachment": true,
         "cost": {
@@ -29752,6 +29846,7 @@
       "MiniMaxAI/MiniMax-M2.5": {
         "attachment": false,
         "cost": {
+          "cache_read": 0.06,
           "input": 0.3,
           "output": 1.2
         },
@@ -29871,6 +29966,7 @@
       "zai-org/GLM-5": {
         "attachment": false,
         "cost": {
+          "cache_read": 0.5,
           "input": 1,
           "output": 3.2
         },
@@ -29903,6 +29999,7 @@
       "zai-org/GLM-5.1": {
         "attachment": false,
         "cost": {
+          "cache_read": 0.26,
           "input": 1.4,
           "output": 4.4
         },
@@ -40186,37 +40283,6 @@
     ],
     "id": "inception",
     "models": {
-      "mercury": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.25,
-          "cache_write": 1,
-          "input": 0.25,
-          "output": 1
-        },
-        "family": "mercury",
-        "id": "mercury",
-        "knowledge": "2023-10",
-        "last_updated": "2025-07-31",
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-06-26",
-        "temperature": true,
-        "tool_call": true
-      },
       "mercury-2": {
         "attachment": false,
         "cost": {
@@ -40248,46 +40314,15 @@
         "temperature": true,
         "tool_call": true
       },
-      "mercury-coder": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.25,
-          "cache_write": 1,
-          "input": 0.25,
-          "output": 1
-        },
-        "family": "mercury",
-        "id": "mercury-coder",
-        "knowledge": "2023-10",
-        "last_updated": "2025-07-31",
-        "limit": {
-          "context": 128000,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury Coder",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-02-26",
-        "temperature": true,
-        "tool_call": true
-      },
-      "mercury-edit": {
+      "mercury-edit-2": {
         "attachment": false,
         "cost": {
           "cache_read": 0.025,
           "input": 0.25,
           "output": 0.75
         },
-        "id": "mercury-edit",
-        "last_updated": "2026-02-24",
+        "id": "mercury-edit-2",
+        "last_updated": "2026-03-30",
         "limit": {
           "context": 128000,
           "output": 8192
@@ -40300,10 +40335,10 @@
             "text"
           ]
         },
-        "name": "Mercury Edit",
+        "name": "Mercury Edit 2",
         "open_weights": false,
         "reasoning": true,
-        "release_date": "2026-02-24",
+        "release_date": "2026-03-30",
         "temperature": true,
         "tool_call": false
       }
@@ -45651,33 +45686,6 @@
         "temperature": true,
         "tool_call": false
       },
-      "inception/mercury": {
-        "attachment": false,
-        "cost": {
-          "input": 0.25,
-          "output": 0.75
-        },
-        "id": "inception/mercury",
-        "last_updated": "2026-03-15",
-        "limit": {
-          "context": 128000,
-          "output": 32000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Inception: Mercury",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-06-26",
-        "temperature": true,
-        "tool_call": true
-      },
       "inception/mercury-2": {
         "attachment": false,
         "cost": {
@@ -45706,17 +45714,18 @@
         "temperature": true,
         "tool_call": true
       },
-      "inception/mercury-coder": {
+      "inception/mercury-edit-2": {
         "attachment": false,
         "cost": {
+          "cache_read": 0.025,
           "input": 0.25,
           "output": 0.75
         },
-        "id": "inception/mercury-coder",
-        "last_updated": "2026-03-15",
+        "id": "inception/mercury-edit-2",
+        "last_updated": "2026-03-30",
         "limit": {
           "context": 128000,
-          "output": 32000
+          "output": 8192
         },
         "modalities": {
           "input": [
@@ -45726,12 +45735,12 @@
             "text"
           ]
         },
-        "name": "Inception: Mercury Coder",
+        "name": "Mercury Edit 2",
         "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-02-26",
+        "reasoning": true,
+        "release_date": "2026-03-30",
         "temperature": true,
-        "tool_call": true
+        "tool_call": false
       },
       "inflection/inflection-3-pi": {
         "attachment": false,
@@ -49609,6 +49618,35 @@
         "release_date": "2026-03-15",
         "status": "beta",
         "tool_call": false
+      },
+      "openrouter/elephant-alpha": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "id": "openrouter/elephant-alpha",
+        "last_updated": "2026-04-13",
+        "limit": {
+          "context": 262144,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Elephant (new)",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-01-15",
+        "status": "alpha",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
       },
       "openrouter/free": {
         "attachment": true,
@@ -72183,34 +72221,6 @@
         "structured_output": true,
         "tool_call": true
       },
-      "mercury-coder-small": {
-        "attachment": false,
-        "cost": {
-          "input": 0.25,
-          "output": 1
-        },
-        "id": "mercury-coder-small",
-        "last_updated": "2025-02-26",
-        "limit": {
-          "context": 32768,
-          "input": 32768,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury Coder Small",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-02-26",
-        "structured_output": false,
-        "tool_call": false
-      },
       "meta-llama/llama-3.1-8b-instruct": {
         "attachment": false,
         "cost": {
@@ -82583,6 +82593,34 @@
         "temperature": true,
         "tool_call": true
       },
+      "minimaxai/minimax-m2.7": {
+        "attachment": false,
+        "cost": {
+          "input": 0.3,
+          "output": 1.2
+        },
+        "family": "minimax",
+        "id": "minimaxai/minimax-m2.7",
+        "last_updated": "2026-03-18",
+        "limit": {
+          "context": 204800,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M2.7",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-03-18",
+        "temperature": true,
+        "tool_call": true
+      },
       "mistralai/codestral-22b-instruct-v0.1": {
         "attachment": false,
         "cost": {
@@ -87912,6 +87950,84 @@
         "temperature": true,
         "tool_call": true
       },
+      "qwen3.5-plus": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.02,
+          "cache_write": 0.25,
+          "input": 0.2,
+          "output": 1.2
+        },
+        "family": "qwen3.5",
+        "id": "qwen3.5-plus",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-04",
+        "last_updated": "2026-02-16",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.5 Plus",
+        "open_weights": false,
+        "provider": {
+          "npm": "@ai-sdk/alibaba"
+        },
+        "reasoning": true,
+        "release_date": "2026-02-16",
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen3.6-plus": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.05,
+          "cache_write": 0.625,
+          "input": 0.5,
+          "output": 3
+        },
+        "family": "qwen3.6",
+        "id": "qwen3.6-plus",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-04",
+        "last_updated": "2026-04-02",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.6 Plus",
+        "open_weights": false,
+        "provider": {
+          "npm": "@ai-sdk/alibaba"
+        },
+        "reasoning": true,
+        "release_date": "2026-04-02",
+        "temperature": true,
+        "tool_call": true
+      },
       "qwen3.6-plus-free": {
         "attachment": false,
         "cost": {
@@ -88226,6 +88342,84 @@
         },
         "reasoning": true,
         "release_date": "2026-03-18",
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen3.5-plus": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.02,
+          "cache_write": 0.25,
+          "input": 0.2,
+          "output": 1.2
+        },
+        "family": "qwen3.5",
+        "id": "qwen3.5-plus",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-04",
+        "last_updated": "2026-02-16",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.5 Plus",
+        "open_weights": false,
+        "provider": {
+          "npm": "@ai-sdk/alibaba"
+        },
+        "reasoning": true,
+        "release_date": "2026-02-16",
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen3.6-plus": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.05,
+          "cache_write": 0.625,
+          "input": 0.5,
+          "output": 3
+        },
+        "family": "qwen3.6",
+        "id": "qwen3.6-plus",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-04",
+        "last_updated": "2026-04-02",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.6 Plus",
+        "open_weights": false,
+        "provider": {
+          "npm": "@ai-sdk/alibaba"
+        },
+        "reasoning": true,
+        "release_date": "2026-04-02",
         "temperature": true,
         "tool_call": true
       }
@@ -88654,36 +88848,6 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-04-01",
-        "temperature": true,
-        "tool_call": true
-      },
-      "arcee-ai/trinity-mini:free": {
-        "attachment": false,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "family": "trinity-mini",
-        "id": "arcee-ai/trinity-mini:free",
-        "knowledge": "2025-06",
-        "last_updated": "2026-01-28",
-        "limit": {
-          "context": 131072,
-          "output": 131072
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Trinity Mini",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2026-01-28",
-        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -90012,36 +90176,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "inception/mercury": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.025,
-          "input": 0.25,
-          "output": 0.75
-        },
-        "family": "mercury",
-        "id": "inception/mercury",
-        "last_updated": "2025-06-26",
-        "limit": {
-          "context": 128000,
-          "output": 32000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-06-26",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "inception/mercury-2": {
         "attachment": false,
         "cost": {
@@ -90072,19 +90206,18 @@
         "temperature": true,
         "tool_call": true
       },
-      "inception/mercury-coder": {
+      "inception/mercury-edit-2": {
         "attachment": false,
         "cost": {
           "cache_read": 0.025,
           "input": 0.25,
           "output": 0.75
         },
-        "family": "mercury",
-        "id": "inception/mercury-coder",
-        "last_updated": "2025-04-30",
+        "id": "inception/mercury-edit-2",
+        "last_updated": "2026-03-30",
         "limit": {
           "context": 128000,
-          "output": 32000
+          "output": 8192
         },
         "modalities": {
           "input": [
@@ -90094,13 +90227,12 @@
             "text"
           ]
         },
-        "name": "Mercury Coder",
+        "name": "Mercury Edit 2",
         "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-04-30",
-        "structured_output": true,
+        "reasoning": true,
+        "release_date": "2026-03-30",
         "temperature": true,
-        "tool_call": true
+        "tool_call": false
       },
       "liquid/lfm-2.5-1.2b-instruct:free": {
         "attachment": false,
@@ -90927,35 +91059,6 @@
         "reasoning": true,
         "release_date": "2026-01-27",
         "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "moonshotai/kimi-k2:free": {
-        "attachment": false,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "family": "kimi",
-        "id": "moonshotai/kimi-k2:free",
-        "knowledge": "2025-04",
-        "last_updated": "2025-07-11",
-        "limit": {
-          "context": 32800,
-          "output": 32800
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 (free)",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-07-11",
         "temperature": true,
         "tool_call": true
       },
@@ -92473,36 +92576,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "qwen/qwen3-4b:free": {
-        "attachment": false,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "family": "qwen",
-        "id": "qwen/qwen3-4b:free",
-        "knowledge": "2025-04",
-        "last_updated": "2025-07-23",
-        "limit": {
-          "context": 40960,
-          "output": 40960
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen3 4B (free)",
-        "open_weights": true,
-        "reasoning": true,
-        "release_date": "2025-04-30",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "qwen/qwen3-coder": {
         "attachment": false,
         "cost": {
@@ -92623,35 +92696,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "qwen/qwen3-coder:free": {
-        "attachment": false,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "family": "qwen",
-        "id": "qwen/qwen3-coder:free",
-        "knowledge": "2025-04",
-        "last_updated": "2025-07-23",
-        "limit": {
-          "context": 262144,
-          "output": 66536
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen3 Coder 480B A35B Instruct (free)",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-07-23",
-        "temperature": true,
-        "tool_call": true
-      },
       "qwen/qwen3-max": {
         "attachment": false,
         "cost": {
@@ -92703,36 +92747,6 @@
           ]
         },
         "name": "Qwen3 Next 80B A3B Instruct",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-09-11",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "qwen/qwen3-next-80b-a3b-instruct:free": {
-        "attachment": false,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "family": "qwen",
-        "id": "qwen/qwen3-next-80b-a3b-instruct:free",
-        "knowledge": "2025-04",
-        "last_updated": "2025-09-11",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen3 Next 80B A3B Instruct (free)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-09-11",
@@ -95101,6 +95115,7 @@
         "open_weights": false,
         "reasoning": false,
         "release_date": "2024-06-05",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -95133,6 +95148,7 @@
         "open_weights": false,
         "reasoning": false,
         "release_date": "2024-11-18",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -95265,10 +95281,14 @@
       },
       "cerebras/gpt-oss-120b-cs": {
         "attachment": true,
+        "cost": {
+          "input": 0.35,
+          "output": 0.75
+        },
         "id": "cerebras/gpt-oss-120b-cs",
         "last_updated": "2025-08-06",
         "limit": {
-          "context": 0,
+          "context": 128000,
           "output": 0
         },
         "modalities": {
@@ -95279,7 +95299,7 @@
             "text"
           ]
         },
-        "name": "gpt-oss-120b-cs",
+        "name": "GPT-OSS-120B-CS",
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-08-06",
@@ -95288,10 +95308,14 @@
       },
       "cerebras/llama-3.1-8b-cs": {
         "attachment": true,
+        "cost": {
+          "input": 0.1,
+          "output": 0.1
+        },
         "id": "cerebras/llama-3.1-8b-cs",
         "last_updated": "2025-05-13",
         "limit": {
-          "context": 0,
+          "context": 128000,
           "output": 0
         },
         "modalities": {
@@ -95302,7 +95326,7 @@
             "text"
           ]
         },
-        "name": "llama-3.1-8b-cs",
+        "name": "Llama-3.1-8B-CS",
         "open_weights": false,
         "reasoning": false,
         "release_date": "2025-05-13",
@@ -95329,6 +95353,7 @@
         "open_weights": false,
         "reasoning": false,
         "release_date": "2025-05-13",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": false
       },
@@ -95352,6 +95377,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-08-06",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -95375,6 +95401,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-05-15",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -95696,6 +95723,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-10-22",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -95786,6 +95814,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-12-11",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -96362,6 +96391,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-12-22",
+        "status": "deprecated",
         "temperature": true,
         "tool_call": true
       },
@@ -96413,8 +96443,13 @@
       },
       "novita/glm-5": {
         "attachment": true,
+        "cost": {
+          "cache_read": 0.2,
+          "input": 1,
+          "output": 3.2
+        },
         "id": "novita/glm-5",
-        "last_updated": "2026-02-11",
+        "last_updated": "2026-02-15",
         "limit": {
           "context": 205000,
           "output": 131072
@@ -96427,10 +96462,10 @@
             "text"
           ]
         },
-        "name": "glm-5",
+        "name": "GLM-5",
         "open_weights": false,
         "reasoning": true,
-        "release_date": "2026-02-11",
+        "release_date": "2026-02-15",
         "temperature": true,
         "tool_call": true
       },
@@ -96460,10 +96495,15 @@
       },
       "novita/kimi-k2.5": {
         "attachment": true,
+        "cost": {
+          "cache_read": 0.1,
+          "input": 0.6,
+          "output": 3
+        },
         "id": "novita/kimi-k2.5",
         "last_updated": "2026-01-27",
         "limit": {
-          "context": 256000,
+          "context": 128000,
           "output": 262144
         },
         "modalities": {
@@ -96476,11 +96516,11 @@
             "text"
           ]
         },
-        "name": "kimi-k2.5",
+        "name": "Kimi-K2.5",
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-01-27",
-        "temperature": false,
+        "temperature": true,
         "tool_call": true
       },
       "novita/minimax-m2.1": {
@@ -96532,6 +96572,7 @@
         "open_weights": false,
         "reasoning": false,
         "release_date": "2024-08-14",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -96672,6 +96713,7 @@
         "open_weights": false,
         "reasoning": false,
         "release_date": "2024-03-25",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -96701,6 +96743,7 @@
         "open_weights": false,
         "reasoning": false,
         "release_date": "2024-08-26",
+        "status": "deprecated",
         "temperature": false,
         "tool_call": true
       },
@@ -97224,7 +97267,7 @@
             "text"
           ]
         },
-        "name": "GPT 5.1 Codex Max",
+        "name": "GPT-5.1-Codex-Max",
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-12-08",
@@ -111534,6 +111577,34 @@
         "temperature": true,
         "tool_call": true
       },
+      "mercury-edit-2": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.025,
+          "input": 0.25,
+          "output": 0.75
+        },
+        "id": "mercury-edit-2",
+        "last_updated": "2026-03-30",
+        "limit": {
+          "context": 128000,
+          "output": 8192
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Mercury Edit 2",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-03-30",
+        "temperature": true,
+        "tool_call": false
+      },
       "minimax-m21": {
         "attachment": false,
         "cost": {
@@ -115230,19 +115301,18 @@
         "temperature": true,
         "tool_call": true
       },
-      "inception/mercury-coder-small": {
+      "inception/mercury-edit-2": {
         "attachment": false,
         "cost": {
+          "cache_read": 0.025,
           "input": 0.25,
-          "output": 1
+          "output": 0.75
         },
-        "family": "mercury",
-        "id": "inception/mercury-coder-small",
-        "knowledge": "2024-10",
-        "last_updated": "2025-02-26",
+        "id": "inception/mercury-edit-2",
+        "last_updated": "2026-03-30",
         "limit": {
-          "context": 32000,
-          "output": 16384
+          "context": 128000,
+          "output": 8192
         },
         "modalities": {
           "input": [
@@ -115252,12 +115322,12 @@
             "text"
           ]
         },
-        "name": "Mercury Coder Small Beta",
+        "name": "Mercury Edit 2",
         "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-02-26",
+        "reasoning": true,
+        "release_date": "2026-03-30",
         "temperature": true,
-        "tool_call": true
+        "tool_call": false
       },
       "kwaipilot/kat-coder-pro-v1": {
         "attachment": false,
