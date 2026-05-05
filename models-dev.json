@@ -24119,6 +24119,40 @@
         "temperature": true,
         "tool_call": true
       },
+      "moonshotai/chat-completion/models/Kimi-K2_6": {
+        "attachment": true,
+        "cost": {
+          "input": 0.95,
+          "output": 4
+        },
+        "family": "kimi-k2.6",
+        "id": "moonshotai/chat-completion/models/Kimi-K2_6",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-01",
+        "last_updated": "2026-04-21",
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K2.6",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-21",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "openai/chat-completion/models/gpt-oss-120b-high-throughput": {
         "attachment": false,
         "cost": {
@@ -29224,6 +29258,66 @@
         "temperature": true,
         "tool_call": true
       },
+      "google/gemma-4-26B-A4B-it": {
+        "attachment": false,
+        "cost": {
+          "input": 0.07,
+          "output": 0.34
+        },
+        "family": "gemma",
+        "id": "google/gemma-4-26B-A4B-it",
+        "last_updated": "2026-04-02",
+        "limit": {
+          "context": 256000,
+          "output": 8192
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Gemma 4 26B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-02",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "google/gemma-4-31B-it": {
+        "attachment": false,
+        "cost": {
+          "input": 0.13,
+          "output": 0.38
+        },
+        "family": "gemma",
+        "id": "google/gemma-4-31B-it",
+        "last_updated": "2026-04-02",
+        "limit": {
+          "context": 256000,
+          "output": 8192
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Gemma 4 31B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-02",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "meta-llama/Llama-3.1-70B-Instruct": {
         "attachment": false,
         "cost": {
@@ -31980,7 +32074,7 @@
           "field": "reasoning_content"
         },
         "knowledge": "2025-04",
-        "last_updated": "2025-12",
+        "last_updated": "2025-12-22",
         "limit": {
           "context": 200000,
           "output": 128000
@@ -31996,7 +32090,7 @@
         "name": "GLM-4.7",
         "open_weights": true,
         "reasoning": true,
-        "release_date": "2025-12",
+        "release_date": "2025-12-22",
         "temperature": true,
         "tool_call": true
       },
@@ -32011,8 +32105,7 @@
         "interleaved": {
           "field": "reasoning_content"
         },
-        "knowledge": "2025-04",
-        "last_updated": "2026-02",
+        "last_updated": "2026-02-11",
         "limit": {
           "context": 200000,
           "output": 128000
@@ -32028,7 +32121,39 @@
         "name": "GLM-5",
         "open_weights": true,
         "reasoning": true,
-        "release_date": "2026-02",
+        "release_date": "2026-02-11",
+        "temperature": true,
+        "tool_call": true
+      },
+      "glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "input": 1.25,
+          "output": 3.89
+        },
+        "family": "glm",
+        "id": "glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 200000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-03-27",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -32056,6 +32181,34 @@
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-08",
+        "temperature": true,
+        "tool_call": true
+      },
+      "minimax-m2.5": {
+        "attachment": false,
+        "cost": {
+          "input": 0.22,
+          "output": 0.88
+        },
+        "family": "minimax",
+        "id": "minimax-m2.5",
+        "last_updated": "2026-02-12",
+        "limit": {
+          "context": 200000,
+          "output": 32000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M2.5",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-12",
         "temperature": true,
         "tool_call": true
       }
@@ -33624,13 +33777,211 @@
     "name": "Fireworks AI",
     "npm": "@ai-sdk/openai-compatible"
   },
-  "firmware": {
+  "friendli": {
+    "api": "https://api.friendli.ai/serverless/v1",
+    "doc": "https://friendli.ai/docs/guides/serverless_endpoints/introduction",
+    "env": [
+      "FRIENDLI_TOKEN"
+    ],
+    "id": "friendli",
+    "models": {
+      "MiniMaxAI/MiniMax-M2.5": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.06,
+          "input": 0.3,
+          "output": 1.2
+        },
+        "family": "minimax",
+        "id": "MiniMaxAI/MiniMax-M2.5",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-02-12",
+        "limit": {
+          "context": 196608,
+          "output": 196608
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M2.5",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-12",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "Qwen/Qwen3-235B-A22B-Instruct-2507": {
+        "attachment": false,
+        "cost": {
+          "input": 0.2,
+          "output": 0.8
+        },
+        "family": "qwen",
+        "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+        "last_updated": "2026-01-29",
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3 235B A22B Instruct 2507",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2025-07-29",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "meta-llama/Llama-3.1-8B-Instruct": {
+        "attachment": false,
+        "cost": {
+          "input": 0.1,
+          "output": 0.1
+        },
+        "family": "llama",
+        "id": "meta-llama/Llama-3.1-8B-Instruct",
+        "last_updated": "2025-12-23",
+        "limit": {
+          "context": 131072,
+          "output": 8000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Llama 3.1 8B Instruct",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2024-08-01",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "meta-llama/Llama-3.3-70B-Instruct": {
+        "attachment": false,
+        "cost": {
+          "input": 0.6,
+          "output": 0.6
+        },
+        "family": "llama",
+        "id": "meta-llama/Llama-3.3-70B-Instruct",
+        "last_updated": "2025-12-23",
+        "limit": {
+          "context": 131072,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Llama 3.3 70B Instruct",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2024-08-01",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "zai-org/GLM-5": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.5,
+          "input": 1,
+          "output": 3.2
+        },
+        "family": "glm",
+        "id": "zai-org/GLM-5",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-02-12",
+        "limit": {
+          "context": 202752,
+          "output": 202752
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-12",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "zai-org/GLM-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.26,
+          "input": 1.4,
+          "output": 4.4
+        },
+        "family": "glm",
+        "id": "zai-org/GLM-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-07",
+        "limit": {
+          "context": 202752,
+          "output": 202752
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-07",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      }
+    },
+    "name": "Friendli",
+    "npm": "@ai-sdk/openai-compatible"
+  },
+  "frogbot": {
     "api": "https://app.frogbot.ai/api/v1",
     "doc": "https://docs.frogbot.ai",
     "env": [
-      "FIRMWARE_API_KEY"
+      "FROGBOT_API_KEY"
     ],
-    "id": "firmware",
+    "id": "frogbot",
     "models": {
       "claude-haiku-4-5": {
         "attachment": true,
@@ -34455,205 +34806,7 @@
         "tool_call": true
       }
     },
-    "name": "Firmware",
-    "npm": "@ai-sdk/openai-compatible"
-  },
-  "friendli": {
-    "api": "https://api.friendli.ai/serverless/v1",
-    "doc": "https://friendli.ai/docs/guides/serverless_endpoints/introduction",
-    "env": [
-      "FRIENDLI_TOKEN"
-    ],
-    "id": "friendli",
-    "models": {
-      "MiniMaxAI/MiniMax-M2.5": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.06,
-          "input": 0.3,
-          "output": 1.2
-        },
-        "family": "minimax",
-        "id": "MiniMaxAI/MiniMax-M2.5",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "last_updated": "2026-02-12",
-        "limit": {
-          "context": 196608,
-          "output": 196608
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "MiniMax-M2.5",
-        "open_weights": true,
-        "reasoning": true,
-        "release_date": "2026-02-12",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "Qwen/Qwen3-235B-A22B-Instruct-2507": {
-        "attachment": false,
-        "cost": {
-          "input": 0.2,
-          "output": 0.8
-        },
-        "family": "qwen",
-        "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
-        "last_updated": "2026-01-29",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen3 235B A22B Instruct 2507",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-07-29",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "meta-llama/Llama-3.1-8B-Instruct": {
-        "attachment": false,
-        "cost": {
-          "input": 0.1,
-          "output": 0.1
-        },
-        "family": "llama",
-        "id": "meta-llama/Llama-3.1-8B-Instruct",
-        "last_updated": "2025-12-23",
-        "limit": {
-          "context": 131072,
-          "output": 8000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Llama 3.1 8B Instruct",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2024-08-01",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "meta-llama/Llama-3.3-70B-Instruct": {
-        "attachment": false,
-        "cost": {
-          "input": 0.6,
-          "output": 0.6
-        },
-        "family": "llama",
-        "id": "meta-llama/Llama-3.3-70B-Instruct",
-        "last_updated": "2025-12-23",
-        "limit": {
-          "context": 131072,
-          "output": 131072
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Llama 3.3 70B Instruct",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2024-08-01",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "zai-org/GLM-5": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.5,
-          "input": 1,
-          "output": 3.2
-        },
-        "family": "glm",
-        "id": "zai-org/GLM-5",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "last_updated": "2026-02-12",
-        "limit": {
-          "context": 202752,
-          "output": 202752
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "GLM-5",
-        "open_weights": true,
-        "reasoning": true,
-        "release_date": "2026-02-12",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "zai-org/GLM-5.1": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.26,
-          "input": 1.4,
-          "output": 4.4
-        },
-        "family": "glm",
-        "id": "zai-org/GLM-5.1",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "last_updated": "2026-04-07",
-        "limit": {
-          "context": 202752,
-          "output": 202752
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "GLM-5.1",
-        "open_weights": true,
-        "reasoning": true,
-        "release_date": "2026-04-07",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      }
-    },
-    "name": "Friendli",
+    "name": "FrogBot",
     "npm": "@ai-sdk/openai-compatible"
   },
   "github-copilot": {
@@ -90816,7 +90969,7 @@
         "last_updated": "2026-04-07",
         "limit": {
           "context": 202752,
-          "output": 202752
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -91336,7 +91489,7 @@
         "last_updated": "2026-02-17",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 65536
         },
         "modalities": {
           "input": [
@@ -100986,6 +101139,42 @@
         "status": "beta",
         "temperature": true,
         "tool_call": false
+      },
+      "x-ai/grok-4.3": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.2,
+          "context_over_200k": {
+            "cache_read": 0.4,
+            "input": 2.5,
+            "output": 5
+          },
+          "input": 1.25,
+          "output": 2.5
+        },
+        "family": "grok",
+        "id": "x-ai/grok-4.3",
+        "last_updated": "2026-05-01",
+        "limit": {
+          "context": 1000000,
+          "output": 1000000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Grok 4.3",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-05-01",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
       },
       "x-ai/grok-code-fast-1": {
         "attachment": false,
@@ -120000,6 +120189,42 @@
         "structured_output": true,
         "temperature": true,
         "tool_call": false
+      },
+      "grok-4-3": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.23,
+          "context_over_200k": {
+            "cache_read": 0.45,
+            "input": 2.83,
+            "output": 5.67
+          },
+          "input": 1.42,
+          "output": 2.83
+        },
+        "family": "grok",
+        "id": "grok-4-3",
+        "last_updated": "2026-05-04",
+        "limit": {
+          "context": 1000000,
+          "output": 32000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Grok 4.3",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-04-18",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
       },
       "grok-41-fast": {
         "attachment": true,
