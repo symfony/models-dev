@@ -552,7 +552,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-7",
@@ -2128,7 +2140,17 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "gpt-5.4",
@@ -2295,7 +2317,17 @@
             "output": 270
           },
           "input": 30,
-          "output": 180
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "gpt-5.4-pro",
@@ -4935,16 +4967,137 @@
     ],
     "id": "aihubmix",
     "models": {
+      "alicloud-deepseek-v4-flash": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.028,
+          "input": 0.14,
+          "output": 0.28
+        },
+        "family": "deepseek-flash",
+        "id": "alicloud-deepseek-v4-flash",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-05",
+        "last_updated": "2026-04-24",
+        "limit": {
+          "context": 1000000,
+          "output": 384000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Flash (Alibaba Cloud)",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-24",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "alicloud-deepseek-v4-pro": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.13,
+          "input": 1.69,
+          "output": 3.38
+        },
+        "family": "deepseek-thinking",
+        "id": "alicloud-deepseek-v4-pro",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-05",
+        "last_updated": "2026-04-24",
+        "limit": {
+          "context": 1000000,
+          "output": 384000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Pro (Alibaba Cloud)",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-24",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "alicloud-glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.169,
+          "cache_write": 1.05625,
+          "input": 0.84,
+          "output": 3.38
+        },
+        "family": "glm",
+        "id": "alicloud-glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 200000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1 (Alibaba Cloud)",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-03-27",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "claude-opus-4-6": {
         "attachment": true,
         "cost": {
           "cache_read": 0.5,
           "cache_write": 6.25,
+          "context_over_200k": {
+            "cache_read": 1,
+            "cache_write": 12.5,
+            "input": 10,
+            "output": 37.5
+          },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-6",
+        "interleaved": true,
         "knowledge": "2025-05-31",
         "last_updated": "2026-03-13",
         "limit": {
@@ -4965,6 +5118,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-05",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -4973,16 +5127,37 @@
         "cost": {
           "cache_read": 0.5,
           "cache_write": 6.25,
+          "context_over_200k": {
+            "cache_read": 1,
+            "cache_write": 12.5,
+            "input": 10,
+            "output": 37.5
+          },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-6-think",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "knowledge": "2025-05-31",
         "last_updated": "2026-03-13",
         "limit": {
-          "context": 200000,
-          "output": 32000
+          "context": 1000000,
+          "output": 128000
         },
         "modalities": {
           "input": [
@@ -4994,10 +5169,11 @@
             "text"
           ]
         },
-        "name": "Claude Opus 4.6",
+        "name": "Claude Opus 4.6 Thinking",
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-05",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -5006,11 +5182,30 @@
         "cost": {
           "cache_read": 0.5,
           "cache_write": 6.25,
+          "context_over_200k": {
+            "cache_read": 1,
+            "cache_write": 12.5,
+            "input": 10,
+            "output": 37.5
+          },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-7",
+        "interleaved": true,
         "knowledge": "2026-01-31",
         "last_updated": "2026-04-16",
         "limit": {
@@ -5031,6 +5226,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-04-16",
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -5039,21 +5235,43 @@
         "cost": {
           "cache_read": 0.5,
           "cache_write": 6.25,
+          "context_over_200k": {
+            "cache_read": 1,
+            "cache_write": 12.5,
+            "input": 10,
+            "output": 37.5
+          },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-7-think",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "knowledge": "2026-01-31",
         "last_updated": "2026-04-16",
         "limit": {
-          "context": 200000,
-          "output": 32000
+          "context": 1000000,
+          "output": 128000
         },
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -5079,14 +5297,27 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "claude-sonnet-4-6",
+        "interleaved": true,
         "knowledge": "2025-08-31",
-        "last_updated": "2026-02-17",
+        "last_updated": "2026-03-13",
         "limit": {
-          "context": 200000,
+          "context": 1000000,
           "output": 64000
         },
         "modalities": {
@@ -5103,6 +5334,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-17",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -5118,14 +5350,29 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "claude-sonnet-4-6-think",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "knowledge": "2025-08-31",
-        "last_updated": "2026-02-17",
+        "last_updated": "2026-03-13",
         "limit": {
-          "context": 200000,
+          "context": 1000000,
           "output": 64000
         },
         "modalities": {
@@ -5138,16 +5385,18 @@
             "text"
           ]
         },
-        "name": "Claude Sonnet 4.6 Think",
+        "name": "Claude Sonnet 4.6 Thinking",
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-17",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
       "coding-glm-5.1": {
         "attachment": false,
         "cost": {
+          "cache_read": 0.013,
           "input": 0.06,
           "output": 0.22
         },
@@ -5169,28 +5418,28 @@
             "text"
           ]
         },
-        "name": "Coding-GLM-5.1",
-        "open_weights": false,
+        "name": "Coding GLM 5.1",
+        "open_weights": true,
         "reasoning": true,
         "release_date": "2026-04-11",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
       "coding-glm-5.1-free": {
         "attachment": false,
         "cost": {
-          "cache_read": 0,
           "input": 0,
           "output": 0
         },
-        "family": "glm",
+        "family": "glm-free",
         "id": "coding-glm-5.1-free",
         "interleaved": {
           "field": "reasoning_content"
         },
         "last_updated": "2026-04-11",
         "limit": {
-          "context": 204800,
+          "context": 200000,
           "output": 128000
         },
         "modalities": {
@@ -5202,7 +5451,7 @@
           ]
         },
         "name": "Coding GLM 5.1 (free)",
-        "open_weights": false,
+        "open_weights": true,
         "reasoning": true,
         "release_date": "2026-04-11",
         "structured_output": true,
@@ -5217,10 +5466,13 @@
         },
         "family": "minimax",
         "id": "coding-minimax-m2.7",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "last_updated": "2026-03-18",
         "limit": {
           "context": 204800,
-          "output": 13100
+          "output": 128100
         },
         "modalities": {
           "input": [
@@ -5244,12 +5496,15 @@
           "input": 0,
           "output": 0
         },
-        "family": "minimax",
+        "family": "minimax-free",
         "id": "coding-minimax-m2.7-free",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "last_updated": "2026-03-18",
         "limit": {
           "context": 204800,
-          "output": 13100
+          "output": 128100
         },
         "modalities": {
           "input": [
@@ -5259,10 +5514,11 @@
             "text"
           ]
         },
-        "name": "Coding-MiniMax-M2.7-Free",
+        "name": "Coding MiniMax M2.7 (Free)",
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-03-18",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -5274,10 +5530,13 @@
         },
         "family": "minimax",
         "id": "coding-minimax-m2.7-highspeed",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "last_updated": "2026-03-18",
         "limit": {
           "context": 204800,
-          "output": 13100
+          "output": 128100
         },
         "modalities": {
           "input": [
@@ -5295,7 +5554,108 @@
         "temperature": true,
         "tool_call": true
       },
-      "deepseek-v4-flash": {
+      "coding-xiaomi-mimo-v2.5": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.016,
+          "context_over_200k": {
+            "cache_read": 0.032,
+            "input": 0.16,
+            "output": 0.8
+          },
+          "input": 0.08,
+          "output": 0.4,
+          "tiers": [
+            {
+              "cache_read": 0.032,
+              "input": 0.16,
+              "output": 0.8,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "mimo-v2.5",
+        "id": "coding-xiaomi-mimo-v2.5",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2024-12",
+        "last_updated": "2026-05-13",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "audio",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Coding Xiaomi MiMo-V2.5",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-22",
+        "temperature": true,
+        "tool_call": true
+      },
+      "coding-xiaomi-mimo-v2.5-pro": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.04,
+          "context_over_200k": {
+            "cache_read": 0.08,
+            "input": 0.4,
+            "output": 1.2
+          },
+          "input": 0.2,
+          "output": 0.6,
+          "tiers": [
+            {
+              "cache_read": 0.08,
+              "input": 0.4,
+              "output": 1.2,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "mimo-v2.5-pro",
+        "id": "coding-xiaomi-mimo-v2.5-pro",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2024-12",
+        "last_updated": "2026-05-13",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Coding Xiaomi MiMo-V2.5-Pro",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-22",
+        "temperature": true,
+        "tool_call": true
+      },
+      "deep-deepseek-v4-flash": {
         "attachment": false,
         "cost": {
           "cache_read": 0.0308,
@@ -5303,7 +5663,7 @@
           "output": 0.308
         },
         "family": "deepseek-flash",
-        "id": "deepseek-v4-flash",
+        "id": "deep-deepseek-v4-flash",
         "interleaved": {
           "field": "reasoning_content"
         },
@@ -5321,7 +5681,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash",
+        "name": "DeepSeek V4 Flash (DeepSeek)",
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-04-24",
@@ -5329,41 +5689,7 @@
         "temperature": true,
         "tool_call": true
       },
-      "deepseek-v4-flash-think": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.0308,
-          "input": 0.154,
-          "output": 0.308
-        },
-        "family": "deepseek",
-        "id": "deepseek-v4-flash-think",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2025-05",
-        "last_updated": "2026-04-24",
-        "limit": {
-          "context": 1000000,
-          "output": 384000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "DeepSeek V4 Flash Think",
-        "open_weights": true,
-        "reasoning": true,
-        "release_date": "2026-04-24",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "deepseek-v4-pro": {
+      "deep-deepseek-v4-pro": {
         "attachment": false,
         "cost": {
           "cache_read": 0.004302,
@@ -5371,7 +5697,7 @@
           "output": 0.956
         },
         "family": "deepseek-thinking",
-        "id": "deepseek-v4-pro",
+        "id": "deep-deepseek-v4-pro",
         "interleaved": {
           "field": "reasoning_content"
         },
@@ -5389,10 +5715,236 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Pro",
+        "name": "DeepSeek V4 Pro (DeepSeek)",
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-04-24",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "doubao-seed-2-0-code-preview": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.09644,
+          "input": 0.48,
+          "output": 2.41,
+          "tiers": [
+            {
+              "cache_read": 0.144656,
+              "input": 0.72,
+              "output": 3.62,
+              "tier": {
+                "size": 32000,
+                "type": "context"
+              }
+            },
+            {
+              "cache_read": 0.28932,
+              "input": 1.45,
+              "output": 7.23,
+              "tier": {
+                "size": 128000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "seed",
+        "id": "doubao-seed-2-0-code-preview",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-02-14",
+        "limit": {
+          "context": 256000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Doubao Seed 2.0 Code Preview",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-02-14",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "doubao-seed-2-0-lite-260428": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.01692,
+          "input": 0.08,
+          "input_audio": 1.269,
+          "output": 0.51,
+          "tiers": [
+            {
+              "cache_read": 0.02536,
+              "input": 0.13,
+              "input_audio": 1.902,
+              "output": 0.76,
+              "tier": {
+                "size": 32000,
+                "type": "context"
+              }
+            },
+            {
+              "cache_read": 0.05072,
+              "input": 0.25,
+              "input_audio": 3.804,
+              "output": 1.52,
+              "tier": {
+                "size": 128000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "seed",
+        "id": "doubao-seed-2-0-lite-260428",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-28",
+        "limit": {
+          "context": 256000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Doubao Seed 2.0 Lite 260428",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-04-28",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "doubao-seed-2-0-mini-260428": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.00564,
+          "input": 0.03,
+          "input_audio": 0.423,
+          "output": 0.28,
+          "tiers": [
+            {
+              "cache_read": 0.01128,
+              "input": 0.06,
+              "input_audio": 0.846,
+              "output": 0.56,
+              "tier": {
+                "size": 32000,
+                "type": "context"
+              }
+            },
+            {
+              "cache_read": 0.02256,
+              "input": 0.11,
+              "input_audio": 1.692,
+              "output": 1.13,
+              "tier": {
+                "size": 128000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "seed",
+        "id": "doubao-seed-2-0-mini-260428",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-04-28",
+        "limit": {
+          "context": 256000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Doubao Seed 2.0 Mini 260428",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-04-28",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "doubao-seed-2-0-pro": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.09644,
+          "input": 0.48,
+          "output": 2.41,
+          "tiers": [
+            {
+              "cache_read": 0.144656,
+              "input": 0.72,
+              "output": 3.62,
+              "tier": {
+                "size": 32000,
+                "type": "context"
+              }
+            },
+            {
+              "cache_read": 0.28932,
+              "input": 1.45,
+              "output": 7.23,
+              "tier": {
+                "size": 128000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "seed",
+        "id": "doubao-seed-2-0-pro",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-02-14",
+        "limit": {
+          "context": 256000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Doubao Seed 2.0 Pro",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-02-14",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -5402,7 +5954,8 @@
         "cost": {
           "cache_read": 0.03,
           "input": 0.3,
-          "output": 2.499
+          "input_audio": 1,
+          "output": 2.5
         },
         "family": "gemini-flash",
         "id": "gemini-2.5-flash",
@@ -5436,8 +5989,24 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.125,
+          "context_over_200k": {
+            "cache_read": 0.25,
+            "input": 2.5,
+            "output": 15
+          },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-2.5-pro",
@@ -5471,8 +6040,24 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.05,
+          "context_over_200k": {
+            "cache_read": 0.05,
+            "input": 0.5,
+            "output": 3
+          },
           "input": 0.5,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.05,
+              "input": 0.5,
+              "output": 3,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-flash",
         "id": "gemini-3-flash-preview",
@@ -5505,14 +6090,15 @@
       "gemini-3.1-flash-lite": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.25,
+          "cache_read": 0.025,
+          "cache_write": 1,
           "input": 0.25,
           "output": 1.5
         },
         "family": "gemini-flash-lite",
         "id": "gemini-3.1-flash-lite",
         "knowledge": "2025-01",
-        "last_updated": "2026-03-03",
+        "last_updated": "2026-05-07",
         "limit": {
           "context": 1048576,
           "output": 65536
@@ -5532,7 +6118,7 @@
         "name": "Gemini 3.1 Flash Lite",
         "open_weights": false,
         "reasoning": true,
-        "release_date": "2026-03-03",
+        "release_date": "2026-05-07",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -5541,8 +6127,24 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.2,
+          "context_over_200k": {
+            "cache_read": 0.4,
+            "input": 4,
+            "output": 18
+          },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro-preview",
@@ -5582,7 +6184,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro-preview-customtools",
@@ -5612,39 +6225,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "glm-5.1": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.183112,
-          "input": 0.845,
-          "output": 3.38
-        },
-        "family": "glm",
-        "id": "glm-5.1",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "last_updated": "2026-03-27",
-        "limit": {
-          "context": 200000,
-          "output": 128000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "GLM-5.1",
-        "open_weights": false,
-        "reasoning": true,
-        "release_date": "2026-03-27",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "glm-5v-turbo": {
         "attachment": true,
         "cost": {
@@ -5652,7 +6232,7 @@
           "input": 0.7042,
           "output": 3.09848
         },
-        "family": "glm",
+        "family": "glmv",
         "id": "glm-5v-turbo",
         "interleaved": {
           "field": "reasoning_content"
@@ -5680,81 +6260,20 @@
         "temperature": true,
         "tool_call": true
       },
-      "gpt-4.1": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.5,
-          "input": 2,
-          "output": 8
-        },
-        "family": "gpt",
-        "id": "gpt-4.1",
-        "knowledge": "2024-04",
-        "last_updated": "2025-04-14",
-        "limit": {
-          "context": 1047576,
-          "output": 32768
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "GPT-4.1",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-04-14",
-        "temperature": true,
-        "tool_call": true
-      },
-      "gpt-4.1-mini": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.1,
-          "input": 0.4,
-          "output": 1.6
-        },
-        "family": "gpt-mini",
-        "id": "gpt-4.1-mini",
-        "knowledge": "2024-04",
-        "last_updated": "2025-04-14",
-        "limit": {
-          "context": 1047576,
-          "output": 32768
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "GPT-4.1 mini",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-04-14",
-        "temperature": true,
-        "tool_call": true
-      },
       "gpt-5.1": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.125,
+          "cache_read": 0.13,
           "input": 1.25,
           "output": 10
         },
         "family": "gpt",
         "id": "gpt-5.1",
-        "knowledge": "2025-11",
-        "last_updated": "2025-11-15",
+        "knowledge": "2024-09-30",
+        "last_updated": "2025-11-13",
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "modalities": {
@@ -5769,8 +6288,9 @@
         "name": "GPT-5.1",
         "open_weights": false,
         "reasoning": true,
-        "release_date": "2025-11-15",
-        "temperature": true,
+        "release_date": "2025-11-13",
+        "structured_output": true,
+        "temperature": false,
         "tool_call": true
       },
       "gpt-5.1-codex": {
@@ -5852,6 +6372,7 @@
         "last_updated": "2025-12-11",
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "modalities": {
@@ -5867,6 +6388,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-12-11",
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -5880,25 +6402,28 @@
         "family": "gpt-codex",
         "id": "gpt-5.2-codex",
         "knowledge": "2025-08-31",
-        "last_updated": "2026-01-14",
+        "last_updated": "2025-12-11",
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
           ]
         },
-        "name": "GPT-5.2-Codex",
+        "name": "GPT-5.2 Codex",
         "open_weights": false,
         "reasoning": true,
-        "release_date": "2026-01-14",
+        "release_date": "2025-12-11",
         "structured_output": true,
+        "temperature": false,
         "tool_call": true
       },
       "gpt-5.3-codex": {
@@ -5939,20 +6464,55 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.25,
+          "context_over_200k": {
+            "cache_read": 0.5,
+            "input": 5,
+            "output": 22.5
+          },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 0.5,
+                "input": 5,
+                "output": 30
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
         },
         "family": "gpt",
         "id": "gpt-5.4",
-        "last_updated": "2026-03-11",
+        "knowledge": "2025-08-31",
+        "last_updated": "2026-03-05",
         "limit": {
-          "context": 400000,
+          "context": 1050000,
+          "input": 922000,
           "output": 128000
         },
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -5961,7 +6521,7 @@
         "name": "GPT-5.4",
         "open_weights": false,
         "reasoning": true,
-        "release_date": "2026-03-11",
+        "release_date": "2026-03-05",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -5973,11 +6533,29 @@
           "input": 0.75,
           "output": 4.5
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 0.15,
+                "input": 1.5,
+                "output": 9
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
+        },
         "family": "gpt-mini",
         "id": "gpt-5.4-mini",
-        "last_updated": "2026-03-11",
+        "knowledge": "2025-08-31",
+        "last_updated": "2026-03-17",
         "limit": {
           "context": 400000,
+          "input": 272000,
           "output": 128000
         },
         "modalities": {
@@ -5989,10 +6567,10 @@
             "text"
           ]
         },
-        "name": "GPT-5.4-Mini",
+        "name": "GPT-5.4 mini",
         "open_weights": false,
-        "reasoning": false,
-        "release_date": "2026-03-11",
+        "reasoning": true,
+        "release_date": "2026-03-17",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -6001,8 +6579,40 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.5,
+          "context_over_200k": {
+            "cache_read": 1,
+            "input": 10,
+            "output": 45
+          },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 1.25,
+                "input": 12.5,
+                "output": 75
+              },
+              "provider": {
+                "body": {
+                  "service_tier": "priority"
+                }
+              }
+            }
+          }
         },
         "family": "gpt",
         "id": "gpt-5.5",
@@ -6010,6 +6620,7 @@
         "last_updated": "2026-04-23",
         "limit": {
           "context": 1050000,
+          "input": 922000,
           "output": 128000
         },
         "modalities": {
@@ -6040,7 +6651,18 @@
             "output": 5
           },
           "input": 1.25,
-          "output": 2.5
+          "output": 2.5,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2.5,
+              "output": 5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4.3",
@@ -6067,9 +6689,9 @@
         "tool_call": true
       },
       "kimi-k2.5": {
-        "attachment": false,
+        "attachment": true,
         "cost": {
-          "cache_read": 0.105,
+          "cache_read": 0.1,
           "input": 0.6,
           "output": 3
         },
@@ -6081,8 +6703,8 @@
         "knowledge": "2025-01",
         "last_updated": "2026-01",
         "limit": {
-          "context": 256000,
-          "output": 0
+          "context": 262144,
+          "output": 32768
         },
         "modalities": {
           "input": [
@@ -6105,9 +6727,9 @@
       "kimi-k2.6": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.160835,
+          "cache_read": 0.16,
           "input": 0.95,
-          "output": 3.9995
+          "output": 4
         },
         "family": "kimi-k2.6",
         "id": "kimi-k2.6",
@@ -6118,7 +6740,7 @@
         "last_updated": "2026-04-21",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 32768
         },
         "modalities": {
           "input": [
@@ -6135,21 +6757,25 @@
         "reasoning": true,
         "release_date": "2026-04-21",
         "structured_output": true,
-        "temperature": true,
+        "temperature": false,
         "tool_call": true
       },
       "minimax-m2.7": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.05916,
-          "input": 0.2958,
-          "output": 1.1832
+          "cache_read": 0.06,
+          "cache_write": 0.375,
+          "input": 0.3,
+          "output": 1.2
         },
         "family": "minimax",
         "id": "minimax-m2.7",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "last_updated": "2026-03-18",
         "limit": {
-          "context": 200000,
+          "context": 204800,
           "output": 128000
         },
         "modalities": {
@@ -6160,43 +6786,12 @@
             "text"
           ]
         },
-        "name": "MiniMax-M2.7",
+        "name": "MiniMax M2.7",
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-03-18",
-        "temperature": true,
-        "tool_call": true
-      },
-      "o4-mini": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.275,
-          "input": 1.1,
-          "output": 4.4
-        },
-        "family": "o-mini",
-        "id": "o4-mini",
-        "knowledge": "2024-05",
-        "last_updated": "2025-04-16",
-        "limit": {
-          "context": 200000,
-          "output": 100000
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "o4-mini",
-        "open_weights": false,
-        "reasoning": true,
-        "release_date": "2025-04-16",
         "structured_output": true,
-        "temperature": false,
+        "temperature": true,
         "tool_call": true
       },
       "qwen3.6-flash": {
@@ -6204,11 +6799,32 @@
         "cost": {
           "cache_read": 0.0169,
           "cache_write": 0.21125,
-          "input": 0.169,
-          "output": 1.014
+          "context_over_200k": {
+            "cache_read": 0.0676,
+            "cache_write": 0.845,
+            "input": 0.68,
+            "output": 4.06
+          },
+          "input": 0.17,
+          "output": 1.01,
+          "tiers": [
+            {
+              "cache_read": 0.0676,
+              "cache_write": 0.845,
+              "input": 0.68,
+              "output": 4.06,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
-        "family": "qwen",
+        "family": "qwen3.6",
         "id": "qwen3.6-flash",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "knowledge": "2025-04",
         "last_updated": "2026-04-02",
         "limit": {
@@ -6238,11 +6854,26 @@
         "cost": {
           "cache_read": 0.1268,
           "cache_write": 1.585,
-          "input": 1.268,
-          "output": 7.608
+          "input": 1.27,
+          "output": 7.61,
+          "tiers": [
+            {
+              "cache_read": 0.2112,
+              "cache_write": 2.64,
+              "input": 2.11,
+              "output": 12.67,
+              "tier": {
+                "size": 128000,
+                "type": "context"
+              }
+            }
+          ]
         },
-        "family": "qwen",
+        "family": "qwen3.6",
         "id": "qwen3.6-max-preview",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "knowledge": "2025-04",
         "last_updated": "2026-05-09",
         "limit": {
@@ -6270,11 +6901,32 @@
         "cost": {
           "cache_read": 0.0282,
           "cache_write": 0.3525,
-          "input": 0.282,
-          "output": 1.692
+          "context_over_200k": {
+            "cache_read": 0.1128,
+            "cache_write": 1.41,
+            "input": 1.13,
+            "output": 6.77
+          },
+          "input": 0.28,
+          "output": 1.69,
+          "tiers": [
+            {
+              "cache_read": 0.1128,
+              "cache_write": 1.41,
+              "input": 1.13,
+              "output": 6.77,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
-        "family": "qwen",
+        "family": "qwen3.6",
         "id": "qwen3.6-plus",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
         "knowledge": "2025-04",
         "last_updated": "2026-05-09",
         "limit": {
@@ -6295,6 +6947,209 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-05-09",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "xiaomi-mimo-v2.5": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.088,
+          "context_over_200k": {
+            "cache_read": 0.176,
+            "input": 0.88,
+            "output": 4.4
+          },
+          "input": 0.44,
+          "output": 2.2,
+          "tiers": [
+            {
+              "cache_read": 0.176,
+              "input": 0.88,
+              "output": 4.4,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "mimo-v2.5",
+        "id": "xiaomi-mimo-v2.5",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2024-12",
+        "last_updated": "2026-05-13",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "audio",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Xiaomi MiMo-V2.5",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-22",
+        "temperature": true,
+        "tool_call": true
+      },
+      "xiaomi-mimo-v2.5-free": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0,
+          "input": 0,
+          "output": 0
+        },
+        "family": "mimo-v2.5",
+        "id": "xiaomi-mimo-v2.5-free",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2024-12",
+        "last_updated": "2026-05-13",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "audio",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Xiaomi MiMo-V2.5 (free)",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-22",
+        "temperature": true,
+        "tool_call": true
+      },
+      "xiaomi-mimo-v2.5-pro": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.22,
+          "context_over_200k": {
+            "cache_read": 0.44,
+            "input": 2.2,
+            "output": 6.6
+          },
+          "input": 1.1,
+          "output": 3.3,
+          "tiers": [
+            {
+              "cache_read": 0.44,
+              "input": 2.2,
+              "output": 6.6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "mimo-v2.5-pro",
+        "id": "xiaomi-mimo-v2.5-pro",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2024-12",
+        "last_updated": "2026-05-13",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Xiaomi MiMo-V2.5-Pro",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-22",
+        "temperature": true,
+        "tool_call": true
+      },
+      "xiaomi-mimo-v2.5-pro-free": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0,
+          "input": 0,
+          "output": 0
+        },
+        "family": "mimo-v2.5-pro",
+        "id": "xiaomi-mimo-v2.5-pro-free",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2024-12",
+        "last_updated": "2026-05-13",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Xiaomi MiMo-V2.5-Pro (free)",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-22",
+        "temperature": true,
+        "tool_call": true
+      },
+      "zai-glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.183112,
+          "input": 0.845,
+          "output": 3.38
+        },
+        "family": "glm",
+        "id": "zai-glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 200000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1 (Z.ai)",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-03-27",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -7723,10 +8578,28 @@
       "qwen3.6-plus": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.028,
-          "cache_write": 0.344,
-          "input": 0.276,
-          "output": 1.651
+          "cache_read": 0.05,
+          "cache_write": 0.625,
+          "context_over_200k": {
+            "cache_read": 0.2,
+            "cache_write": 2.5,
+            "input": 2,
+            "output": 6
+          },
+          "input": 0.5,
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.2,
+              "cache_write": 2.5,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "qwen",
         "id": "qwen3.6-plus",
@@ -9971,10 +10844,28 @@
       "qwen3.6-plus": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.028,
-          "cache_write": 0.344,
-          "input": 0.276,
-          "output": 1.651
+          "cache_read": 0.05,
+          "cache_write": 0.625,
+          "context_over_200k": {
+            "cache_read": 0.2,
+            "cache_write": 2.5,
+            "input": 2,
+            "output": 6
+          },
+          "input": 0.5,
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.2,
+              "cache_write": 2.5,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "qwen",
         "id": "qwen3.6-plus",
@@ -11120,7 +12011,6 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-04-16",
-        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -11188,6 +12078,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-17",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -11221,6 +12112,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-10-15",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -11288,6 +12180,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-09-29",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -11410,6 +12303,7 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-02-06",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -11545,7 +12439,6 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-04-16",
-        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -11613,6 +12506,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-17",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -11748,7 +12642,6 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-04-16",
-        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -11816,6 +12709,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-17",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -11973,6 +12867,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2025-09-29",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -12006,6 +12901,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-17",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -12268,6 +13164,7 @@
         "open_weights": true,
         "reasoning": false,
         "release_date": "2026-02-17",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -12565,6 +13462,7 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-02-06",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -12623,6 +13521,7 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2025-12-23",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -12680,6 +13579,7 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-03-11",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -12691,10 +13591,10 @@
         },
         "family": "gpt-oss",
         "id": "openai.gpt-oss-120b-1:0",
-        "last_updated": "2024-12-01",
+        "last_updated": "2025-08-05",
         "limit": {
           "context": 128000,
-          "output": 4096
+          "output": 16384
         },
         "modalities": {
           "input": [
@@ -12707,7 +13607,7 @@
         "name": "gpt-oss-120b",
         "open_weights": false,
         "reasoning": false,
-        "release_date": "2024-12-01",
+        "release_date": "2025-08-05",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -12720,10 +13620,10 @@
         },
         "family": "gpt-oss",
         "id": "openai.gpt-oss-20b-1:0",
-        "last_updated": "2024-12-01",
+        "last_updated": "2025-08-05",
         "limit": {
           "context": 128000,
-          "output": 4096
+          "output": 16384
         },
         "modalities": {
           "input": [
@@ -12736,7 +13636,7 @@
         "name": "gpt-oss-20b",
         "open_weights": false,
         "reasoning": false,
-        "release_date": "2024-12-01",
+        "release_date": "2025-08-05",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -12749,10 +13649,10 @@
         },
         "family": "gpt-oss",
         "id": "openai.gpt-oss-safeguard-120b",
-        "last_updated": "2024-12-01",
+        "last_updated": "2025-10-29",
         "limit": {
           "context": 128000,
-          "output": 4096
+          "output": 16384
         },
         "modalities": {
           "input": [
@@ -12765,7 +13665,7 @@
         "name": "GPT OSS Safeguard 120B",
         "open_weights": false,
         "reasoning": false,
-        "release_date": "2024-12-01",
+        "release_date": "2025-10-29",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -12778,10 +13678,10 @@
         },
         "family": "gpt-oss",
         "id": "openai.gpt-oss-safeguard-20b",
-        "last_updated": "2024-12-01",
+        "last_updated": "2025-10-29",
         "limit": {
           "context": 128000,
-          "output": 4096
+          "output": 16384
         },
         "modalities": {
           "input": [
@@ -12794,7 +13694,7 @@
         "name": "GPT OSS Safeguard 20B",
         "open_weights": false,
         "reasoning": false,
-        "release_date": "2024-12-01",
+        "release_date": "2025-10-29",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -13172,7 +14072,6 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-04-16",
-        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -13240,6 +14139,7 @@
         "open_weights": false,
         "reasoning": true,
         "release_date": "2026-02-17",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -13417,6 +14317,7 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2025-12-22",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -13446,6 +14347,7 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-01-19",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -13477,12 +14379,95 @@
         "open_weights": true,
         "reasoning": true,
         "release_date": "2026-03-18",
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       }
     },
     "name": "Amazon Bedrock",
     "npm": "@ai-sdk/amazon-bedrock"
+  },
+  "ambient": {
+    "api": "https://api.ambient.xyz/v1",
+    "doc": "https://ambient.xyz",
+    "env": [
+      "AMBIENT_API_KEY"
+    ],
+    "id": "ambient",
+    "models": {
+      "moonshotai/kimi-k2.6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 0,
+          "input": 0.95,
+          "output": 4
+        },
+        "family": "kimi-k2.6",
+        "id": "moonshotai/kimi-k2.6",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-01",
+        "last_updated": "2026-04-21",
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K2.6",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-21",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "zai-org/GLM-5.1-FP8": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0,
+          "cache_write": 0,
+          "input": 1.4,
+          "output": 4.4
+        },
+        "family": "glm",
+        "id": "zai-org/GLM-5.1-FP8",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 202752,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-03-27",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      }
+    },
+    "name": "Ambient",
+    "npm": "@ai-sdk/openai-compatible"
   },
   "anthropic": {
     "doc": "https://docs.anthropic.com/en/docs/about-claude/models",
@@ -14080,6 +15065,26 @@
           "input": 5,
           "output": 25
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 3,
+                "cache_write": 37.5,
+                "input": 30,
+                "output": 150
+              },
+              "provider": {
+                "body": {
+                  "speed": "fast"
+                },
+                "headers": {
+                  "anthropic-beta": "fast-mode-2026-02-01"
+                }
+              }
+            }
+          }
+        },
         "family": "claude-opus",
         "id": "claude-opus-4-7",
         "knowledge": "2026-01-31",
@@ -14274,6 +15279,600 @@
     "name": "Anthropic",
     "npm": "@ai-sdk/anthropic"
   },
+  "auriko": {
+    "api": "https://api.auriko.ai/v1",
+    "doc": "https://docs.auriko.ai",
+    "env": [
+      "AURIKO_API_KEY"
+    ],
+    "id": "auriko",
+    "models": {
+      "claude-opus-4-6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.5,
+          "cache_write": 6.25,
+          "input": 5,
+          "output": 25
+        },
+        "family": "claude-opus",
+        "id": "claude-opus-4-6",
+        "knowledge": "2025-05-31",
+        "last_updated": "2026-03-13",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Opus 4.6",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-02-05",
+        "temperature": true,
+        "tool_call": true
+      },
+      "claude-opus-4-7": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.5,
+          "cache_write": 6.25,
+          "input": 5,
+          "output": 25
+        },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 3,
+                "cache_write": 37.5,
+                "input": 30,
+                "output": 150
+              },
+              "provider": {
+                "body": {
+                  "speed": "fast"
+                },
+                "headers": {
+                  "anthropic-beta": "fast-mode-2026-02-01"
+                }
+              }
+            }
+          }
+        },
+        "family": "claude-opus",
+        "id": "claude-opus-4-7",
+        "knowledge": "2026-01-31",
+        "last_updated": "2026-04-16",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Opus 4.7",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-04-16",
+        "temperature": false,
+        "tool_call": true
+      },
+      "claude-sonnet-4-6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.3,
+          "cache_write": 3.75,
+          "input": 3,
+          "output": 15
+        },
+        "family": "claude-sonnet",
+        "id": "claude-sonnet-4-6",
+        "knowledge": "2025-08-31",
+        "last_updated": "2026-03-13",
+        "limit": {
+          "context": 1000000,
+          "output": 64000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Sonnet 4.6",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-02-17",
+        "temperature": true,
+        "tool_call": true
+      },
+      "deepseek-v4-flash": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.0028,
+          "input": 0.14,
+          "output": 0.28
+        },
+        "family": "deepseek-flash",
+        "id": "deepseek-v4-flash",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-05",
+        "last_updated": "2026-04-24",
+        "limit": {
+          "context": 1000000,
+          "output": 384000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Flash",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-24",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "deepseek-v4-pro": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.003625,
+          "input": 0.435,
+          "output": 0.87
+        },
+        "family": "deepseek-thinking",
+        "id": "deepseek-v4-pro",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-05",
+        "last_updated": "2026-04-24",
+        "limit": {
+          "context": 1000000,
+          "output": 384000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Pro",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-24",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "gemini-2.5-flash": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.03,
+          "input": 0.3,
+          "output": 2.5
+        },
+        "family": "gemini-flash",
+        "id": "gemini-2.5-flash",
+        "knowledge": "2025-01",
+        "last_updated": "2025-06-05",
+        "limit": {
+          "context": 1048576,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "audio",
+            "video",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Gemini 2.5 Flash",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2025-03-20",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "gemini-2.5-pro": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.125,
+          "context_over_200k": {
+            "cache_read": 0.25,
+            "input": 2.5,
+            "output": 15
+          },
+          "input": 1.25,
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "gemini-pro",
+        "id": "gemini-2.5-pro",
+        "knowledge": "2025-01",
+        "last_updated": "2025-06-05",
+        "limit": {
+          "context": 1048576,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "audio",
+            "video",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Gemini 2.5 Pro",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2025-03-20",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "gemini-3.1-pro-preview": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.2,
+          "context_over_200k": {
+            "cache_read": 0.4,
+            "input": 4,
+            "output": 18
+          },
+          "input": 2,
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "gemini-pro",
+        "id": "gemini-3.1-pro-preview",
+        "knowledge": "2025-01",
+        "last_updated": "2026-02-19",
+        "limit": {
+          "context": 1048576,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Gemini 3.1 Pro Preview",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-02-19",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "glm-5.1": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.26,
+          "input": 1.4,
+          "output": 4.4
+        },
+        "family": "glm",
+        "id": "glm-5.1",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-27",
+        "limit": {
+          "context": 200000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.1",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-03-27",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "grok-4.3": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.2,
+          "context_over_200k": {
+            "cache_read": 0.4,
+            "input": 2.5,
+            "output": 5
+          },
+          "input": 1.25,
+          "output": 2.5,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2.5,
+              "output": 5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "grok",
+        "id": "grok-4.3",
+        "last_updated": "2026-05-01",
+        "limit": {
+          "context": 1000000,
+          "output": 30000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Grok 4.3",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-05-01",
+        "temperature": true,
+        "tool_call": true
+      },
+      "kimi-k2.5": {
+        "attachment": false,
+        "cost": {
+          "input": 0.5,
+          "output": 2.8
+        },
+        "family": "kimi-k2.5",
+        "id": "kimi-k2.5",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-01",
+        "last_updated": "2026-01",
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K2.5",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-01",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "kimi-k2.6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.16,
+          "input": 0.95,
+          "output": 4
+        },
+        "family": "kimi-k2.6",
+        "id": "kimi-k2.6",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-01",
+        "last_updated": "2026-04-21",
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K2.6",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-21",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "minimax-m2-7": {
+        "attachment": false,
+        "cost": {
+          "cache_write": 0.375,
+          "input": 0.3,
+          "output": 1.2
+        },
+        "family": "minimax",
+        "id": "minimax-m2-7",
+        "last_updated": "2026-03-18",
+        "limit": {
+          "context": 204800,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M2.7",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-03-18",
+        "temperature": true,
+        "tool_call": true
+      },
+      "minimax-m2-7-highspeed": {
+        "attachment": false,
+        "cost": {
+          "cache_write": 0.375,
+          "input": 0.6,
+          "output": 2.4
+        },
+        "family": "minimax",
+        "id": "minimax-m2-7-highspeed",
+        "last_updated": "2026-03-18",
+        "limit": {
+          "context": 204800,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M2.7-highspeed",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-03-18",
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen-3.6-plus": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.1,
+          "context_over_200k": {
+            "cache_read": 0.2,
+            "cache_write": 2.5,
+            "input": 2,
+            "output": 6
+          },
+          "input": 0.5,
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.2,
+              "cache_write": 2.5,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "qwen",
+        "id": "qwen-3.6-plus",
+        "knowledge": "2025-04",
+        "last_updated": "2026-04-02",
+        "limit": {
+          "context": 1000000,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.6 Plus",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-04-02",
+        "temperature": true,
+        "tool_call": true
+      }
+    },
+    "name": "Auriko",
+    "npm": "@ai-sdk/openai-compatible"
+  },
   "azure": {
     "doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models",
     "env": [
@@ -14407,7 +16006,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-6",
@@ -15862,7 +17473,18 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "gpt-5.4",
@@ -15967,7 +17589,17 @@
             "output": 270
           },
           "input": 30,
-          "output": 180
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "gpt-5.4-pro",
@@ -16005,7 +17637,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "gpt-5.5",
@@ -17755,7 +19398,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-6",
@@ -19108,7 +20763,18 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "gpt-5.4",
@@ -19213,7 +20879,17 @@
             "output": 270
           },
           "input": 30,
-          "output": 180
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "gpt-5.4-pro",
@@ -19251,7 +20927,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "gpt-5.5",
@@ -23197,6 +24884,47 @@
     "name": "Clarifai",
     "npm": "@ai-sdk/openai-compatible"
   },
+  "claudinio": {
+    "api": "https://api.claudin.io/v1",
+    "doc": "https://claudin.io",
+    "env": [
+      "CLAUDINIO_API_KEY"
+    ],
+    "id": "claudinio",
+    "models": {
+      "claudinio": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.05,
+          "input": 0.5,
+          "output": 2
+        },
+        "id": "claudinio",
+        "knowledge": "2026-05",
+        "last_updated": "2026-05-12",
+        "limit": {
+          "context": 256000,
+          "output": 64000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claudinio",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-05-12",
+        "tool_call": true
+      }
+    },
+    "name": "Claudinio",
+    "npm": "@ai-sdk/openai-compatible"
+  },
   "cloudferro-sherlock": {
     "api": "https://api-sherlock.cloudferro.com/openai/v1/",
     "doc": "https://docs.sherlock.cloudferro.com/",
@@ -23707,7 +25435,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "anthropic/claude-opus-4-6",
@@ -23848,7 +25588,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic/claude-sonnet-4-6",
@@ -24250,7 +26002,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "openai/gpt-5.5",
@@ -27913,6 +29676,26 @@
           "input": 5,
           "output": 25
         },
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 3,
+                "cache_write": 37.5,
+                "input": 30,
+                "output": 150
+              },
+              "provider": {
+                "body": {
+                  "speed": "fast"
+                },
+                "headers": {
+                  "anthropic-beta": "fast-mode-2026-02-01"
+                }
+              }
+            }
+          }
+        },
         "family": "claude-opus",
         "id": "databricks-claude-opus-4-7",
         "knowledge": "2026-01-31",
@@ -28083,7 +29866,18 @@
             "output": 15
           },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "databricks-gemini-2-5-pro",
@@ -28117,8 +29911,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.025,
-          "cache_write": 1,
           "input": 0.25,
+          "input_audio": 0.5,
           "output": 1.5
         },
         "family": "gemini-flash-lite",
@@ -28159,7 +29953,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "databricks-gemini-3-1-pro",
@@ -28193,12 +29998,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.05,
-          "context_over_200k": {
-            "cache_read": 0.05,
-            "input": 0.5,
-            "output": 3
-          },
           "input": 0.5,
+          "input_audio": 1,
           "output": 3
         },
         "family": "gemini-flash",
@@ -28239,7 +30040,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "databricks-gemini-3-pro",
@@ -28378,7 +30190,18 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "experimental": {
           "modes": {
@@ -28515,7 +30338,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "experimental": {
           "modes": {
@@ -29604,6 +31438,107 @@
         "temperature": true,
         "tool_call": true
       },
+      "xiaomi/mimo-v2.5": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.08,
+          "context_over_200k": {
+            "cache_read": 0.16,
+            "input": 0.8,
+            "output": 4
+          },
+          "input": 0.4,
+          "output": 2,
+          "tiers": [
+            {
+              "cache_read": 0.16,
+              "input": 0.8,
+              "output": 4,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "mimo",
+        "id": "xiaomi/mimo-v2.5",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2024-12",
+        "last_updated": "2026-04-22",
+        "limit": {
+          "context": 262144,
+          "output": 16384
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "audio",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiMo-V2.5",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-22",
+        "temperature": true,
+        "tool_call": true
+      },
+      "xiaomi/mimo-v2.5-pro": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.2,
+          "context_over_200k": {
+            "cache_read": 0.4,
+            "input": 2,
+            "output": 6
+          },
+          "input": 1,
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "family": "mimo",
+        "id": "xiaomi/mimo-v2.5-pro",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2024-12",
+        "last_updated": "2026-04-22",
+        "limit": {
+          "context": 1048576,
+          "output": 16384
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiMo-V2.5-Pro",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-04-22",
+        "temperature": true,
+        "tool_call": true
+      },
       "zai-org/GLM-4.5": {
         "attachment": false,
         "cost": {
@@ -30252,7 +32187,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.3,
+              "cache_write": 3.75,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic-claude-4.5-sonnet",
@@ -30291,7 +32238,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.3,
+              "cache_write": 3.75,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic-claude-4.6-sonnet",
@@ -30429,7 +32388,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "cache_write": 6.25,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "anthropic-claude-opus-4.6",
@@ -30501,7 +32472,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.3,
+              "cache_write": 3.75,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic-claude-sonnet-4",
@@ -31841,7 +33824,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "openai-gpt-5.5",
@@ -38380,8 +40374,9 @@
       "gemini-2.5-flash-lite": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.025,
+          "cache_read": 0.01,
           "input": 0.1,
+          "input_audio": 0.3,
           "output": 0.4
         },
         "family": "gemini-flash-lite",
@@ -38626,7 +40621,18 @@
             "output": 15
           },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-2.5-pro",
@@ -38759,12 +40765,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.05,
-          "context_over_200k": {
-            "cache_read": 0.05,
-            "input": 0.5,
-            "output": 3
-          },
           "input": 0.5,
+          "input_audio": 1,
           "output": 3
         },
         "family": "gemini-flash",
@@ -38805,7 +40807,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3-pro-preview",
@@ -38838,7 +40851,7 @@
       "gemini-3.1-flash-image-preview": {
         "attachment": true,
         "cost": {
-          "input": 0.25,
+          "input": 0.5,
           "output": 60
         },
         "family": "gemini-flash",
@@ -38871,8 +40884,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.025,
-          "cache_write": 1,
           "input": 0.25,
+          "input_audio": 0.5,
           "output": 1.5
         },
         "family": "gemini-flash-lite",
@@ -38907,8 +40920,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.025,
-          "cache_write": 1,
           "input": 0.25,
+          "input_audio": 0.5,
           "output": 1.5
         },
         "family": "gemini-flash-lite",
@@ -38949,7 +40962,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro-preview",
@@ -38989,7 +41013,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro-preview-customtools",
@@ -39631,7 +41666,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-6@default",
@@ -39673,7 +41720,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-7@default",
@@ -39787,7 +41846,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "claude-sonnet-4-6@default",
@@ -40027,8 +42098,9 @@
       "gemini-2.5-flash-lite": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.025,
+          "cache_read": 0.01,
           "input": 0.1,
+          "input_audio": 0.3,
           "output": 0.4
         },
         "family": "gemini-flash-lite",
@@ -40239,7 +42311,18 @@
             "output": 15
           },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-2.5-pro",
@@ -40340,12 +42423,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.05,
-          "context_over_200k": {
-            "cache_read": 0.05,
-            "input": 0.5,
-            "output": 3
-          },
           "input": 0.5,
+          "input_audio": 1,
           "output": 3
         },
         "family": "gemini-flash",
@@ -40386,7 +42465,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3-pro-preview",
@@ -40420,8 +42510,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.025,
-          "cache_write": 1,
           "input": 0.25,
+          "input_audio": 0.5,
           "output": 1.5
         },
         "family": "gemini-flash-lite",
@@ -40456,8 +42546,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.025,
-          "cache_write": 1,
           "input": 0.25,
+          "input_audio": 0.5,
           "output": 1.5
         },
         "family": "gemini-flash-lite",
@@ -40498,7 +42588,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro-preview",
@@ -40538,7 +42639,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro-preview-customtools",
@@ -41158,7 +43270,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-6@default",
@@ -41197,7 +43321,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "claude-opus-4-7@default",
@@ -41302,7 +43438,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "claude-sonnet-4-6@default",
@@ -53402,18 +55550,15 @@
       "moonshotai/kimi-k2.6": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.16,
-          "input": 0.95,
-          "output": 4
+          "cache_read": 0.375,
+          "input": 0.75,
+          "output": 3.5
         },
         "id": "moonshotai/kimi-k2.6",
-        "interleaved": {
-          "field": "reasoning_details"
-        },
-        "last_updated": "2026-04-20",
+        "last_updated": "2026-05-12",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 65535
         },
         "modalities": {
           "input": [
@@ -58422,7 +60567,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2-pro",
@@ -58457,7 +60613,18 @@
             "output": 4
           },
           "input": 0.4,
-          "output": 2
+          "output": 2,
+          "tiers": [
+            {
+              "cache_read": 0.16,
+              "input": 0.8,
+              "output": 4,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2.5",
@@ -58498,7 +60665,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2.5-pro",
@@ -60434,8 +62612,9 @@
       "gemini-2.5-flash-lite": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.025,
+          "cache_read": 0.01,
           "input": 0.1,
+          "input_audio": 0.3,
           "output": 0.4
         },
         "family": "gemini-flash-lite",
@@ -60511,7 +62690,18 @@
             "output": 15
           },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-2.5-pro",
@@ -60545,12 +62735,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.05,
-          "context_over_200k": {
-            "cache_read": 0.05,
-            "input": 0.5,
-            "output": 3
-          },
           "input": 0.5,
+          "input_audio": 1,
           "output": 3
         },
         "family": "gemini-flash",
@@ -60585,8 +62771,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.025,
-          "cache_write": 1,
           "input": 0.25,
+          "input_audio": 0.5,
           "output": 1.5
         },
         "family": "gemini-flash-lite",
@@ -60621,8 +62807,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.025,
-          "cache_write": 1,
           "input": 0.25,
+          "input_audio": 0.5,
           "output": 1.5
         },
         "family": "gemini-flash-lite",
@@ -60663,7 +62849,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro-preview",
@@ -62349,7 +64546,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "experimental": {
           "modes": {
@@ -62402,7 +64610,17 @@
             "output": 270
           },
           "input": 30,
-          "output": 180
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "gpt-5.5-pro",
@@ -62682,7 +64900,18 @@
             "output": 12
           },
           "input": 2,
-          "output": 6
+          "output": 6,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 12,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4-20-beta-0309-non-reasoning",
@@ -62717,7 +64946,18 @@
             "output": 12
           },
           "input": 2,
-          "output": 6
+          "output": 6,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 12,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4-20-beta-0309-reasoning",
@@ -62752,7 +64992,18 @@
             "output": 5
           },
           "input": 1.25,
-          "output": 2.5
+          "output": 2.5,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2.5,
+              "output": 5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4-3",
@@ -63501,7 +65752,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "mimo-v2-pro",
@@ -63539,7 +65801,18 @@
             "output": 4
           },
           "input": 0.4,
-          "output": 2
+          "output": 2,
+          "tiers": [
+            {
+              "cache_read": 0.16,
+              "input": 0.8,
+              "output": 4,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "mimo-v2.5",
@@ -63580,7 +65853,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "mimo-v2.5-pro",
@@ -65375,10 +67659,28 @@
       "qwen3.6-plus": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.028,
-          "cache_write": 0.344,
-          "input": 0.276,
-          "output": 1.651
+          "cache_read": 0.05,
+          "cache_write": 0.625,
+          "context_over_200k": {
+            "cache_read": 0.2,
+            "cache_write": 2.5,
+            "input": 2,
+            "output": 6
+          },
+          "input": 0.5,
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.2,
+              "cache_write": 2.5,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "qwen",
         "id": "qwen3.6-plus",
@@ -93312,7 +95614,18 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "experimental": {
           "modes": {
@@ -93447,7 +95760,17 @@
             "output": 270
           },
           "input": 30,
-          "output": 180
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "gpt-5.4-pro",
@@ -93485,7 +95808,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "experimental": {
           "modes": {
@@ -93538,7 +95872,17 @@
             "output": 270
           },
           "input": 30,
-          "output": 180
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "gpt-5.5-pro",
@@ -94324,7 +96668,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "claude-sonnet-4",
@@ -94366,7 +96722,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "claude-sonnet-4-5",
@@ -94516,7 +96884,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3-pro",
@@ -94560,7 +96939,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro",
@@ -95199,7 +97589,18 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "gpt-5.4",
@@ -95352,7 +97753,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "gpt-5.5",
@@ -96450,7 +98862,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo-v2-pro",
         "id": "mimo-v2-pro",
@@ -96489,7 +98912,18 @@
             "output": 4
           },
           "input": 0.4,
-          "output": 2
+          "output": 2,
+          "tiers": [
+            {
+              "cache_read": 0.16,
+              "input": 0.8,
+              "output": 4,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo-v2.5",
         "id": "mimo-v2.5",
@@ -96530,7 +98964,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo-v2.5-pro",
         "id": "mimo-v2.5-pro",
@@ -96567,9 +99012,6 @@
         },
         "family": "minimax-m2.5",
         "id": "minimax-m2.5",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
         "knowledge": "2025-01",
         "last_updated": "2026-02-12",
         "limit": {
@@ -96586,6 +99028,9 @@
         },
         "name": "MiniMax M2.5",
         "open_weights": true,
+        "provider": {
+          "npm": "@ai-sdk/anthropic"
+        },
         "reasoning": true,
         "release_date": "2026-02-12",
         "temperature": true,
@@ -96921,7 +99366,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "anthropic/claude-opus-4.6",
@@ -96961,7 +99418,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "anthropic/claude-opus-4.7",
@@ -97001,7 +99470,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic/claude-sonnet-4",
@@ -97040,7 +99521,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic/claude-sonnet-4.5",
@@ -97080,7 +99573,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic/claude-sonnet-4.6",
@@ -97838,7 +100343,18 @@
             "output": 15
           },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "google/gemini-2.5-pro",
@@ -98093,7 +100609,18 @@
           },
           "input": 2,
           "output": 12,
-          "reasoning": 12
+          "reasoning": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "google/gemini-3.1-pro-preview",
@@ -98136,7 +100663,18 @@
           },
           "input": 2,
           "output": 12,
-          "reasoning": 12
+          "reasoning": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "google/gemini-3.1-pro-preview-customtools",
@@ -100459,7 +102997,18 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "openai/gpt-5.4",
@@ -100598,7 +103147,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "openai/gpt-5.5",
@@ -100635,7 +103195,17 @@
             "output": 270
           },
           "input": 30,
-          "output": 180
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "openai/gpt-5.5-pro",
@@ -101973,7 +104543,17 @@
           "cache_read": 0.75,
           "cache_write": 15,
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "input": 6,
+              "output": 30,
+              "tier": {
+                "size": 128000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "x-ai/grok-4",
@@ -102070,11 +104650,23 @@
         "cost": {
           "cache_read": 0.2,
           "context_over_200k": {
+            "cache_read": 0.4,
             "input": 4,
             "output": 12
           },
           "input": 2,
-          "output": 6
+          "output": 6,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 12,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "x-ai/grok-4.20-beta",
@@ -102105,11 +104697,23 @@
         "cost": {
           "cache_read": 0.2,
           "context_over_200k": {
+            "cache_read": 0.4,
             "input": 4,
             "output": 12
           },
           "input": 2,
-          "output": 6
+          "output": 6,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 12,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "x-ai/grok-4.20-multi-agent-beta",
@@ -102145,7 +104749,18 @@
             "output": 5
           },
           "input": 1.25,
-          "output": 2.5
+          "output": 2.5,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2.5,
+              "output": 5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "x-ai/grok-4.3",
@@ -102282,7 +104897,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2-pro",
@@ -102320,7 +104946,18 @@
             "output": 4
           },
           "input": 0.4,
-          "output": 2
+          "output": 2,
+          "tiers": [
+            {
+              "cache_read": 0.16,
+              "input": 0.8,
+              "output": 4,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2.5",
@@ -102361,7 +104998,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2.5-pro",
@@ -103436,7 +106084,18 @@
             "output": 15
           },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "google/gemini-2.5-pro",
@@ -103475,7 +106134,18 @@
             "output": 3
           },
           "input": 0.5,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.05,
+              "input": 0.5,
+              "output": 3,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-flash",
         "id": "google/gemini-3-flash-preview",
@@ -103514,7 +106184,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "google/gemini-3.1-pro-preview",
@@ -107873,7 +110554,17 @@
             "output": 0.71
           },
           "input": 0.09,
-          "output": 0.71
+          "output": 0.71,
+          "tiers": [
+            {
+              "input": 0.09,
+              "output": 0.71,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-flash",
         "id": "gemini-2.5-flash",
@@ -107911,7 +110602,17 @@
             "output": 0.43
           },
           "input": 0.07,
-          "output": 0.43
+          "output": 0.43,
+          "tiers": [
+            {
+              "input": 0.07,
+              "output": 0.43,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-flash",
         "id": "gemini-3-flash-preview",
@@ -110929,7 +113630,19 @@
             "output": 37.5
           },
           "input": 5,
-          "output": 25
+          "output": 25,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "cache_write": 12.5,
+              "input": 10,
+              "output": 37.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-opus",
         "id": "anthropic/claude-opus-4-6",
@@ -111035,7 +113748,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic/claude-sonnet-4-6",
@@ -111108,7 +113833,18 @@
             "output": 15
           },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "google/gemini-2.5-pro",
@@ -111853,7 +114589,18 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "openai/gpt-5.4",
@@ -112775,6 +115522,72 @@
     },
     "name": "SAP AI Core",
     "npm": "@jerome-benoit/sap-ai-provider-v2"
+  },
+  "sarvam": {
+    "api": "https://api.sarvam.ai/v1",
+    "doc": "https://docs.sarvam.ai/api-reference-docs/getting-started/models",
+    "env": [
+      "SARVAM_API_KEY"
+    ],
+    "id": "sarvam",
+    "models": {
+      "sarvam-105b": {
+        "attachment": false,
+        "family": "sarvam",
+        "id": "sarvam-105b",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-06",
+        "limit": {
+          "context": 131072,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Sarvam-105B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-18",
+        "temperature": true,
+        "tool_call": true
+      },
+      "sarvam-30b": {
+        "attachment": false,
+        "family": "sarvam",
+        "id": "sarvam-30b",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-03-06",
+        "limit": {
+          "context": 65536,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Sarvam-30B",
+        "open_weights": true,
+        "reasoning": true,
+        "release_date": "2026-02-18",
+        "temperature": true,
+        "tool_call": true
+      }
+    },
+    "name": "Sarvam AI",
+    "npm": "@ai-sdk/openai-compatible"
   },
   "scaleway": {
     "api": "https://api.scaleway.ai/v1",
@@ -121029,7 +123842,18 @@
             "output": 22.5
           },
           "input": 2.5,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.5,
+              "input": 5,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3-1-pro-preview",
@@ -121228,7 +124052,18 @@
             "output": 5.67
           },
           "input": 1.42,
-          "output": 2.83
+          "output": 2.83,
+          "tiers": [
+            {
+              "cache_read": 0.45,
+              "input": 2.83,
+              "output": 5.67,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4-20",
@@ -121264,7 +124099,18 @@
             "output": 5.67
           },
           "input": 1.42,
-          "output": 2.83
+          "output": 2.83,
+          "tiers": [
+            {
+              "cache_read": 0.45,
+              "input": 2.83,
+              "output": 5.67,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4-20-multi-agent",
@@ -121300,7 +124146,18 @@
             "output": 5.67
           },
           "input": 1.42,
-          "output": 2.83
+          "output": 2.83,
+          "tiers": [
+            {
+              "cache_read": 0.45,
+              "input": 2.83,
+              "output": 5.67,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4-3",
@@ -121976,7 +124833,17 @@
             "output": 337.5
           },
           "input": 37.5,
-          "output": 225
+          "output": 225,
+          "tiers": [
+            {
+              "input": 75,
+              "output": 337.5,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "openai-gpt-54-pro",
@@ -122012,7 +124879,18 @@
             "output": 56.25
           },
           "input": 6.25,
-          "output": 37.5
+          "output": 37.5,
+          "tiers": [
+            {
+              "cache_read": 1.25,
+              "input": 12.5,
+              "output": 56.25,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "openai-gpt-55",
@@ -122109,7 +124987,19 @@
             "output": 7.5
           },
           "input": 0.625,
-          "output": 3.75
+          "output": 3.75,
+          "tiers": [
+            {
+              "cache_read": 0.0625,
+              "cache_write": 0.78,
+              "input": 2.5,
+              "output": 7.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "qwen",
         "id": "qwen-3-6-plus",
@@ -124073,7 +126963,19 @@
             "output": 22.5
           },
           "input": 3,
-          "output": 15
+          "output": 15,
+          "tiers": [
+            {
+              "cache_read": 0.6,
+              "cache_write": 7.5,
+              "input": 6,
+              "output": 22.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "claude-sonnet",
         "id": "anthropic/claude-sonnet-4.6",
@@ -124967,7 +127869,18 @@
             "output": 15
           },
           "input": 1.25,
-          "output": 10
+          "output": 10,
+          "tiers": [
+            {
+              "cache_read": 0.25,
+              "input": 2.5,
+              "output": 15,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "google/gemini-2.5-pro",
@@ -125069,7 +127982,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "google/gemini-3-pro-preview",
@@ -130290,7 +133214,18 @@
             "output": 18
           },
           "input": 2,
-          "output": 12
+          "output": 12,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 18,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gemini-pro",
         "id": "gemini-3.1-pro-preview",
@@ -130605,7 +133540,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt",
         "id": "gpt-5.5",
@@ -130806,41 +133752,6 @@
     ],
     "id": "wafer.ai",
     "models": {
-      "DeepSeek-V4-Pro": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0,
-          "cache_write": 0,
-          "input": 0,
-          "output": 0
-        },
-        "family": "deepseek-thinking",
-        "id": "DeepSeek-V4-Pro",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2025-05",
-        "last_updated": "2026-04-24",
-        "limit": {
-          "context": 1000000,
-          "output": 384000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "DeepSeek V4 Pro",
-        "open_weights": true,
-        "reasoning": true,
-        "release_date": "2026-04-24",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "GLM-5.1": {
         "attachment": false,
         "cost": {
@@ -130870,36 +133781,6 @@
         "reasoning": true,
         "release_date": "2026-04-07",
         "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "MiniMax-M2.7": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0,
-          "cache_write": 0,
-          "input": 0,
-          "output": 0
-        },
-        "family": "minimax",
-        "id": "MiniMax-M2.7",
-        "last_updated": "2026-03-18",
-        "limit": {
-          "context": 204800,
-          "output": 131072
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "MiniMax-M2.7",
-        "open_weights": true,
-        "reasoning": true,
-        "release_date": "2026-03-18",
         "temperature": true,
         "tool_call": true
       },
@@ -132091,7 +134972,18 @@
             "output": 12
           },
           "input": 2,
-          "output": 6
+          "output": 6,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 12,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4.20-0309-non-reasoning",
@@ -132126,7 +135018,18 @@
             "output": 12
           },
           "input": 2,
-          "output": 6
+          "output": 6,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 12,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4.20-0309-reasoning",
@@ -132161,7 +135064,18 @@
             "output": 12
           },
           "input": 2,
-          "output": 6
+          "output": 6,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 4,
+              "output": 12,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4.20-multi-agent-0309",
@@ -132196,7 +135110,18 @@
             "output": 5
           },
           "input": 1.25,
-          "output": 2.5
+          "output": 2.5,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2.5,
+              "output": 5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "grok",
         "id": "grok-4.3",
@@ -132404,7 +135329,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "mimo-v2-pro",
@@ -132442,7 +135378,18 @@
             "output": 4
           },
           "input": 0.4,
-          "output": 2
+          "output": 2,
+          "tiers": [
+            {
+              "cache_read": 0.16,
+              "input": 0.8,
+              "output": 4,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "mimo-v2.5",
@@ -132483,7 +135430,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "mimo-v2.5-pro",
@@ -132597,11 +135555,6 @@
         "attachment": false,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0.4,
-            "input": 2,
-            "output": 6
-          },
           "input": 0,
           "output": 0
         },
@@ -132662,11 +135615,6 @@
         "attachment": true,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0,
-            "input": 0,
-            "output": 0
-          },
           "input": 0,
           "output": 0
         },
@@ -132703,11 +135651,6 @@
         "attachment": false,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0,
-            "input": 0,
-            "output": 0
-          },
           "input": 0,
           "output": 0
         },
@@ -132823,11 +135766,6 @@
         "attachment": false,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0.4,
-            "input": 2,
-            "output": 6
-          },
           "input": 0,
           "output": 0
         },
@@ -132888,11 +135826,6 @@
         "attachment": true,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0,
-            "input": 0,
-            "output": 0
-          },
           "input": 0,
           "output": 0
         },
@@ -132929,11 +135862,6 @@
         "attachment": false,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0,
-            "input": 0,
-            "output": 0
-          },
           "input": 0,
           "output": 0
         },
@@ -133049,11 +135977,6 @@
         "attachment": false,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0.4,
-            "input": 2,
-            "output": 6
-          },
           "input": 0,
           "output": 0
         },
@@ -133114,11 +136037,6 @@
         "attachment": true,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0,
-            "input": 0,
-            "output": 0
-          },
           "input": 0,
           "output": 0
         },
@@ -133155,11 +136073,6 @@
         "attachment": false,
         "cost": {
           "cache_read": 0,
-          "context_over_200k": {
-            "cache_read": 0,
-            "input": 0,
-            "output": 0
-          },
           "input": 0,
           "output": 0
         },
@@ -133191,6 +136104,49 @@
       }
     },
     "name": "Xiaomi Token Plan (Singapore)",
+    "npm": "@ai-sdk/openai-compatible"
+  },
+  "xpersona": {
+    "api": "https://xpersona.co/v1",
+    "doc": "https://xpersona.co/docs",
+    "env": [
+      "XPERSONA_API_KEY"
+    ],
+    "id": "xpersona",
+    "models": {
+      "xpersona-frieren-coder": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.15,
+          "input": 1.5,
+          "output": 6,
+          "reasoning": 6
+        },
+        "id": "xpersona-frieren-coder",
+        "knowledge": "2025-08-31",
+        "last_updated": "2026-05-13",
+        "limit": {
+          "context": 128000,
+          "output": 16384
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Xpersona Frieren Coder",
+        "open_weights": false,
+        "reasoning": true,
+        "release_date": "2026-05-01",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      }
+    },
+    "name": "Xpersona",
     "npm": "@ai-sdk/openai-compatible"
   },
   "zai": {
@@ -135541,7 +138497,18 @@
             "output": 45
           },
           "input": 5,
-          "output": 30
+          "output": 30,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 10,
+              "output": 45,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "experimental": {
           "modes": {
@@ -135594,7 +138561,17 @@
             "output": 270
           },
           "input": 30,
-          "output": 180
+          "output": 180,
+          "tiers": [
+            {
+              "input": 60,
+              "output": 270,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "gpt-pro",
         "id": "openai/gpt-5.5-pro",
@@ -135751,7 +138728,19 @@
             "output": 6
           },
           "input": 0.5,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.2,
+              "cache_write": 2.5,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "id": "qwen/qwen3.6-plus",
         "last_updated": "2026-03-30",
@@ -136413,7 +139402,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2-pro",
@@ -136448,7 +139448,18 @@
             "output": 4
           },
           "input": 0.4,
-          "output": 2
+          "output": 2,
+          "tiers": [
+            {
+              "cache_read": 0.16,
+              "input": 0.8,
+              "output": 4,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2.5",
@@ -136489,7 +139500,18 @@
             "output": 6
           },
           "input": 1,
-          "output": 3
+          "output": 3,
+          "tiers": [
+            {
+              "cache_read": 0.4,
+              "input": 2,
+              "output": 6,
+              "tier": {
+                "size": 256000,
+                "type": "context"
+              }
+            }
+          ]
         },
         "family": "mimo",
         "id": "xiaomi/mimo-v2.5-pro",
