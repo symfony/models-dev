@@ -7282,6 +7282,45 @@
         "structured_output": true,
         "temperature": true,
         "tool_call": true
+      },
+      "agnes-2.5-pro-alpha": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.0038,
+          "input": 0.45,
+          "output": 0.9
+        },
+        "description": "Paid reasoning model for advanced coding, scientific reasoning, long-context analysis, agentic workflows, and multimodal understanding.",
+        "id": "agnes-2.5-pro-alpha",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-07-24",
+        "limit": {
+          "context": 1000000,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Agnes 2.5 Pro Alpha",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "release_date": "2026-07-24",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
       }
     },
     "name": "Agnes AI",
@@ -11541,6 +11580,52 @@
     },
     "name": "AIHubMix",
     "npm": "@aihubmix/ai-sdk-provider"
+  },
+  "aixy": {
+    "api": "https://api.aixy-gateway.com/v1",
+    "doc": "https://docs.aixy-gateway.com/integrations/overview",
+    "env": [
+      "AIXY_API_KEY"
+    ],
+    "id": "aixy",
+    "models": {
+      "openai/gpt-4.1-mini": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.1,
+          "input": 0.4,
+          "output": 1.6
+        },
+        "description": "Affordable GPT-4.1 lane for fast coding help and structured extraction",
+        "family": "gpt-mini",
+        "id": "openai/gpt-4.1-mini",
+        "knowledge": "2024-04",
+        "last_updated": "2025-04-14",
+        "limit": {
+          "context": 1047576,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GPT-4.1 mini",
+        "open_weights": false,
+        "reasoning": false,
+        "release_date": "2025-04-14",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      }
+    },
+    "name": "Aixy",
+    "npm": "@ai-sdk/openai-compatible"
   },
   "aki-io": {
     "api": "https://aki.io/v1",
@@ -59134,6 +59219,8 @@
       "databricks/databricks-gpt-oss-120b": {
         "attachment": false,
         "cost": {
+          "cache_read": 0.15001,
+          "cache_write": 0.15001,
           "input": 0.15001,
           "output": 0.59997
         },
@@ -59174,6 +59261,8 @@
       "databricks/databricks-gpt-oss-20b": {
         "attachment": false,
         "cost": {
+          "cache_read": 0.07,
+          "cache_write": 0.07,
           "input": 0.07,
           "output": 0.30002
         },
@@ -61699,8 +61788,8 @@
       "ionos/meta-llama/Llama-3.3-70B-Instruct": {
         "attachment": false,
         "cost": {
-          "input": 0.75816,
-          "output": 0.75816
+          "input": 0.75803,
+          "output": 0.75803
         },
         "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
         "family": "llama",
@@ -61730,8 +61819,8 @@
       "ionos/openai/gpt-oss-120b": {
         "attachment": false,
         "cost": {
-          "input": 0.17496,
-          "output": 0.75816
+          "input": 0.17493,
+          "output": 0.75803
         },
         "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
@@ -64874,6 +64963,37 @@
         "temperature": true,
         "tool_call": true
       },
+      "qwen/qwen3-coder-next@eu": {
+        "attachment": false,
+        "cost": {
+          "input": 0.3,
+          "output": 1.5
+        },
+        "description": "Open-weight Qwen coding model for agents, repository edits, and multi-turn tool use",
+        "family": "qwen",
+        "id": "qwen/qwen3-coder-next@eu",
+        "knowledge": "2025-09",
+        "last_updated": "2026-02-03",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3 Coder Next (EU)",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2026-02-03",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "qwen/qwen3-coder-plus": {
         "attachment": false,
         "cost": {
@@ -64933,6 +65053,39 @@
           ]
         },
         "name": "Qwen3 Max",
+        "open_weights": false,
+        "reasoning": false,
+        "release_date": "2025-09-23",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen/qwen3-max@eu": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.24,
+          "cache_write": 1.5,
+          "input": 1.2,
+          "output": 6
+        },
+        "description": "Flagship Qwen3 model for coding agents, complex reasoning, and tool use",
+        "family": "qwen",
+        "id": "qwen/qwen3-max@eu",
+        "knowledge": "2025-04",
+        "last_updated": "2025-09-23",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3 Max (EU)",
         "open_weights": false,
         "reasoning": false,
         "release_date": "2025-09-23",
@@ -65237,8 +65390,8 @@
       "scaleway/deepseek-v4-flash-0731": {
         "attachment": false,
         "cost": {
-          "input": 0.46656,
-          "output": 0.93312
+          "input": 0.46648,
+          "output": 0.93296
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -65274,13 +65427,13 @@
         "release_date": "2026-07-31",
         "structured_output": false,
         "temperature": true,
-        "tool_call": true
+        "tool_call": false
       },
       "scaleway/gpt-oss-120b": {
         "attachment": false,
         "cost": {
-          "input": 0.17496,
-          "output": 0.69984
+          "input": 0.17493,
+          "output": 0.69972
         },
         "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
@@ -65314,13 +65467,13 @@
         "release_date": "2025-08-05",
         "structured_output": false,
         "temperature": true,
-        "tool_call": true
+        "tool_call": false
       },
       "scaleway/llama-3.3-70b-instruct": {
         "attachment": false,
         "cost": {
-          "input": 1.04976,
-          "output": 1.04976
+          "input": 1.04958,
+          "output": 1.04958
         },
         "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
         "family": "llama",
@@ -65345,7 +65498,7 @@
         "release_date": "2024-12-06",
         "structured_output": false,
         "temperature": true,
-        "tool_call": true
+        "tool_call": false
       },
       "tensorx/deepseek/deepseek-v4-flash-0731": {
         "attachment": false,
@@ -65716,7 +65869,7 @@
           }
         ],
         "release_date": "2026-07-15",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -70301,7 +70454,7 @@
         "release_date": "2025-07-30",
         "tool_call": false
       },
-      "Qwen/Qwen3.6-35B-A3B-FP8": {
+      "Qwen/Qwen3.6-35B-A3B": {
         "attachment": true,
         "cost": {
           "input": 0.345,
@@ -70309,7 +70462,7 @@
         },
         "description": "Open multimodal Qwen MoE for local agents that need vision, audio, and code",
         "family": "qwen",
-        "id": "Qwen/Qwen3.6-35B-A3B-FP8",
+        "id": "Qwen/Qwen3.6-35B-A3B",
         "last_updated": "2026-04-17",
         "limit": {
           "context": 262144,
@@ -70335,6 +70488,50 @@
           }
         ],
         "release_date": "2026-04-17",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "Qwen/Qwen3.8-27B": {
+        "attachment": true,
+        "cost": {
+          "input": 0.87,
+          "output": 3.5
+        },
+        "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
+        "family": "qwen",
+        "id": "Qwen/Qwen3.8-27B",
+        "last_updated": "2026-08-14",
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.8-27B",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          },
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-08-14",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -70709,7 +70906,6 @@
           {
             "type": "effort",
             "values": [
-              "none",
               "high",
               "max"
             ]
@@ -77606,6 +77802,90 @@
     ],
     "id": "gmicloud",
     "models": {
+      "MiniMaxAI/MiniMax-M2.7": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.06,
+          "input": 0.3,
+          "output": 1.2
+        },
+        "description": "Open MiniMax flagship for coding agents, office automation, and complex environments",
+        "family": "minimax",
+        "id": "MiniMaxAI/MiniMax-M2.7",
+        "last_updated": "2026-03-18",
+        "limit": {
+          "context": 196608,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M2.7",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-03-18",
+        "temperature": true,
+        "tool_call": true
+      },
+      "MiniMaxAI/MiniMax-M3": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.12,
+          "context_over_200k": {
+            "cache_read": 0.24,
+            "input": 1.2,
+            "output": 4.8
+          },
+          "input": 0.6,
+          "output": 2.4,
+          "tiers": [
+            {
+              "cache_read": 0.24,
+              "input": 1.2,
+              "output": 4.8,
+              "tier": {
+                "size": 512000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "description": "MiniMax multimodal model for long-context coding, perception, and agent planning",
+        "family": "minimax",
+        "id": "MiniMaxAI/MiniMax-M3",
+        "last_updated": "2026-06-01",
+        "limit": {
+          "context": 1048576,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M3",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "release_date": "2026-06-01",
+        "temperature": true,
+        "tool_call": true
+      },
       "Qwen/Qwen3.7-Max": {
         "attachment": false,
         "cost": {
@@ -88716,6 +88996,47 @@
         "temperature": true,
         "tool_call": true
       },
+      "Qwen/Qwen3.8-27B": {
+        "attachment": true,
+        "cost": {
+          "input": 0.4,
+          "output": 3
+        },
+        "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+        "family": "qwen",
+        "id": "Qwen/Qwen3.8-27B",
+        "last_updated": "2026-08-14",
+        "limit": {
+          "context": 262144,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.8 27B",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-08-14",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "XiaomiMiMo/MiMo-V2-Flash": {
         "attachment": false,
         "cost": {
@@ -90227,11 +90548,8 @@
             "type": "effort",
             "values": [
               "none",
-              "minimal",
               "low",
-              "medium",
               "high",
-              "xhigh",
               "max"
             ]
           }
@@ -90312,9 +90630,10 @@
           {
             "type": "effort",
             "values": [
+              "none",
               "low",
-              "medium",
-              "high"
+              "high",
+              "max"
             ]
           }
         ],
@@ -90326,9 +90645,9 @@
       "gemma-4-26b-a4b-it": {
         "attachment": false,
         "cost": {
-          "cache_write": 0.055,
-          "input": 0.11,
-          "output": 0.408
+          "cache_write": 0.06,
+          "input": 0.12,
+          "output": 0.42
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -90358,9 +90677,9 @@
       "glm-5": {
         "attachment": false,
         "cost": {
-          "cache_write": 0.43,
-          "input": 0.86,
-          "output": 2.784
+          "cache_write": 0.455,
+          "input": 0.91,
+          "output": 2.814
         },
         "description": "General GLM flagship for coding, analysis, and tool-heavy engineering workflows",
         "family": "glm",
@@ -90389,9 +90708,9 @@
       "glm-5.1": {
         "attachment": false,
         "cost": {
-          "cache_write": 0.666,
-          "input": 1.332,
-          "output": 4.312
+          "cache_write": 0.68,
+          "input": 1.36,
+          "output": 4.4
         },
         "description": "Strong GLM coding model for agentic engineering, terminals, and repository generation",
         "family": "glm",
@@ -90463,9 +90782,9 @@
       "gpt-oss-120b": {
         "attachment": false,
         "cost": {
-          "cache_write": 0.089,
-          "input": 0.178,
-          "output": 0.68
+          "cache_write": 0.094,
+          "input": 0.188,
+          "output": 0.7
         },
         "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
@@ -95002,7 +95321,7 @@
           "cache_read": 0.2,
           "cache_write": 0,
           "input": 0.57,
-          "output": 3.41
+          "output": 3.39
         },
         "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
         "family": "kimi-k2",
@@ -95078,7 +95397,7 @@
           "cache_read": 0.17,
           "cache_write": 0,
           "input": 0.75,
-          "output": 2.9
+          "output": 2.4
         },
         "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
         "family": "glm",
@@ -101077,7 +101396,7 @@
         "last_updated": "2025-02-04",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 29491
         },
         "modalities": {
           "input": [
@@ -101107,7 +101426,7 @@
         "last_updated": "2025-11-21",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -102114,7 +102433,7 @@
         "last_updated": "2026-05-28",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -102303,7 +102622,7 @@
         "last_updated": "2026-08-12",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -102730,7 +103049,7 @@
         "last_updated": "2025-03-24",
         "limit": {
           "context": 163840,
-          "output": 163840
+          "output": 147456
         },
         "modalities": {
           "input": [
@@ -102761,7 +103080,7 @@
         "last_updated": "2025-08-21",
         "limit": {
           "context": 161000,
-          "output": 161000
+          "output": 144900
         },
         "modalities": {
           "input": [
@@ -102878,7 +103197,7 @@
         "last_updated": "2025-01-23",
         "limit": {
           "context": 8192,
-          "output": 8192
+          "output": 7372
         },
         "modalities": {
           "input": [
@@ -102959,7 +103278,7 @@
         "last_updated": "2025-12-01",
         "limit": {
           "context": 163840,
-          "output": 163840
+          "output": 147456
         },
         "modalities": {
           "input": [
@@ -103081,7 +103400,7 @@
         "last_updated": "2026-07-31",
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -103208,7 +103527,7 @@
         "last_updated": "2026-08-22",
         "limit": {
           "context": 1048575,
-          "output": 384000
+          "output": 943717
         },
         "modalities": {
           "input": [
@@ -103248,7 +103567,7 @@
         "last_updated": "2026-08-14",
         "limit": {
           "context": 512000,
-          "output": 512000
+          "output": 460800
         },
         "modalities": {
           "input": [
@@ -103606,7 +103925,7 @@
         "knowledge": "2025-01",
         "last_updated": "2026-05-28",
         "limit": {
-          "context": 65536,
+          "context": 131072,
           "output": 32768
         },
         "modalities": {
@@ -103738,7 +104057,7 @@
         "last_updated": "2026-02-26",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -103832,7 +104151,7 @@
         "last_updated": "2026-06-30",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -104277,7 +104596,7 @@
         "last_updated": "2025-03-12",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -104327,36 +104646,6 @@
         "temperature": true,
         "tool_call": false
       },
-      "google/gemma-3n-e4b-it": {
-        "attachment": false,
-        "cost": {
-          "input": 0.06,
-          "output": 0.12
-        },
-        "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
-        "family": "gemma",
-        "id": "google/gemma-3n-e4b-it",
-        "last_updated": "2025-05-20",
-        "limit": {
-          "context": 32768,
-          "output": 6554
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Google: Gemma 3n 4B",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-05-20",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": false
-      },
       "google/gemma-4-26b-a4b-it": {
         "attachment": true,
         "cost": {
@@ -104401,9 +104690,9 @@
       "google/gemma-4-31b-it": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.01,
-          "input": 0.08,
-          "output": 0.35
+          "cache_read": 0.05,
+          "input": 0.09,
+          "output": 0.34
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -104411,7 +104700,7 @@
         "last_updated": "2026-04-02",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 16384
         },
         "modalities": {
           "input": [
@@ -104515,7 +104804,7 @@
         "last_updated": "2023-07-02",
         "limit": {
           "context": 4096,
-          "output": 4096
+          "output": 3686
         },
         "modalities": {
           "input": [
@@ -104545,7 +104834,7 @@
         "last_updated": "2025-10-20",
         "limit": {
           "context": 131000,
-          "output": 131000
+          "output": 117900
         },
         "modalities": {
           "input": [
@@ -104576,7 +104865,7 @@
         "last_updated": "2026-04-30",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -105135,7 +105424,7 @@
         "last_updated": "2024-07-23",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -105165,7 +105454,7 @@
         "last_updated": "2024-09-25",
         "limit": {
           "context": 60000,
-          "output": 60000
+          "output": 54000
         },
         "modalities": {
           "input": [
@@ -105195,7 +105484,7 @@
         "last_updated": "2024-09-25",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -105225,8 +105514,8 @@
         "knowledge": "2023-12",
         "last_updated": "2024-12-06",
         "limit": {
-          "context": 131072,
-          "output": 16384
+          "context": 128000,
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -105286,8 +105575,8 @@
         "id": "meta-llama/llama-4-scout",
         "last_updated": "2025-04-05",
         "limit": {
-          "context": 327680,
-          "output": 16384
+          "context": 131072,
+          "output": 8192
         },
         "modalities": {
           "input": [
@@ -105351,7 +105640,7 @@
         "last_updated": "2026-08-10",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -105395,7 +105684,7 @@
         "last_updated": "2026-07-09",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -105442,7 +105731,7 @@
         "last_updated": "2026-08-05",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -105489,7 +105778,7 @@
         "last_updated": "2026-08-21",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -105535,7 +105824,7 @@
         "last_updated": "2025-01-10",
         "limit": {
           "context": 16384,
-          "output": 16384
+          "output": 14745
         },
         "modalities": {
           "input": [
@@ -105594,7 +105883,7 @@
         "last_updated": "2025-01-15",
         "limit": {
           "context": 1000192,
-          "output": 1000192
+          "output": 900172
         },
         "modalities": {
           "input": [
@@ -105811,7 +106100,7 @@
         "id": "minimax/minimax-m2.7",
         "last_updated": "2026-03-18",
         "limit": {
-          "context": 196608,
+          "context": 204800,
           "output": 131072
         },
         "modalities": {
@@ -105850,7 +106139,7 @@
         "last_updated": "2026-03-18",
         "limit": {
           "context": 196608,
-          "output": 196608
+          "output": 176947
         },
         "modalities": {
           "input": [
@@ -105918,6 +106207,47 @@
         "temperature": true,
         "tool_call": true
       },
+      "minimax/minimax-m3:free": {
+        "attachment": true,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,...",
+        "family": "minimax",
+        "id": "minimax/minimax-m3:free",
+        "last_updated": "2026-06-01",
+        "limit": {
+          "context": 1048576,
+          "output": 943718
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax: MiniMax M3 (free)",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
+          }
+        ],
+        "release_date": "2026-06-01",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
       "mistralai/codestral-2508": {
         "attachment": true,
         "cost": {
@@ -105931,7 +106261,7 @@
         "last_updated": "2025-08-01",
         "limit": {
           "context": 256000,
-          "output": 51200
+          "output": 204800
         },
         "modalities": {
           "input": [
@@ -105964,7 +106294,7 @@
         "last_updated": "2025-12-09",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -105996,7 +106326,7 @@
         "last_updated": "2025-12-02",
         "limit": {
           "context": 262144,
-          "output": 52429
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -106028,7 +106358,7 @@
         "last_updated": "2025-12-02",
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 104857
         },
         "modalities": {
           "input": [
@@ -106059,7 +106389,7 @@
         "last_updated": "2024-10-17",
         "limit": {
           "context": 128000,
-          "output": 128000
+          "output": 102400
         },
         "modalities": {
           "input": [
@@ -106090,7 +106420,7 @@
         "last_updated": "2025-12-02",
         "limit": {
           "context": 262144,
-          "output": 32768
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -106122,7 +106452,7 @@
         "last_updated": "2024-02-26",
         "limit": {
           "context": 128000,
-          "output": 25600
+          "output": 102400
         },
         "modalities": {
           "input": [
@@ -106154,7 +106484,7 @@
         "last_updated": "2024-11-19",
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 104857
         },
         "modalities": {
           "input": [
@@ -106187,7 +106517,7 @@
         "last_updated": "2025-12-02",
         "limit": {
           "context": 262144,
-          "output": 52429
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -106220,7 +106550,7 @@
         "last_updated": "2025-05-07",
         "limit": {
           "context": 131072,
-          "output": 26215
+          "output": 104857
         },
         "modalities": {
           "input": [
@@ -106252,7 +106582,7 @@
         "last_updated": "2026-04-30",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -106294,7 +106624,7 @@
         "last_updated": "2025-08-13",
         "limit": {
           "context": 131072,
-          "output": 26215
+          "output": 104857
         },
         "modalities": {
           "input": [
@@ -106359,7 +106689,7 @@
         "last_updated": "2025-02-17",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 26214
         },
         "modalities": {
           "input": [
@@ -106422,7 +106752,7 @@
         "last_updated": "2026-03-16",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -106462,7 +106792,7 @@
         "last_updated": "2025-03-17",
         "limit": {
           "context": 128000,
-          "output": 128000
+          "output": 102400
         },
         "modalities": {
           "input": [
@@ -106526,7 +106856,7 @@
         "last_updated": "2024-04-17",
         "limit": {
           "context": 65536,
-          "output": 13108
+          "output": 52428
         },
         "modalities": {
           "input": [
@@ -106558,7 +106888,7 @@
         "last_updated": "2025-10-30",
         "limit": {
           "context": 32000,
-          "output": 6400
+          "output": 25600
         },
         "modalities": {
           "input": [
@@ -106692,7 +107022,7 @@
         "last_updated": "2026-01",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -106734,7 +107064,7 @@
         "last_updated": "2026-04-21",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -106776,7 +107106,7 @@
         "last_updated": "2026-06-12",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -106816,7 +107146,7 @@
         "last_updated": "2026-07-16",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -106919,7 +107249,7 @@
         "last_updated": "2026-06-24",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -106960,7 +107290,7 @@
         "last_updated": "2026-06-08",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -107060,7 +107390,7 @@
         "last_updated": "2025-08-26",
         "limit": {
           "context": 131072,
-          "output": 26215
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -107099,7 +107429,7 @@
         "last_updated": "2025-08-26",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -107139,7 +107469,7 @@
         "last_updated": "2025-12-15",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -107260,7 +107590,7 @@
         "last_updated": "2026-03-11",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -107301,7 +107631,7 @@
         "last_updated": "2026-06-04",
         "limit": {
           "context": 512288,
-          "output": 512288
+          "output": 461059
         },
         "modalities": {
           "input": [
@@ -107532,7 +107862,7 @@
         "last_updated": "2024-01-25",
         "limit": {
           "context": 4095,
-          "output": 4096
+          "output": 3685
         },
         "modalities": {
           "input": [
@@ -107594,7 +107924,7 @@
         "last_updated": "2023-09-28",
         "limit": {
           "context": 4095,
-          "output": 4096
+          "output": 3685
         },
         "modalities": {
           "input": [
@@ -109453,7 +109783,7 @@
         "last_updated": "2025-08-05",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -109484,9 +109814,8 @@
       "openai/gpt-oss-20b": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.03,
-          "input": 0.03,
-          "output": 0.13
+          "input": 0.02,
+          "output": 0.1
         },
         "description": "Open-weight GPT model for self-hosted reasoning and instruction-following workloads",
         "family": "gpt-oss",
@@ -109494,7 +109823,7 @@
         "last_updated": "2025-08-05",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -110070,7 +110399,7 @@
         "last_updated": "2025-01-27",
         "limit": {
           "context": 127072,
-          "output": 25415
+          "output": 114364
         },
         "modalities": {
           "input": [
@@ -110102,7 +110431,7 @@
         "last_updated": "2025-03-07",
         "limit": {
           "context": 128000,
-          "output": 25600
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -110211,7 +110540,7 @@
         "last_updated": "2025-03-07",
         "limit": {
           "context": 128000,
-          "output": 25600
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -110439,7 +110768,7 @@
         "last_updated": "2024-10-16",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 29491
         },
         "modalities": {
           "input": [
@@ -110469,7 +110798,7 @@
         "last_updated": "2024-11-11",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 29491
         },
         "modalities": {
           "input": [
@@ -110550,59 +110879,19 @@
         "temperature": true,
         "tool_call": true
       },
-      "qwen/qwen-plus-2025-07-28:thinking": {
-        "attachment": false,
-        "cost": {
-          "input": 0.26,
-          "output": 0.78
-        },
-        "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
-        "family": "qwen",
-        "id": "qwen/qwen-plus-2025-07-28:thinking",
-        "last_updated": "2025-09-08",
-        "limit": {
-          "context": 1000000,
-          "output": 32768
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen: Qwen Plus 0728 (thinking)",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2025-09-08",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "qwen/qwen2.5-vl-72b-instruct": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.4,
-          "input": 0.8,
-          "output": 1
+          "input": 0.25,
+          "output": 0.75
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
         "id": "qwen/qwen2.5-vl-72b-instruct",
         "last_updated": "2025-02-01",
         "limit": {
-          "context": 128000,
-          "output": 128000
+          "context": 32000,
+          "output": 28800
         },
         "modalities": {
           "input": [
@@ -110742,7 +111031,7 @@
         "last_updated": "2025-07-25",
         "limit": {
           "context": 131072,
-          "output": 262144
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -110997,7 +111286,7 @@
         "last_updated": "2025-04",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -111061,7 +111350,7 @@
         "last_updated": "2026-02-03",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -111197,7 +111486,7 @@
         "last_updated": "2025-09",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -111509,7 +111798,7 @@
         "last_updated": "2026-02-23",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -111591,7 +111880,7 @@
         "last_updated": "2026-02-23",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -111632,7 +111921,7 @@
         "last_updated": "2026-02-15",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 65536
         },
         "modalities": {
           "input": [
@@ -111673,7 +111962,7 @@
         "last_updated": "2026-02-23",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -111838,7 +112127,7 @@
         "last_updated": "2026-04-22",
         "limit": {
           "context": 262144,
-          "output": 81920
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -111880,7 +112169,7 @@
         "last_updated": "2026-04-17",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -112218,7 +112507,7 @@
         "id": "qwen/qwen3.8-27b",
         "last_updated": "2026-08-14",
         "limit": {
-          "context": 262144,
+          "context": 1000000,
           "output": 131072
         },
         "modalities": {
@@ -112308,7 +112597,7 @@
         "last_updated": "2026-03-20",
         "limit": {
           "context": 16384,
-          "output": 16384
+          "output": 14745
         },
         "modalities": {
           "input": [
@@ -112340,7 +112629,7 @@
         "last_updated": "2025-03-12",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -112520,7 +112809,7 @@
         "last_updated": "2024-08-13",
         "limit": {
           "context": 8192,
-          "output": 16384
+          "output": 7372
         },
         "modalities": {
           "input": [
@@ -112930,7 +113219,7 @@
         "limit": {
           "context": 256000,
           "input": 256000,
-          "output": 256000
+          "output": 230400
         },
         "modalities": {
           "input": [
@@ -113015,7 +113304,7 @@
         "last_updated": "2025-07-08",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -113186,7 +113475,7 @@
         "last_updated": "2026-04-20",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -113268,7 +113557,7 @@
         "last_updated": "2025-09-27",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -113297,7 +113586,7 @@
         "last_updated": "2024-09-30",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -113327,7 +113616,7 @@
         "last_updated": "2025-03-10",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 29491
         },
         "modalities": {
           "input": [
@@ -113356,7 +113645,7 @@
         "last_updated": "2024-11-08",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 26214
         },
         "modalities": {
           "input": [
@@ -113598,7 +113887,7 @@
         "last_updated": "2026-01-27",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -113708,7 +113997,7 @@
         "last_updated": "2026-03-31",
         "limit": {
           "context": 2000000,
-          "output": 2000000
+          "output": 1800000
         },
         "modalities": {
           "input": [
@@ -113750,7 +114039,7 @@
         "last_updated": "2026-03-31",
         "limit": {
           "context": 2000000,
-          "output": 2000000
+          "output": 1800000
         },
         "modalities": {
           "input": [
@@ -113794,7 +114083,7 @@
         "last_updated": "2026-04-17",
         "limit": {
           "context": 1000000,
-          "output": 4096
+          "output": 900000
         },
         "modalities": {
           "input": [
@@ -113838,7 +114127,7 @@
         "last_updated": "2026-07-08",
         "limit": {
           "context": 500000,
-          "output": 500000
+          "output": 450000
         },
         "modalities": {
           "input": [
@@ -113882,7 +114171,7 @@
         "last_updated": "2026-08-12",
         "limit": {
           "context": 500000,
-          "output": 500000
+          "output": 450000
         },
         "modalities": {
           "input": [
@@ -113926,7 +114215,7 @@
         "last_updated": "2026-04-16",
         "limit": {
           "context": 256000,
-          "output": 256000
+          "output": 230400
         },
         "modalities": {
           "input": [
@@ -114460,7 +114749,7 @@
         "last_updated": "2026-04-07",
         "limit": {
           "context": 202752,
-          "output": 202752
+          "output": 182476
         },
         "modalities": {
           "input": [
@@ -114798,8 +115087,8 @@
       "~deepseek/deepseek-v4-flash-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.008,
-          "input": 0.035,
+          "cache_read": 0.007,
+          "input": 0.03,
           "output": 0.075
         },
         "description": "This model always redirects to the latest model in the DeepSeek V4 Flash family.",
@@ -114808,7 +115097,7 @@
         "last_updated": "2026-08-01",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -114934,9 +115223,9 @@
       "~moonshotai/kimi-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.29,
-          "input": 2.8,
-          "output": 14
+          "cache_read": 0.256,
+          "input": 2.55,
+          "output": 12.75
         },
         "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
         "family": "kimi",
@@ -114944,7 +115233,7 @@
         "last_updated": "2026-04-27",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -115080,7 +115369,7 @@
         "last_updated": "2026-07-08",
         "limit": {
           "context": 500000,
-          "output": 500000
+          "output": 450000
         },
         "modalities": {
           "input": [
@@ -118113,7 +118402,7 @@
         "id": "glm-5.3",
         "last_updated": "2026-08-14",
         "limit": {
-          "context": 1000000,
+          "context": 1048576,
           "output": 131072
         },
         "modalities": {
@@ -127705,9 +127994,9 @@
       "baidu/deepseek-v4-flash": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.028,
-          "input": 0.14,
-          "output": 0.28
+          "cache_read": 0.044,
+          "input": 0.44,
+          "output": 1.32
         },
         "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
         "family": "deepseek-flash",
@@ -127754,9 +128043,9 @@
       "baidu/deepseek-v4-pro": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.14,
-          "input": 1.69,
-          "output": 3.38
+          "cache_read": 0.132,
+          "input": 1.32,
+          "output": 3.96
         },
         "description": "Open MoE flagship with million-token context for coding and long agent runs",
         "family": "deepseek-thinking",
@@ -127940,6 +128229,47 @@
           }
         ],
         "release_date": "2026-06-13",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
+      "baidu/glm-5.3": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.26,
+          "input": 1.4,
+          "output": 4.4
+        },
+        "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+        "family": "glm",
+        "id": "baidu/glm-5.3",
+        "last_updated": "2026-08-14",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.3 (Baidu)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-08-14",
         "structured_output": false,
         "temperature": true,
         "tool_call": true
@@ -139469,6 +139799,62 @@
     "name": "LLM Gateway",
     "npm": "@ai-sdk/openai-compatible"
   },
+  "llmtech": {
+    "api": "https://api.llmtech.eu/v1",
+    "doc": "https://llmtech.eu/models/qwen3.8-27b",
+    "env": [
+      "LLMTECH_API_KEY"
+    ],
+    "id": "llmtech",
+    "models": {
+      "unsloth/Qwen3.8-27B-NVFP4": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.04,
+          "input": 0.25,
+          "output": 2.09
+        },
+        "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
+        "family": "qwen",
+        "id": "unsloth/Qwen3.8-27B-NVFP4",
+        "last_updated": "2026-08-14",
+        "limit": {
+          "context": 262144,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.8 27B",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          },
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-08-14",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      }
+    },
+    "name": "LLM Tech",
+    "npm": "@ai-sdk/openai-compatible"
+  },
   "llmtr": {
     "api": "https://llmtr.com/v1",
     "doc": "https://llmtr.com/docs",
@@ -142766,8 +143152,8 @@
         "attachment": false,
         "cost": {
           "cache_read": 0.007,
-          "input": 0.035,
-          "output": 0.07
+          "input": 0.22,
+          "output": 0.66
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -142875,7 +143261,21 @@
         "name": "DeepSeek V4 Pro 0423",
         "open_weights": true,
         "reasoning": true,
-        "reasoning_options": [],
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          },
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "max"
+            ]
+          }
+        ],
         "release_date": "2026-04-23",
         "structured_output": false,
         "temperature": true,
@@ -146067,8 +146467,8 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.5,
-          "input": 4,
-          "output": 24
+          "input": 5,
+          "output": 30
         },
         "description": "Frontier GPT-5.6 model for complex professional work, coding, and agentic workflows",
         "family": "gpt-sol",
@@ -146412,7 +146812,17 @@
         "name": "o4 Mini",
         "open_weights": false,
         "reasoning": true,
-        "reasoning_options": [],
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
         "release_date": "2025-04-16",
         "structured_output": true,
         "temperature": false,
@@ -146993,7 +147403,7 @@
         "tool_call": true
       },
       "qwen/qwen3.5-27b": {
-        "attachment": false,
+        "attachment": true,
         "cost": {
           "cache_read": 0.0172,
           "input": 0.086,
@@ -147004,12 +147414,13 @@
         "id": "qwen/qwen3.5-27b",
         "last_updated": "2026-02-23",
         "limit": {
-          "context": 131072,
-          "output": 32768
+          "context": 256000,
+          "output": 64000
         },
         "modalities": {
           "input": [
-            "text"
+            "text",
+            "image"
           ],
           "output": [
             "text"
@@ -153385,7 +153796,15 @@
         "name": "GLM 4.6 Derestricted v5",
         "open_weights": true,
         "reasoning": true,
-        "reasoning_options": [],
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
+          }
+        ],
         "release_date": "2025-12-23",
         "structured_output": false,
         "tool_call": true
@@ -153449,7 +153868,15 @@
         "name": "Gemma 4 31B Claude 4.6 Opus Reasoning Distilled",
         "open_weights": true,
         "reasoning": true,
-        "reasoning_options": [],
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
+          }
+        ],
         "release_date": "2026-05-01",
         "structured_output": false,
         "tool_call": true
@@ -153484,7 +153911,11 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
           }
         ],
         "release_date": "2026-05-01",
@@ -153521,7 +153952,11 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
           }
         ],
         "release_date": "2026-05-01",
@@ -153558,7 +153993,11 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
           }
         ],
         "release_date": "2026-05-01",
@@ -153577,8 +154016,8 @@
         "id": "Gemma-4-31B-MeroMero-v2",
         "last_updated": "2026-08-23",
         "limit": {
-          "context": 65536,
-          "input": 65536,
+          "context": 262144,
+          "input": 262144,
           "output": 32768
         },
         "modalities": {
@@ -153610,8 +154049,8 @@
         "id": "Gemma-4-31B-MeroMero-v2:thinking",
         "last_updated": "2026-08-24",
         "limit": {
-          "context": 65536,
-          "input": 65536,
+          "context": 262144,
+          "input": 262144,
           "output": 32768
         },
         "modalities": {
@@ -153661,7 +154100,11 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
           }
         ],
         "release_date": "2026-05-01",
@@ -154134,12 +154577,11 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
-          },
-          {
-            "max": 81920,
-            "min": 1024,
-            "type": "budget_tokens"
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
           }
         ],
         "release_date": "2026-04-30",
@@ -154176,12 +154618,11 @@
         "reasoning": true,
         "reasoning_options": [
           {
-            "type": "toggle"
-          },
-          {
-            "max": 81920,
-            "min": 1024,
-            "type": "budget_tokens"
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
           }
         ],
         "release_date": "2026-04-30",
@@ -162966,8 +163407,8 @@
         "id": "google/gemma-4-26b-a4b-uncensored",
         "last_updated": "2026-08-22",
         "limit": {
-          "context": 131072,
-          "input": 131072,
+          "context": 262144,
+          "input": 262144,
           "output": 32768
         },
         "modalities": {
@@ -162999,8 +163440,8 @@
         "id": "google/gemma-4-26b-a4b-uncensored:thinking",
         "last_updated": "2026-08-24",
         "limit": {
-          "context": 131072,
-          "input": 131072,
+          "context": 262144,
+          "input": 262144,
           "output": 32768
         },
         "modalities": {
@@ -169010,8 +169451,8 @@
         "id": "ornith-ai/ornith-1.5-9b",
         "last_updated": "2026-08-23",
         "limit": {
-          "context": 131072,
-          "input": 131072,
+          "context": 262144,
+          "input": 262144,
           "output": 32768
         },
         "modalities": {
@@ -169043,8 +169484,8 @@
         "id": "ornith-ai/ornith-1.5-9b:thinking",
         "last_updated": "2026-08-24",
         "limit": {
-          "context": 131072,
-          "input": 131072,
+          "context": 262144,
+          "input": 262144,
           "output": 32768
         },
         "modalities": {
@@ -170385,8 +170826,8 @@
         "id": "qwen/qwen3.6-35b-a3b-uncensored",
         "last_updated": "2026-08-21",
         "limit": {
-          "context": 65536,
-          "input": 65536,
+          "context": 262144,
+          "input": 262144,
           "output": 32768
         },
         "modalities": {
@@ -170418,8 +170859,8 @@
         "id": "qwen/qwen3.6-35b-a3b-uncensored:thinking",
         "last_updated": "2026-08-24",
         "limit": {
-          "context": 65536,
-          "input": 65536,
+          "context": 262144,
+          "input": 262144,
           "output": 32768
         },
         "modalities": {
@@ -170502,6 +170943,72 @@
         "reasoning": true,
         "reasoning_options": [],
         "release_date": "2026-08-24",
+        "structured_output": true,
+        "tool_call": true
+      },
+      "qwen/qwen3.8-27b-uncensored": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.075,
+          "input": 0.18,
+          "output": 0.5
+        },
+        "description": "Qwen 3.8 27B Uncensored is an NVFP4 open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work.",
+        "family": "qwen",
+        "id": "qwen/qwen3.8-27b-uncensored",
+        "last_updated": "2026-08-21",
+        "limit": {
+          "context": 262144,
+          "input": 262144,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen 3.8 27B Uncensored",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-08-21",
+        "structured_output": true,
+        "tool_call": true
+      },
+      "qwen/qwen3.8-27b-uncensored:thinking": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.075,
+          "input": 0.18,
+          "output": 0.5
+        },
+        "description": "Qwen 3.8 27B Uncensored with thinking enabled for more deliberate creative work, coding, multimodal analysis, tool use, and long-context problem solving.",
+        "family": "qwen",
+        "id": "qwen/qwen3.8-27b-uncensored:thinking",
+        "last_updated": "2026-08-25",
+        "limit": {
+          "context": 262144,
+          "input": 262144,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen 3.8 27B Uncensored Thinking",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-08-25",
         "structured_output": true,
         "tool_call": true
       },
@@ -197560,9 +198067,9 @@
       "grok-4.5": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.5,
+          "cache_read": 0.3,
           "context_over_200k": {
-            "cache_read": 1,
+            "cache_read": 0.6,
             "input": 4,
             "output": 12
           },
@@ -197570,7 +198077,7 @@
           "output": 6,
           "tiers": [
             {
-              "cache_read": 1,
+              "cache_read": 0.6,
               "input": 4,
               "output": 12,
               "tier": {
@@ -199606,9 +200113,9 @@
       "grok-4.5": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.5,
+          "cache_read": 0.3,
           "context_over_200k": {
-            "cache_read": 1,
+            "cache_read": 0.6,
             "input": 4,
             "output": 12
           },
@@ -199616,7 +200123,7 @@
           "output": 6,
           "tiers": [
             {
-              "cache_read": 1,
+              "cache_read": 0.6,
               "input": 4,
               "output": 12,
               "tier": {
@@ -199660,6 +200167,70 @@
           }
         ],
         "release_date": "2026-07-08",
+        "status": "deprecated",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "grok-4.6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.5,
+          "context_over_200k": {
+            "cache_read": 1,
+            "input": 4,
+            "output": 12
+          },
+          "input": 2,
+          "output": 6,
+          "tiers": [
+            {
+              "cache_read": 1,
+              "input": 4,
+              "output": 12,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
+        "family": "grok",
+        "id": "grok-4.6",
+        "knowledge": "2026-02-01",
+        "last_updated": "2026-08-12",
+        "limit": {
+          "context": 500000,
+          "output": 500000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Grok 4.6",
+        "open_weights": false,
+        "provider": {
+          "npm": "@ai-sdk/openai"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-08-12",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -200652,7 +201223,7 @@
         "last_updated": "2025-02-04",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 29491
         },
         "modalities": {
           "input": [
@@ -200682,7 +201253,7 @@
         "last_updated": "2025-11-21",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -201805,7 +202376,7 @@
         "last_updated": "2026-05-28",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -201985,7 +202556,7 @@
         "last_updated": "2026-08-12",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -202435,7 +203006,7 @@
         "last_updated": "2025-03-24",
         "limit": {
           "context": 163840,
-          "output": 163840
+          "output": 147456
         },
         "modalities": {
           "input": [
@@ -202467,7 +203038,7 @@
         "last_updated": "2025-08-21",
         "limit": {
           "context": 163840,
-          "output": 161000
+          "output": 144900
         },
         "modalities": {
           "input": [
@@ -202568,7 +203139,7 @@
         "last_updated": "2025-01-23",
         "limit": {
           "context": 8192,
-          "output": 8192
+          "output": 7372
         },
         "modalities": {
           "input": [
@@ -202638,7 +203209,7 @@
         "last_updated": "2025-12-01",
         "limit": {
           "context": 163840,
-          "output": 163840
+          "output": 147456
         },
         "modalities": {
           "input": [
@@ -202747,9 +203318,9 @@
       "deepseek/deepseek-v4-flash-0731": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.028,
-          "input": 0.14,
-          "output": 0.28
+          "cache_read": 0.012,
+          "input": 0.06,
+          "output": 0.12
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -202758,7 +203329,7 @@
         "last_updated": "2026-07-31",
         "limit": {
           "context": 1310720,
-          "output": 131072
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -202837,9 +203408,9 @@
       "deepseek/deepseek-v4-pro": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.065859,
-          "input": 0.790308,
-          "output": 1.580616
+          "cache_read": 0.0725,
+          "input": 0.87,
+          "output": 1.74
         },
         "description": "Open MoE flagship with million-token context for coding and long agent runs",
         "family": "deepseek-thinking",
@@ -202894,7 +203465,7 @@
         "last_updated": "2026-08-22",
         "limit": {
           "context": 1048576,
-          "output": 384000
+          "output": 943717
         },
         "modalities": {
           "input": [
@@ -202936,7 +203507,7 @@
         "last_updated": "2026-08-14",
         "limit": {
           "context": 512000,
-          "output": 512000
+          "output": 460800
         },
         "modalities": {
           "input": [
@@ -203456,7 +204027,7 @@
         "last_updated": "2026-02-26",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -203553,7 +204124,7 @@
         "last_updated": "2026-06-30",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -204043,7 +204614,7 @@
         "last_updated": "2025-03-12",
         "limit": {
           "context": 262144,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -204090,37 +204661,6 @@
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-03-13",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": false
-      },
-      "google/gemma-3n-e4b-it": {
-        "attachment": false,
-        "cost": {
-          "input": 0.06,
-          "output": 0.12
-        },
-        "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
-        "family": "gemma",
-        "id": "google/gemma-3n-e4b-it",
-        "knowledge": "2024-08-31",
-        "last_updated": "2025-05-20",
-        "limit": {
-          "context": 32768,
-          "output": 32768
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Gemma 3n 4B",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-05-20",
         "structured_output": true,
         "temperature": true,
         "tool_call": false
@@ -204202,8 +204742,8 @@
       "google/gemma-4-31b-it": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.1,
-          "input": 0.1,
+          "cache_read": 0.05,
+          "input": 0.09,
           "output": 0.34
         },
         "description": "Largest Gemma 4 instruction model for open, self-hosted chat and reasoning",
@@ -204212,7 +204752,7 @@
         "last_updated": "2026-04-02",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 16384
         },
         "modalities": {
           "input": [
@@ -204350,7 +204890,7 @@
         "last_updated": "2023-07-02",
         "limit": {
           "context": 8192,
-          "output": 4096
+          "output": 3686
         },
         "modalities": {
           "input": [
@@ -204380,7 +204920,7 @@
         "last_updated": "2025-10-20",
         "limit": {
           "context": 131000,
-          "output": 131000
+          "output": 117900
         },
         "modalities": {
           "input": [
@@ -204411,7 +204951,7 @@
         "last_updated": "2026-04-30",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -204739,7 +205279,7 @@
         "last_updated": "2024-07-23",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -204770,7 +205310,7 @@
         "last_updated": "2024-09-25",
         "limit": {
           "context": 60000,
-          "output": 60000
+          "output": 54000
         },
         "modalities": {
           "input": [
@@ -204801,7 +205341,7 @@
         "last_updated": "2024-09-25",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -204822,8 +205362,9 @@
       "meta-llama/llama-3.3-70b-instruct": {
         "attachment": false,
         "cost": {
-          "input": 0.1,
-          "output": 0.32
+          "cache_read": 0.71,
+          "input": 0.71,
+          "output": 0.71
         },
         "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
         "family": "llama",
@@ -204832,7 +205373,7 @@
         "last_updated": "2024-12-06",
         "limit": {
           "context": 131072,
-          "output": 16384
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -204885,8 +205426,9 @@
       "meta-llama/llama-4-scout": {
         "attachment": true,
         "cost": {
-          "input": 0.1,
-          "output": 0.3
+          "cache_read": 0.055,
+          "input": 0.11,
+          "output": 0.34
         },
         "description": "Open multimodal Llama model for long-context analysis and efficient agents",
         "family": "llama",
@@ -204895,7 +205437,7 @@
         "last_updated": "2025-04-05",
         "limit": {
           "context": 1310720,
-          "output": 16384
+          "output": 8192
         },
         "modalities": {
           "input": [
@@ -204926,7 +205468,7 @@
         "knowledge": "2024-08-31",
         "last_updated": "2025-04-30",
         "limit": {
-          "context": 1048576,
+          "context": 163840,
           "output": 16384
         },
         "modalities": {
@@ -204960,7 +205502,7 @@
         "last_updated": "2026-08-10",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -205003,7 +205545,7 @@
         "last_updated": "2026-07-09",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -205050,7 +205592,7 @@
         "last_updated": "2026-08-05",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -205097,7 +205639,7 @@
         "last_updated": "2026-08-21",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -205144,7 +205686,7 @@
         "last_updated": "2025-01-10",
         "limit": {
           "context": 16384,
-          "output": 16384
+          "output": 14745
         },
         "modalities": {
           "input": [
@@ -205205,7 +205747,7 @@
         "last_updated": "2025-01-15",
         "limit": {
           "context": 1000192,
-          "output": 1000192
+          "output": 900172
         },
         "modalities": {
           "input": [
@@ -205435,7 +205977,7 @@
         "last_updated": "2026-03-18",
         "limit": {
           "context": 196608,
-          "output": 196608
+          "output": 176947
         },
         "modalities": {
           "input": [
@@ -205488,6 +206030,39 @@
         "temperature": true,
         "tool_call": true
       },
+      "minimax/minimax-m3:free": {
+        "attachment": true,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "MiniMax multimodal coding model for long-context reasoning and agent tasks",
+        "family": "minimax",
+        "id": "minimax/minimax-m3:free",
+        "last_updated": "2026-06-01",
+        "limit": {
+          "context": 1048576,
+          "output": 943718
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax M3 (free)",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-06-01",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
       "mistralai/codestral-2508": {
         "attachment": true,
         "cost": {
@@ -205502,7 +206077,7 @@
         "last_updated": "2025-08-01",
         "limit": {
           "context": 256000,
-          "output": 256000
+          "output": 204800
         },
         "modalities": {
           "input": [
@@ -205535,7 +206110,7 @@
         "last_updated": "2025-12-09",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -205567,7 +206142,7 @@
         "last_updated": "2025-12-02",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -205599,7 +206174,7 @@
         "last_updated": "2025-12-02",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 104857
         },
         "modalities": {
           "input": [
@@ -205631,7 +206206,7 @@
         "last_updated": "2024-10-17",
         "limit": {
           "context": 128000,
-          "output": 128000
+          "output": 102400
         },
         "modalities": {
           "input": [
@@ -205662,7 +206237,7 @@
         "last_updated": "2025-12-02",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -205695,7 +206270,7 @@
         "last_updated": "2024-02-26",
         "limit": {
           "context": 128000,
-          "output": 128000
+          "output": 102400
         },
         "modalities": {
           "input": [
@@ -205728,7 +206303,7 @@
         "last_updated": "2024-11-19",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 104857
         },
         "modalities": {
           "input": [
@@ -205761,7 +206336,7 @@
         "last_updated": "2025-12-02",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -205795,7 +206370,7 @@
         "last_updated": "2025-05-07",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 104857
         },
         "modalities": {
           "input": [
@@ -205827,7 +206402,7 @@
         "last_updated": "2026-04-30",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -205870,7 +206445,7 @@
         "last_updated": "2025-08-13",
         "limit": {
           "context": 131072,
-          "output": 262144
+          "output": 104857
         },
         "modalities": {
           "input": [
@@ -205935,7 +206510,7 @@
         "last_updated": "2025-02-17",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 26214
         },
         "modalities": {
           "input": [
@@ -205999,7 +206574,7 @@
         "last_updated": "2026-03-16",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 209715
         },
         "modalities": {
           "input": [
@@ -206040,7 +206615,7 @@
         "last_updated": "2025-03-17",
         "limit": {
           "context": 128000,
-          "output": 128000
+          "output": 102400
         },
         "modalities": {
           "input": [
@@ -206105,7 +206680,7 @@
         "last_updated": "2024-04-17",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 52428
         },
         "modalities": {
           "input": [
@@ -206137,7 +206712,7 @@
         "last_updated": "2025-10-30",
         "limit": {
           "context": 32000,
-          "output": 32000
+          "output": 25600
         },
         "modalities": {
           "input": [
@@ -206272,7 +206847,7 @@
         "last_updated": "2026-01",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -206309,7 +206884,7 @@
         "last_updated": "2026-04-21",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -206343,7 +206918,7 @@
         "last_updated": "2026-06-12",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -206376,7 +206951,7 @@
         "last_updated": "2026-07-16",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -206482,7 +207057,7 @@
         "last_updated": "2026-06-24",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -206515,7 +207090,7 @@
         "last_updated": "2026-06-08",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -206610,7 +207185,7 @@
         "last_updated": "2025-08-26",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -206646,7 +207221,7 @@
         "last_updated": "2025-08-26",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -206682,7 +207257,7 @@
         "last_updated": "2025-12-15",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -206796,7 +207371,7 @@
         "last_updated": "2026-03-11",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -206842,7 +207417,7 @@
         "last_updated": "2026-06-04",
         "limit": {
           "context": 512288,
-          "output": 16384
+          "output": 461059
         },
         "modalities": {
           "input": [
@@ -207067,7 +207642,7 @@
         "last_updated": "2024-01-25",
         "limit": {
           "context": 4095,
-          "output": 4096
+          "output": 3685
         },
         "modalities": {
           "input": [
@@ -207129,7 +207704,7 @@
         "last_updated": "2023-09-28",
         "limit": {
           "context": 4095,
-          "output": 4096
+          "output": 3685
         },
         "modalities": {
           "input": [
@@ -209089,7 +209664,7 @@
         "last_updated": "2025-08-05",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -209130,7 +209705,7 @@
         "last_updated": "2025-08-05",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -209717,7 +210292,7 @@
         "last_updated": "2025-01-27",
         "limit": {
           "context": 127072,
-          "output": 127072
+          "output": 114364
         },
         "modalities": {
           "input": [
@@ -209749,7 +210324,7 @@
         "last_updated": "2025-03-07",
         "limit": {
           "context": 128000,
-          "output": 128000
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -209843,7 +210418,7 @@
         "last_updated": "2025-03-07",
         "limit": {
           "context": 128000,
-          "output": 128000
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -210033,7 +210608,7 @@
         "last_updated": "2024-10-16",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 29491
         },
         "modalities": {
           "input": [
@@ -210064,7 +210639,7 @@
         "last_updated": "2024-11-11",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 29491
         },
         "modalities": {
           "input": [
@@ -210178,64 +210753,11 @@
         "temperature": true,
         "tool_call": true
       },
-      "qwen/qwen-plus-2025-07-28:thinking": {
-        "attachment": false,
-        "cost": {
-          "context_over_200k": {
-            "input": 0.78,
-            "output": 2.34
-          },
-          "input": 0.26,
-          "output": 0.78,
-          "tiers": [
-            {
-              "input": 0.78,
-              "output": 2.34,
-              "tier": {
-                "size": 256000,
-                "type": "context"
-              }
-            }
-          ]
-        },
-        "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
-        "family": "qwen",
-        "id": "qwen/qwen-plus-2025-07-28:thinking",
-        "knowledge": "2025-03-31",
-        "last_updated": "2025-09-08",
-        "limit": {
-          "context": 1000000,
-          "output": 32768
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen Plus 0728 (thinking)",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "max": 81920,
-            "min": 1,
-            "type": "budget_tokens"
-          }
-        ],
-        "release_date": "2025-09-08",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "qwen/qwen2.5-vl-72b-instruct": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.4,
-          "input": 0.8,
-          "output": 1
+          "input": 0.25,
+          "output": 0.75
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -210244,7 +210766,7 @@
         "last_updated": "2025-02-01",
         "limit": {
           "context": 128000,
-          "output": 128000
+          "output": 28800
         },
         "modalities": {
           "input": [
@@ -210384,7 +210906,7 @@
         "last_updated": "2025-07-25",
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -210618,7 +211140,7 @@
         "last_updated": "2025-04",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -210705,7 +211227,7 @@
         "last_updated": "2026-02-03",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -210902,7 +211424,7 @@
         "last_updated": "2025-09",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -211189,7 +211711,7 @@
         "last_updated": "2026-02-23",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -211264,7 +211786,7 @@
         "last_updated": "2026-02-23",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -211292,9 +211814,8 @@
       "qwen/qwen3.5-397b-a17b": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.3,
-          "input": 0.5,
-          "output": 3.6
+          "input": 0.39,
+          "output": 2.34
         },
         "description": "Large open Qwen multimodal MoE for visual agents and long technical tasks",
         "family": "qwen",
@@ -211302,7 +211823,7 @@
         "last_updated": "2026-02-15",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 65536
         },
         "modalities": {
           "input": [
@@ -211339,7 +211860,7 @@
         "last_updated": "2026-02-23",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -211525,8 +212046,9 @@
       "qwen/qwen3.6-27b": {
         "attachment": true,
         "cost": {
-          "input": 0.32,
-          "output": 3.2
+          "cache_read": 0.12,
+          "input": 0.6,
+          "output": 3.6
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -211534,7 +212056,7 @@
         "last_updated": "2026-04-22",
         "limit": {
           "context": 262144,
-          "output": 81920
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -211572,7 +212094,7 @@
         "last_updated": "2026-04-17",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -211979,9 +212501,10 @@
       "qwen/qwen3.8-27b": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.05,
-          "input": 0.4,
-          "output": 3
+          "cache_read": 0.085,
+          "cache_write": 0.53125,
+          "input": 0.425,
+          "output": 2.55
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -212080,7 +212603,7 @@
         "last_updated": "2026-03-20",
         "limit": {
           "context": 16384,
-          "output": 16384
+          "output": 14745
         },
         "modalities": {
           "input": [
@@ -212113,7 +212636,7 @@
         "last_updated": "2025-03-12",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -212303,7 +212826,7 @@
         "last_updated": "2024-08-13",
         "limit": {
           "context": 8192,
-          "output": 16384
+          "output": 7372
         },
         "modalities": {
           "input": [
@@ -212470,7 +212993,7 @@
         "limit": {
           "context": 262144,
           "input": 256000,
-          "output": 256000
+          "output": 230400
         },
         "modalities": {
           "input": [
@@ -212513,7 +213036,7 @@
         "last_updated": "2025-07-08",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -212676,7 +213199,7 @@
         "last_updated": "2026-04-20",
         "limit": {
           "context": 262144,
-          "output": 262144
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -212717,7 +213240,7 @@
         "last_updated": "2025-09-27",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -212747,7 +213270,7 @@
         "last_updated": "2024-09-30",
         "limit": {
           "context": 65536,
-          "output": 65536
+          "output": 58982
         },
         "modalities": {
           "input": [
@@ -212778,7 +213301,7 @@
         "last_updated": "2025-03-10",
         "limit": {
           "context": 32768,
-          "output": 32768
+          "output": 29491
         },
         "modalities": {
           "input": [
@@ -212808,7 +213331,7 @@
         "last_updated": "2024-11-08",
         "limit": {
           "context": 1024000,
-          "output": 32768
+          "output": 26214
         },
         "modalities": {
           "input": [
@@ -213051,7 +213574,7 @@
         "last_updated": "2026-01-27",
         "limit": {
           "context": 131072,
-          "output": 131072
+          "output": 117964
         },
         "modalities": {
           "input": [
@@ -213162,7 +213685,7 @@
         "last_updated": "2026-03-31",
         "limit": {
           "context": 2000000,
-          "output": 2000000
+          "output": 1800000
         },
         "modalities": {
           "input": [
@@ -213213,7 +213736,7 @@
         "last_updated": "2026-03-31",
         "limit": {
           "context": 2000000,
-          "output": 2000000
+          "output": 1800000
         },
         "modalities": {
           "input": [
@@ -213273,7 +213796,7 @@
         "last_updated": "2026-04-17",
         "limit": {
           "context": 1000000,
-          "output": 1000000
+          "output": 900000
         },
         "modalities": {
           "input": [
@@ -213333,7 +213856,7 @@
         "last_updated": "2026-07-08",
         "limit": {
           "context": 500000,
-          "output": 500000
+          "output": 450000
         },
         "modalities": {
           "input": [
@@ -213393,7 +213916,7 @@
         "last_updated": "2026-08-12",
         "limit": {
           "context": 500000,
-          "output": 500000
+          "output": 450000
         },
         "modalities": {
           "input": [
@@ -213453,7 +213976,7 @@
         "last_updated": "2026-04-16",
         "limit": {
           "context": 256000,
-          "output": 256000
+          "output": 230400
         },
         "modalities": {
           "input": [
@@ -213895,7 +214418,7 @@
         "last_updated": "2026-04-07",
         "limit": {
           "context": 204800,
-          "output": 202752
+          "output": 182476
         },
         "modalities": {
           "input": [
@@ -213972,7 +214495,7 @@
         "last_updated": "2026-06-13",
         "limit": {
           "context": 256000,
-          "output": 256000
+          "output": 230400
         },
         "modalities": {
           "input": [
@@ -214269,8 +214792,8 @@
       "~deepseek/deepseek-v4-flash-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.008,
-          "input": 0.035,
+          "cache_read": 0.007,
+          "input": 0.03,
           "output": 0.075
         },
         "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
@@ -214279,7 +214802,7 @@
         "last_updated": "2026-08-01",
         "limit": {
           "context": 1310720,
-          "output": 1048576
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -214425,9 +214948,9 @@
       "~moonshotai/kimi-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.29,
-          "input": 2.8,
-          "output": 14
+          "cache_read": 0.256,
+          "input": 2.55,
+          "output": 12.75
         },
         "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
         "family": "kimi",
@@ -214435,7 +214958,7 @@
         "last_updated": "2026-04-27",
         "limit": {
           "context": 1048576,
-          "output": 1048576
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -214609,7 +215132,7 @@
         "last_updated": "2026-07-08",
         "limit": {
           "context": 500000,
-          "output": 1000000
+          "output": 450000
         },
         "modalities": {
           "input": [
@@ -220351,6 +220874,222 @@
       }
     },
     "name": "OVHcloud AI Endpoints",
+    "npm": "@ai-sdk/openai-compatible"
+  },
+  "pendra": {
+    "api": "https://api.pendra.ai/api/v1",
+    "doc": "https://pendra.ai/docs/integrations/opencode",
+    "env": [
+      "PENDRA_API_KEY"
+    ],
+    "id": "pendra",
+    "models": {
+      "deepseek-v4-flash": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
+        "family": "deepseek-flash",
+        "id": "deepseek-v4-flash",
+        "knowledge": "2025-05",
+        "last_updated": "2026-04-24",
+        "limit": {
+          "context": 1000000,
+          "output": 384000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Flash",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-04-24",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "glm-4.7-flash": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "Budget GLM lane for fast coding help, routing, and everyday automation",
+        "family": "glm-flash",
+        "id": "glm-4.7-flash",
+        "knowledge": "2025-04",
+        "last_updated": "2026-01-19",
+        "limit": {
+          "context": 200000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-4.7-Flash",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-01-19",
+        "temperature": true,
+        "tool_call": true
+      },
+      "gpt-oss:120b": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
+        "family": "gpt-oss",
+        "id": "gpt-oss:120b",
+        "last_updated": "2025-08-05",
+        "limit": {
+          "context": 131072,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GPT OSS 120B",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
+        "release_date": "2025-08-05",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "llama3.3:70b": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
+        "family": "llama",
+        "id": "llama3.3:70b",
+        "knowledge": "2023-12",
+        "last_updated": "2024-12-06",
+        "limit": {
+          "context": 128000,
+          "output": 4096
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Llama-3.3-70B-Instruct",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2024-12-06",
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen3-coder:30b": {
+        "attachment": false,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "Smaller Qwen coder for efficient local agents and repo-level fixes",
+        "family": "qwen",
+        "id": "qwen3-coder:30b",
+        "knowledge": "2025-04",
+        "last_updated": "2025-04",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3-Coder 30B-A3B Instruct",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2025-04",
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen3.6:27b": {
+        "attachment": true,
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+        "family": "qwen",
+        "id": "qwen3.6:27b",
+        "last_updated": "2026-04-22",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.6 27B",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-04-22",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      }
+    },
+    "name": "Pendra",
     "npm": "@ai-sdk/openai-compatible"
   },
   "perplexity": {
@@ -268290,9 +269029,9 @@
       "nvidia/nemotron-3.5-lightning": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.01,
+          "cache_read": 0.05,
           "input": 0.05,
-          "output": 0.2
+          "output": 0.15
         },
         "description": "Nemotron model for efficient reasoning, coding, and specialized AI agents",
         "family": "nemotron",
