@@ -4508,7 +4508,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana Pro",
+        "name": "Nano Banana Pro Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [],
@@ -4574,7 +4574,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana 2",
+        "name": "Nano Banana 2 Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [],
@@ -23387,6 +23387,50 @@
         "temperature": false,
         "tool_call": true
       },
+      "global.xai.grok-4.6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.5,
+          "input": 2,
+          "output": 6
+        },
+        "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
+        "family": "grok",
+        "id": "global.xai.grok-4.6",
+        "knowledge": "2026-02-01",
+        "last_updated": "2026-08-18",
+        "limit": {
+          "context": 500000,
+          "output": 500000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Grok 4.6 (Global)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-08-12",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
       "google.gemma-3-12b-it": {
         "attachment": false,
         "cost": {
@@ -25917,6 +25961,50 @@
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-04-05",
+        "temperature": true,
+        "tool_call": true
+      },
+      "us.xai.grok-4.6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.55,
+          "input": 2.2,
+          "output": 6.6
+        },
+        "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
+        "family": "grok",
+        "id": "us.xai.grok-4.6",
+        "knowledge": "2026-02-01",
+        "last_updated": "2026-08-18",
+        "limit": {
+          "context": 500000,
+          "output": 500000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Grok 4.6 (US)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-08-12",
+        "structured_output": false,
         "temperature": true,
         "tool_call": true
       },
@@ -30512,7 +30600,6 @@
           }
         ],
         "release_date": "2026-06-30",
-        "status": "beta",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -32073,7 +32160,6 @@
           }
         ],
         "release_date": "2026-07-09",
-        "status": "beta",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -32141,7 +32227,6 @@
           }
         ],
         "release_date": "2026-07-09",
-        "status": "beta",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -32209,7 +32294,73 @@
           }
         ],
         "release_date": "2026-07-09",
-        "status": "beta",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "gpt-6-astra": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 1,
+          "cache_write": 12.5,
+          "context_over_200k": {
+            "cache_read": 2,
+            "cache_write": 25,
+            "input": 20,
+            "output": 75
+          },
+          "input": 10,
+          "output": 50,
+          "tiers": [
+            {
+              "cache_read": 2,
+              "cache_write": 25,
+              "input": 20,
+              "output": 75,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+        "family": "gpt-astra",
+        "id": "gpt-6-astra",
+        "knowledge": "2026-04-30",
+        "last_updated": "2026-09-04",
+        "limit": {
+          "context": 1050000,
+          "input": 922000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GPT-6 Astra",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-09-04",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -32382,7 +32533,6 @@
         "open_weights": false,
         "reasoning": false,
         "release_date": "2025-06-27",
-        "status": "beta",
         "temperature": true,
         "tool_call": true
       },
@@ -32416,7 +32566,6 @@
         "reasoning": true,
         "reasoning_options": [],
         "release_date": "2025-06-27",
-        "status": "beta",
         "temperature": true,
         "tool_call": true
       },
@@ -34000,7 +34149,6 @@
           }
         ],
         "release_date": "2026-06-30",
-        "status": "beta",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -35443,7 +35591,6 @@
           }
         ],
         "release_date": "2026-07-09",
-        "status": "beta",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -35508,7 +35655,6 @@
           }
         ],
         "release_date": "2026-07-09",
-        "status": "beta",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -35576,7 +35722,6 @@
           }
         ],
         "release_date": "2026-07-09",
-        "status": "beta",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -37809,49 +37954,6 @@
     ],
     "id": "cerebras",
     "models": {
-      "gemma-4-31b": {
-        "attachment": true,
-        "cost": {
-          "input": 0.99,
-          "output": 1.49
-        },
-        "description": "Largest Gemma 4 instruction model for open, self-hosted chat and reasoning",
-        "family": "gemma",
-        "id": "gemma-4-31b",
-        "last_updated": "2026-07-01",
-        "limit": {
-          "context": 131072,
-          "output": 40960
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Gemma 4 31B IT",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2026-04-02",
-        "status": "beta",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "gpt-oss-120b": {
         "attachment": false,
         "cost": {
@@ -37888,6 +37990,48 @@
           }
         ],
         "release_date": "2025-08-05",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen-3.8-27b": {
+        "attachment": true,
+        "cost": {
+          "input": 0.99,
+          "output": 1.49
+        },
+        "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
+        "family": "qwen",
+        "id": "qwen-3.8-27b",
+        "last_updated": "2026-09-03",
+        "limit": {
+          "context": 65536,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.8 27B",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
+        "release_date": "2026-08-14",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -47481,6 +47625,55 @@
         "temperature": true,
         "tool_call": true
       },
+      "deepseek-v4-flash-vision-exp": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.007,
+          "input": 0.08,
+          "output": 0.2
+        },
+        "description": "Experimental multimodal DeepSeek V4 Flash model for image understanding, coding, and agentic work",
+        "family": "deepseek-flash",
+        "id": "deepseek-v4-flash-vision-exp",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-08-21",
+        "limit": {
+          "context": 1000000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Flash Vision Exp",
+        "open_weights": false,
+        "provider": {
+          "npm": "@ai-sdk/openai-compatible"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
+        "release_date": "2026-08-21",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "deepseek-v4-pro": {
         "attachment": false,
         "cost": {
@@ -50241,6 +50434,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "openai/gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -54917,8 +55111,8 @@
       "deepseek-ai/DeepSeek-V4-Flash-0731": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.016,
-          "input": 0.08,
+          "cache_read": 0.015,
+          "input": 0.06,
           "output": 0.18
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
@@ -60632,7 +60826,7 @@
             "text"
           ]
         },
-        "name": "Kimi K2 Thinking",
+        "name": "Kimi K2 Thinking (Amazon Bedrock)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -60665,7 +60859,7 @@
             "text"
           ]
         },
-        "name": "Kimi K2.5",
+        "name": "Kimi K2.5 (Amazon Bedrock)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -60697,7 +60891,7 @@
             "text"
           ]
         },
-        "name": "GLM-4.7-Flash",
+        "name": "GLM-4.7-Flash (Amazon Bedrock)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -60729,7 +60923,7 @@
             "text"
           ]
         },
-        "name": "GLM-4.7-Flash (US)",
+        "name": "GLM-4.7-Flash (Amazon Bedrock, US)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -60859,7 +61053,7 @@
             "text"
           ]
         },
-        "name": "Claude Fable 5.1",
+        "name": "Claude Fable Latest (Claude Fable 5.1)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -61183,7 +61377,7 @@
             "text"
           ]
         },
-        "name": "Claude Opus 5",
+        "name": "Claude Opus Latest (Claude Opus 5)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -61324,7 +61518,7 @@
             "text"
           ]
         },
-        "name": "Claude Sonnet 5",
+        "name": "Claude Sonnet Latest (Claude Sonnet 5)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -61371,7 +61565,7 @@
             "text"
           ]
         },
-        "name": "GPT-5.1 Codex",
+        "name": "GPT-5.1 Codex (Azure)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -61415,7 +61609,7 @@
             "text"
           ]
         },
-        "name": "GPT-5.1 Codex Max",
+        "name": "GPT-5.1 Codex Max (Azure)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -61460,7 +61654,7 @@
             "text"
           ]
         },
-        "name": "GPT-5.1 Codex mini",
+        "name": "GPT-5.1 Codex mini (Azure)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -61505,7 +61699,7 @@
             "text"
           ]
         },
-        "name": "GPT-5.2 Codex",
+        "name": "GPT-5.2 Codex (Azure)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -61547,7 +61741,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Cerebras)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -61587,7 +61781,7 @@
             "text"
           ]
         },
-        "name": "Gemma-SEA-LION-v4-27B-IT",
+        "name": "Gemma-SEA-LION-v4-27B-IT (Cloudflare)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-09-23",
@@ -61619,7 +61813,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (Cloudflare)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -61661,7 +61855,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Pro 0813",
+        "name": "DeepSeek V4 Pro 0813 (Cloudflare)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -61703,7 +61897,7 @@
             "text"
           ]
         },
-        "name": "Llama-Guard-3-8B",
+        "name": "Llama-Guard-3-8B (Cloudflare)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-07-23",
@@ -61733,7 +61927,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Cloudflare)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -61773,7 +61967,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 20B",
+        "name": "GPT OSS 20B (Cloudflare)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -61813,7 +62007,7 @@
             "text"
           ]
         },
-        "name": "Qwen2.5-Coder-32B-Instruct",
+        "name": "Qwen2.5-Coder-32B-Instruct (Cloudflare)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-11-12",
@@ -61844,7 +62038,7 @@
             "text"
           ]
         },
-        "name": "GLM-4.7-Flash",
+        "name": "GLM-4.7-Flash (Cloudflare)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -62002,7 +62196,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (Databricks)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62045,7 +62239,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Pro 0813",
+        "name": "DeepSeek V4 Pro 0813 (Databricks)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62088,7 +62282,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Databricks)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62130,7 +62324,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B (EU)",
+        "name": "GPT OSS 120B (Databricks, EU)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62172,7 +62366,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 20B",
+        "name": "GPT OSS 20B (Databricks)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62214,7 +62408,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 20B (EU)",
+        "name": "GPT OSS 20B (Databricks, EU)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62257,7 +62451,7 @@
             "text"
           ]
         },
-        "name": "Inkling",
+        "name": "Inkling (Databricks)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62302,7 +62496,7 @@
             "text"
           ]
         },
-        "name": "Seed 2.0 Code",
+        "name": "Seed 2.0 Code (Deep Infra)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -62345,7 +62539,7 @@
             "text"
           ]
         },
-        "name": "Seed 2.0 Mini",
+        "name": "Seed 2.0 Mini (Deep Infra)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -62388,7 +62582,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek-R1",
+        "name": "DeepSeek-R1 (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -62419,7 +62613,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek-V3",
+        "name": "DeepSeek-V3 (Deep Infra)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-12-26",
@@ -62450,7 +62644,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V3 0324",
+        "name": "DeepSeek V3 0324 (Deep Infra)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-03-24",
@@ -62461,8 +62655,8 @@
       "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.016,
-          "input": 0.08,
+          "cache_read": 0.015,
+          "input": 0.06,
           "output": 0.18
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
@@ -62482,7 +62676,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62524,7 +62718,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Pro 0813",
+        "name": "DeepSeek V4 Pro 0813 (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62567,7 +62761,7 @@
             "text"
           ]
         },
-        "name": "Llama-3.2-11B-Vision-Instruct",
+        "name": "Llama-3.2-11B-Vision-Instruct (Deep Infra)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-09-25",
@@ -62598,7 +62792,7 @@
             "text"
           ]
         },
-        "name": "Llama-3.3-70B-Instruct",
+        "name": "Llama-3.3-70B-Instruct (Deep Infra)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-12-06",
@@ -62629,7 +62823,7 @@
             "text"
           ]
         },
-        "name": "Llama-Guard-3-8B",
+        "name": "Llama-Guard-3-8B (Deep Infra)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-07-23",
@@ -62662,7 +62856,7 @@
             "text"
           ]
         },
-        "name": "Muse Glimmer 30B",
+        "name": "Muse Glimmer 30B (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62706,7 +62900,7 @@
             "text"
           ]
         },
-        "name": "Kimi K2.5",
+        "name": "Kimi K2.5 (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -62738,7 +62932,7 @@
             "text"
           ]
         },
-        "name": "Nemotron 3 Ultra 550B A55B",
+        "name": "Nemotron 3 Ultra 550B A55B (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62778,7 +62972,7 @@
             "text"
           ]
         },
-        "name": "Llama 3.1 Nemotron 70B Instruct",
+        "name": "Llama 3.1 Nemotron 70B Instruct (Deep Infra)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-04-15",
@@ -62809,7 +63003,7 @@
             "text"
           ]
         },
-        "name": "Nemotron 3 Nano 30B A3B",
+        "name": "Nemotron 3 Nano 30B A3B (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -62840,7 +63034,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62880,7 +63074,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 20B",
+        "name": "GPT OSS 20B (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62921,7 +63115,7 @@
             "text"
           ]
         },
-        "name": "Step 3.5 Flash",
+        "name": "Step 3.5 Flash (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -62963,7 +63157,7 @@
             "text"
           ]
         },
-        "name": "Step 3.7 Flash",
+        "name": "Step 3.7 Flash (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63004,7 +63198,7 @@
             "text"
           ]
         },
-        "name": "Hy3",
+        "name": "Hy3 (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63047,7 +63241,7 @@
             "text"
           ]
         },
-        "name": "Inkling",
+        "name": "Inkling (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63093,7 +63287,7 @@
             "text"
           ]
         },
-        "name": "Inkling Small",
+        "name": "Inkling Small (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63138,7 +63332,7 @@
             "text"
           ]
         },
-        "name": "GLM-4.7-Flash",
+        "name": "GLM-4.7-Flash (Deep Infra)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -63331,7 +63525,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (Fireworks AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63373,7 +63567,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Pro 0813",
+        "name": "DeepSeek V4 Pro 0813 (Fireworks AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63416,7 +63610,7 @@
             "text"
           ]
         },
-        "name": "Inkling",
+        "name": "Inkling (Fireworks AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63462,7 +63656,7 @@
             "text"
           ]
         },
-        "name": "Muse Glimmer 30B",
+        "name": "Muse Glimmer 30B (Fireworks AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63504,7 +63698,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Fireworks AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63546,7 +63740,7 @@
             "text"
           ]
         },
-        "name": "Muse Glimmer 30B",
+        "name": "Muse Glimmer 30B (FlexAI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63587,7 +63781,7 @@
             "text"
           ]
         },
-        "name": "Nemotron 3 Super 120B A12B",
+        "name": "Nemotron 3 Super 120B A12B (FlexAI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63628,7 +63822,7 @@
             "text"
           ]
         },
-        "name": "Step 3.7 Flash",
+        "name": "Step 3.7 Flash (FlexAI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63669,7 +63863,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (FlexAI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63710,7 +63904,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (FlexAI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63750,7 +63944,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 20B",
+        "name": "GPT OSS 20B (FlexAI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -63933,7 +64127,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana Pro",
+        "name": "Nano Banana Pro Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [],
@@ -64009,7 +64203,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana 2",
+        "name": "Nano Banana 2 Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -64575,7 +64769,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.8 Flash",
+        "name": "Gemini Flash Latest (Gemini 3.8 Flash)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -64640,7 +64834,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.1 Pro Preview",
+        "name": "Gemini Pro Latest (Gemini 3.1 Pro Preview)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -64681,7 +64875,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Groq)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -64722,7 +64916,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 20B",
+        "name": "GPT OSS 20B (Groq)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -64763,7 +64957,7 @@
             "text"
           ]
         },
-        "name": "Llama-3.3-70B-Instruct",
+        "name": "Llama-3.3-70B-Instruct (IONOS)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-12-06",
@@ -64793,7 +64987,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (IONOS)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -65567,7 +65761,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (Nebius)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -65610,7 +65804,7 @@
             "text"
           ]
         },
-        "name": "Llama-3.3-70B-Instruct",
+        "name": "Llama-3.3-70B-Instruct (Nebius)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-12-06",
@@ -65641,7 +65835,7 @@
             "text"
           ]
         },
-        "name": "Nemotron 3 Ultra 550B A55B",
+        "name": "Nemotron 3 Ultra 550B A55B (Nebius)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -65682,7 +65876,7 @@
             "text"
           ]
         },
-        "name": "Nemotron 3 Super 120B A12B",
+        "name": "Nemotron 3 Super 120B A12B (Nebius)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -65723,7 +65917,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Nebius)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -67010,6 +67204,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "openai/gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -67075,6 +67270,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "openai/gpt-latest",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -67091,7 +67287,7 @@
             "text"
           ]
         },
-        "name": "GPT-6 Astra",
+        "name": "GPT Latest (GPT-6 Astra)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -67138,7 +67334,7 @@
             "text"
           ]
         },
-        "name": "GPT-5.4 mini",
+        "name": "GPT Mini Latest (GPT-5.4 mini)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -67201,7 +67397,7 @@
             "text"
           ]
         },
-        "name": "GPT-5.5 Pro",
+        "name": "GPT Pro Latest (GPT-5.5 Pro)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -67502,7 +67698,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (OVHcloud)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -67542,7 +67738,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 20B",
+        "name": "GPT OSS 20B (OVHcloud)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -67733,7 +67929,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (Alibaba)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -67774,7 +67970,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Pro 0813",
+        "name": "DeepSeek V4 Pro 0813 (Alibaba)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68586,7 +68782,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (Scaleway)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68627,7 +68823,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Scaleway)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68668,7 +68864,7 @@
             "text"
           ]
         },
-        "name": "Llama-3.3-70B-Instruct",
+        "name": "Llama-3.3-70B-Instruct (Scaleway)",
         "open_weights": true,
         "reasoning": false,
         "release_date": "2024-12-06",
@@ -68700,7 +68896,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (TensorX)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68742,7 +68938,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Pro 0813",
+        "name": "DeepSeek V4 Pro 0813 (TensorX)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68786,7 +68982,7 @@
             "text"
           ]
         },
-        "name": "Kimi K2.5",
+        "name": "Kimi K2.5 (TensorX)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [],
@@ -68819,7 +69015,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Flash 0731",
+        "name": "DeepSeek V4 Flash 0731 (Together AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68861,7 +69057,7 @@
             "text"
           ]
         },
-        "name": "DeepSeek V4 Pro 0813",
+        "name": "DeepSeek V4 Pro 0813 (Together AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68905,7 +69101,7 @@
             "text"
           ]
         },
-        "name": "Muse Glimmer 30B",
+        "name": "Muse Glimmer 30B (Together AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68946,7 +69142,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 120B",
+        "name": "GPT OSS 120B (Together AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -68986,7 +69182,7 @@
             "text"
           ]
         },
-        "name": "GPT OSS 20B",
+        "name": "GPT OSS 20B (Together AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -69029,7 +69225,7 @@
             "text"
           ]
         },
-        "name": "Inkling",
+        "name": "Inkling (Together AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -69075,7 +69271,7 @@
             "text"
           ]
         },
-        "name": "Inkling Small",
+        "name": "Inkling Small (Together AI)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -69125,7 +69321,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana",
+        "name": "Nano Banana (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [],
@@ -69165,7 +69361,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3 Flash Preview",
+        "name": "Gemini 3 Flash Preview (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69213,7 +69409,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana Pro",
+        "name": "Nano Banana Pro (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69255,7 +69451,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana 2",
+        "name": "Nano Banana 2 (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69303,7 +69499,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.1 Flash Lite",
+        "name": "Gemini 3.1 Flash Lite (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69347,7 +69543,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana 2 Lite",
+        "name": "Nano Banana 2 Lite (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69395,7 +69591,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.1 Flash Lite (EU)",
+        "name": "Gemini 3.1 Flash Lite (Vertex AI, EU)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69445,7 +69641,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.1 Flash Lite (US)",
+        "name": "Gemini 3.1 Flash Lite (Vertex AI, US)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69513,7 +69709,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.1 Pro Preview",
+        "name": "Gemini 3.1 Pro Preview (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69562,7 +69758,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.5 Flash",
+        "name": "Gemini 3.5 Flash (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69612,7 +69808,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.5 Flash Lite",
+        "name": "Gemini 3.5 Flash Lite (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69662,7 +69858,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.5 Flash Lite (EU)",
+        "name": "Gemini 3.5 Flash Lite (Vertex AI, EU)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69712,7 +69908,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.5 Flash Lite (US)",
+        "name": "Gemini 3.5 Flash Lite (Vertex AI, US)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69762,7 +69958,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.5 Flash (EU)",
+        "name": "Gemini 3.5 Flash (Vertex AI, EU)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69812,7 +70008,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.5 Flash (US)",
+        "name": "Gemini 3.5 Flash (Vertex AI, US)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69862,7 +70058,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.6 Flash",
+        "name": "Gemini 3.6 Flash (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69912,7 +70108,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.6 Flash (EU)",
+        "name": "Gemini 3.6 Flash (Vertex AI, EU)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -69962,7 +70158,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.6 Flash (US)",
+        "name": "Gemini 3.6 Flash (Vertex AI, US)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70012,7 +70208,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.7 Flash",
+        "name": "Gemini 3.7 Flash (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70061,7 +70257,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.7 Flash (EU)",
+        "name": "Gemini 3.7 Flash (Vertex AI, EU)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70110,7 +70306,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.7 Flash (US)",
+        "name": "Gemini 3.7 Flash (Vertex AI, US)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70158,7 +70354,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.8 Flash",
+        "name": "Gemini 3.8 Flash (Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70206,7 +70402,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.8 Flash (EU)",
+        "name": "Gemini 3.8 Flash (Vertex AI, EU)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70254,7 +70450,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.8 Flash (US)",
+        "name": "Gemini 3.8 Flash (Vertex AI, US)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70302,7 +70498,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.8 Flash",
+        "name": "Gemini Flash Latest (Gemini 3.8 Flash, Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70369,7 +70565,7 @@
             "text"
           ]
         },
-        "name": "Gemini 3.1 Pro Preview",
+        "name": "Gemini Pro Latest (Gemini 3.1 Pro Preview, Vertex AI)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -70756,7 +70952,7 @@
             "text"
           ]
         },
-        "name": "Grok 4.6",
+        "name": "Grok Latest (Grok 4.6)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -74892,7 +75088,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana Pro",
+        "name": "Nano Banana Pro Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [],
@@ -74926,7 +75122,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana 2",
+        "name": "Nano Banana 2 Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -79960,6 +80156,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -80689,7 +80886,19 @@
         "name": "Agentic Chat (GPT-5.6 Luna)",
         "open_weights": false,
         "reasoning": true,
-        "reasoning_options": [],
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
         "release_date": "2026-07-09",
         "structured_output": true,
         "temperature": false,
@@ -80726,7 +80935,19 @@
         "name": "Agentic Chat (GPT-5.6 Sol)",
         "open_weights": false,
         "reasoning": true,
-        "reasoning_options": [],
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
         "release_date": "2026-07-09",
         "structured_output": true,
         "temperature": false,
@@ -80763,7 +80984,19 @@
         "name": "Agentic Chat (GPT-5.6 Terra)",
         "open_weights": false,
         "reasoning": true,
-        "reasoning_options": [],
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
         "release_date": "2026-07-09",
         "structured_output": true,
         "temperature": false,
@@ -81007,7 +81240,18 @@
         "name": "Agentic Chat (Claude Opus 4.8)",
         "open_weights": false,
         "reasoning": true,
-        "reasoning_options": [],
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
         "release_date": "2026-05-28",
         "temperature": false,
         "tool_call": true
@@ -108048,7 +108292,7 @@
         "last_updated": "2026-07-31",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -108632,7 +108876,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana Pro",
+        "name": "Nano Banana Pro Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -108718,7 +108962,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana 2",
+        "name": "Nano Banana 2 Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -114579,6 +114823,7 @@
         "description": "GPT-6 Astra is OpenAI's flagship model for demanding end-to-end work. It is suited for advanced analysis, software engineering, deep research, scientific work, and document creation, with particular strengths in long-horizon...",
         "family": "gpt-astra",
         "id": "openai/gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -116507,8 +116752,8 @@
         "knowledge": "2025-04",
         "last_updated": "2025-09",
         "limit": {
-          "context": 131072,
-          "output": 32768
+          "context": 262144,
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -116912,7 +117157,7 @@
         "last_updated": "2026-02-15",
         "limit": {
           "context": 262144,
-          "output": 235929
+          "output": 65536
         },
         "modalities": {
           "input": [
@@ -119456,9 +119701,9 @@
       "z-ai/glm-4.6": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.1,
-          "input": 0.5,
-          "output": 2
+          "cache_read": 0.08,
+          "input": 0.43,
+          "output": 1.75
         },
         "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
         "family": "glm",
@@ -119466,8 +119711,8 @@
         "knowledge": "2025-04",
         "last_updated": "2025-09-30",
         "limit": {
-          "context": 202752,
-          "output": 131072
+          "context": 198000,
+          "output": 16384
         },
         "modalities": {
           "input": [
@@ -119793,7 +120038,7 @@
         "last_updated": "2026-08-14",
         "limit": {
           "context": 1048576,
-          "output": 262144
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -120093,9 +120338,9 @@
       "~deepseek/deepseek-v4-flash-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.009996,
-          "input": 0.04998,
-          "output": 0.09996
+          "cache_read": 0.013,
+          "input": 0.05,
+          "output": 0.16
         },
         "description": "This model always redirects to the latest model in the DeepSeek V4 Flash family.",
         "family": "deepseek",
@@ -120103,7 +120348,7 @@
         "last_updated": "2026-08-01",
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 393216
         },
         "modalities": {
           "input": [
@@ -133143,6 +133388,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "azure/gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -135029,57 +135275,6 @@
         "release_date": "2026-07-06",
         "structured_output": true,
         "temperature": true,
-        "tool_call": true
-      },
-      "deepinfra/kimi-k2.5": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.07,
-          "input": 0.45,
-          "output": 2.25
-        },
-        "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
-        "family": "kimi-k2",
-        "id": "deepinfra/kimi-k2.5",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2025-01",
-        "last_updated": "2026-01",
-        "limit": {
-          "context": 256000,
-          "output": 131072
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2.5 (DeepInfra)",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "minimal",
-              "low",
-              "medium",
-              "high",
-              "xhigh",
-              "max"
-            ]
-          }
-        ],
-        "release_date": "2026-01",
-        "structured_output": false,
-        "temperature": false,
         "tool_call": true
       },
       "deepinfra/ling-3.0-flash": {
@@ -151896,6 +152091,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "openai/gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -158233,211 +158429,6 @@
     ],
     "id": "moonshotai",
     "models": {
-      "kimi-k2-0711-preview": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.15,
-          "input": 0.6,
-          "output": 2.5
-        },
-        "description": "Kimi model for long-context chat, coding, and agentic reasoning",
-        "family": "kimi-k2",
-        "id": "kimi-k2-0711-preview",
-        "knowledge": "2024-10",
-        "last_updated": "2025-07-14",
-        "limit": {
-          "context": 131072,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 0711",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-07-14",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2-0905-preview": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.15,
-          "input": 0.6,
-          "output": 2.5
-        },
-        "description": "Kimi model for long-context chat, coding, and agentic reasoning",
-        "family": "kimi-k2",
-        "id": "kimi-k2-0905-preview",
-        "knowledge": "2024-10",
-        "last_updated": "2025-09-05",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 0905",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-09-05",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2-thinking": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.15,
-          "input": 0.6,
-          "output": 2.5
-        },
-        "description": "Thinking Kimi model for slower research passes, planning, and hard technical questions",
-        "family": "kimi-thinking",
-        "id": "kimi-k2-thinking",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2024-08",
-        "last_updated": "2025-11-06",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 Thinking",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "release_date": "2025-11-06",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2-thinking-turbo": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.15,
-          "input": 1.15,
-          "output": 8
-        },
-        "description": "Kimi reasoning model for long-horizon research, planning, and tool use",
-        "family": "kimi-thinking",
-        "id": "kimi-k2-thinking-turbo",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2024-08",
-        "last_updated": "2025-11-06",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 Thinking Turbo",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "release_date": "2025-11-06",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2-turbo-preview": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.6,
-          "input": 2.4,
-          "output": 10
-        },
-        "description": "Fast Kimi model for responsive chat, coding help, and agent loops",
-        "family": "kimi-k2",
-        "id": "kimi-k2-turbo-preview",
-        "knowledge": "2024-10",
-        "last_updated": "2025-09-05",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 Turbo",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-09-05",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2.5": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.1,
-          "input": 0.6,
-          "output": 3
-        },
-        "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
-        "family": "kimi-k2",
-        "id": "kimi-k2.5",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2025-01",
-        "last_updated": "2026-01",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2.5",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
-        "release_date": "2026-01",
-        "structured_output": true,
-        "temperature": false,
-        "tool_call": true
-      },
       "kimi-k2.6": {
         "attachment": true,
         "cost": {
@@ -158617,211 +158608,6 @@
     ],
     "id": "moonshotai-cn",
     "models": {
-      "kimi-k2-0711-preview": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.15,
-          "input": 0.6,
-          "output": 2.5
-        },
-        "description": "Kimi model for long-context chat, coding, and agentic reasoning",
-        "family": "kimi-k2",
-        "id": "kimi-k2-0711-preview",
-        "knowledge": "2024-10",
-        "last_updated": "2025-07-14",
-        "limit": {
-          "context": 131072,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 0711",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-07-14",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2-0905-preview": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.15,
-          "input": 0.6,
-          "output": 2.5
-        },
-        "description": "Kimi model for long-context chat, coding, and agentic reasoning",
-        "family": "kimi-k2",
-        "id": "kimi-k2-0905-preview",
-        "knowledge": "2024-10",
-        "last_updated": "2025-09-05",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 0905",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-09-05",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2-thinking": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.15,
-          "input": 0.6,
-          "output": 2.5
-        },
-        "description": "Thinking Kimi model for slower research passes, planning, and hard technical questions",
-        "family": "kimi-thinking",
-        "id": "kimi-k2-thinking",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2024-08",
-        "last_updated": "2025-11-06",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 Thinking",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "release_date": "2025-11-06",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2-thinking-turbo": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.15,
-          "input": 1.15,
-          "output": 8
-        },
-        "description": "Kimi reasoning model for long-horizon research, planning, and tool use",
-        "family": "kimi-thinking",
-        "id": "kimi-k2-thinking-turbo",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2024-08",
-        "last_updated": "2025-11-06",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 Thinking Turbo",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "release_date": "2025-11-06",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2-turbo-preview": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.6,
-          "input": 2.4,
-          "output": 10
-        },
-        "description": "Fast Kimi model for responsive chat, coding help, and agent loops",
-        "family": "kimi-k2",
-        "id": "kimi-k2-turbo-preview",
-        "knowledge": "2024-10",
-        "last_updated": "2025-09-05",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2 Turbo",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-09-05",
-        "temperature": true,
-        "tool_call": true
-      },
-      "kimi-k2.5": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.1,
-          "input": 0.6,
-          "output": 3
-        },
-        "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
-        "family": "kimi-k2",
-        "id": "kimi-k2.5",
-        "interleaved": {
-          "field": "reasoning_content"
-        },
-        "knowledge": "2025-01",
-        "last_updated": "2026-01",
-        "limit": {
-          "context": 262144,
-          "output": 262144
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Kimi K2.5",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
-        "release_date": "2026-01",
-        "structured_output": true,
-        "temperature": false,
-        "tool_call": true
-      },
       "kimi-k2.6": {
         "attachment": true,
         "cost": {
@@ -161866,6 +161652,38 @@
         "structured_output": false,
         "tool_call": false
       },
+      "TheDrummer/Artemis-v1.1": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.05,
+          "input": 0.1,
+          "output": 0.45
+        },
+        "description": "TheDrummer's Artemis v1.1 is a Gemma 4 31B fine-tune for creative writing, expressive dialogue, and roleplay, with optional thinking and a 262K context window.",
+        "id": "TheDrummer/Artemis-v1.1",
+        "last_updated": "2026-09-06",
+        "limit": {
+          "context": 262144,
+          "input": 262144,
+          "output": 32768
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "TheDrummer/Artemis v1.1",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-09-06",
+        "structured_output": false,
+        "tool_call": true
+      },
       "TheDrummer/Cydonia-24B-v2": {
         "attachment": false,
         "cost": {
@@ -162611,7 +162429,10 @@
             "type": "effort",
             "values": [
               "none",
-              "high"
+              "low",
+              "medium",
+              "high",
+              "max"
             ]
           }
         ],
@@ -173529,9 +173350,9 @@
         "id": "openai/gpt-5.1-2025-11-13",
         "last_updated": "2025-11-13",
         "limit": {
-          "context": 1000000,
-          "input": 1000000,
-          "output": 32768
+          "context": 400000,
+          "input": 400000,
+          "output": 128000
         },
         "modalities": {
           "input": [
@@ -173847,8 +173668,8 @@
         "knowledge": "2025-08-31",
         "last_updated": "2026-03-05",
         "limit": {
-          "context": 922000,
-          "input": 922000,
+          "context": 1050000,
+          "input": 1050000,
           "output": 128000
         },
         "modalities": {
@@ -173988,8 +173809,8 @@
         "knowledge": "2025-12-01",
         "last_updated": "2026-04-23",
         "limit": {
-          "context": 1000000,
-          "input": 1000000,
+          "context": 1050000,
+          "input": 1050000,
           "output": 128000
         },
         "modalities": {
@@ -174327,6 +174148,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "openai/gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -183021,6 +182843,53 @@
         "temperature": false,
         "tool_call": true
       },
+      "claude-fable-5-1": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.25,
+          "cache_write": 12.5,
+          "input": 10,
+          "output": 50
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "claude-fable-5-1",
+        "knowledge": "2026-06",
+        "last_updated": "2026-09-01",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.1",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-09-01",
+        "structured_output": false,
+        "temperature": false,
+        "tool_call": true
+      },
       "claude-haiku-4-5": {
         "attachment": true,
         "cost": {
@@ -183869,6 +183738,50 @@
         "temperature": true,
         "tool_call": true
       },
+      "glm-5-3-flash": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.03,
+          "input": 0.15,
+          "output": 0.5
+        },
+        "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+        "family": "glm",
+        "id": "glm-5-3-flash",
+        "last_updated": "2026-08-26",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.3 Flash",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-08-26",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "gpt-5": {
         "attachment": true,
         "cost": {
@@ -184703,6 +184616,78 @@
         "temperature": false,
         "tool_call": true
       },
+      "gpt-6-astra": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 1,
+          "cache_write": 12.5,
+          "context_over_200k": {
+            "cache_read": 2,
+            "cache_write": 25,
+            "input": 20,
+            "output": 75
+          },
+          "input": 10,
+          "output": 50,
+          "tiers": [
+            {
+              "cache_read": 2,
+              "cache_write": 25,
+              "input": 20,
+              "output": 75,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+        "family": "gpt-astra",
+        "id": "gpt-6-astra",
+        "knowledge": "2026-04-30",
+        "last_updated": "2026-09-04",
+        "limit": {
+          "context": 1050000,
+          "input": 922000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text",
+            "image"
+          ]
+        },
+        "name": "GPT-6 Astra",
+        "open_weights": false,
+        "provider": {
+          "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+          "npm": "@ai-sdk/openai",
+          "shape": "responses"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-09-04",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "gpt-oss-120b": {
         "attachment": false,
         "cost": {
@@ -184779,6 +184764,50 @@
           }
         ],
         "release_date": "2025-08-05",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "grok-4-6": {
+        "attachment": true,
+        "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
+        "family": "grok",
+        "id": "grok-4-6",
+        "knowledge": "2026-02-01",
+        "last_updated": "2026-08-12",
+        "limit": {
+          "context": 500000,
+          "output": 524288
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Grok 4.6",
+        "open_weights": false,
+        "provider": {
+          "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+          "npm": "@ai-sdk/openai",
+          "shape": "responses"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-08-12",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -196853,6 +196882,58 @@
         "temperature": false,
         "tool_call": true
       },
+      "openai/gpt-6-astra": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 1,
+          "cache_write": 12.5,
+          "input": 10,
+          "output": 50
+        },
+        "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+        "family": "gpt-astra",
+        "id": "openai/gpt-6-astra",
+        "knowledge": "2026-04-30",
+        "last_updated": "2026-09-04",
+        "limit": {
+          "context": 1050000,
+          "input": 922000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GPT-6 Astra",
+        "open_weights": false,
+        "provider": {
+          "api": "https://api.ofox.ai/v1",
+          "npm": "@ai-sdk/openai"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-09-04",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "volcengine/doubao-seed-1-6": {
         "attachment": false,
         "cost": {
@@ -200321,6 +200402,7 @@
         },
         "family": "gpt-astra",
         "id": "gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -203706,6 +203788,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -209303,9 +209386,9 @@
       "deepseek/deepseek-v4-flash": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.01638,
-          "input": 0.0819,
-          "output": 0.1638
+          "cache_read": 0.017721,
+          "input": 0.088606,
+          "output": 0.177212
         },
         "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
         "family": "deepseek-flash",
@@ -209350,9 +209433,9 @@
       "deepseek/deepseek-v4-flash-0731": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.016,
-          "input": 0.065,
-          "output": 0.18
+          "cache_read": 0.028,
+          "input": 0.14,
+          "output": 0.28
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -209361,7 +209444,7 @@
         "last_updated": "2026-07-31",
         "limit": {
           "context": 1310720,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -209440,9 +209523,9 @@
       "deepseek/deepseek-v4-pro": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.062365,
-          "input": 0.748374,
-          "output": 1.496748
+          "cache_read": 0.086855,
+          "input": 1.04226,
+          "output": 2.08452
         },
         "description": "Open MoE flagship with million-token context for coding and long agent runs",
         "family": "deepseek-thinking",
@@ -209487,9 +209570,9 @@
       "deepseek/deepseek-v4-pro-0813": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.037356,
-          "input": 1.12068,
-          "output": 3.36204
+          "cache_read": 0.03718,
+          "input": 1.1154,
+          "output": 3.3462
         },
         "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
         "family": "deepseek-thinking",
@@ -209986,7 +210069,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana Pro",
+        "name": "Nano Banana Pro Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [],
@@ -210065,7 +210148,7 @@
             "image"
           ]
         },
-        "name": "Nano Banana 2",
+        "name": "Nano Banana 2 Preview",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -215929,6 +216012,7 @@
         "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
         "family": "gpt-astra",
         "id": "openai/gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -217930,7 +218014,7 @@
         "last_updated": "2025-09",
         "limit": {
           "context": 262144,
-          "output": 32768
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -218289,9 +218373,8 @@
       "qwen/qwen3.5-397b-a17b": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.225,
-          "input": 0.55,
-          "output": 3.5
+          "input": 0.39,
+          "output": 2.34
         },
         "description": "Large open Qwen multimodal MoE for visual agents and long technical tasks",
         "family": "qwen",
@@ -218299,7 +218382,7 @@
         "last_updated": "2026-02-15",
         "limit": {
           "context": 262144,
-          "output": 235929
+          "output": 65536
         },
         "modalities": {
           "input": [
@@ -220661,9 +220744,9 @@
       "z-ai/glm-4.6": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.1,
-          "input": 0.5,
-          "output": 2
+          "cache_read": 0.08,
+          "input": 0.43,
+          "output": 1.75
         },
         "description": "Late GLM-4 workhorse for coding agents, reasoning, and structured tasks",
         "family": "glm",
@@ -220672,7 +220755,7 @@
         "last_updated": "2025-09-30",
         "limit": {
           "context": 204800,
-          "output": 131072
+          "output": 16384
         },
         "modalities": {
           "input": [
@@ -220977,52 +221060,10 @@
         "temperature": true,
         "tool_call": true
       },
-      "z-ai/glm-5.2:free": {
-        "attachment": false,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
-        "family": "glm",
-        "id": "z-ai/glm-5.2:free",
-        "last_updated": "2026-06-13",
-        "limit": {
-          "context": 256000,
-          "output": 230400
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "GLM 5.2 (free)",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          },
-          {
-            "type": "effort",
-            "values": [
-              "high",
-              "xhigh"
-            ]
-          }
-        ],
-        "release_date": "2026-06-13",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "z-ai/glm-5.3": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.14,
+          "cache_read": 0.26,
           "input": 1.4,
           "output": 4.4
         },
@@ -221032,7 +221073,7 @@
         "last_updated": "2026-08-14",
         "limit": {
           "context": 1310720,
-          "output": 262144
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -221328,9 +221369,9 @@
       "~deepseek/deepseek-v4-flash-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.009996,
-          "input": 0.04998,
-          "output": 0.09996
+          "cache_read": 0.013,
+          "input": 0.05,
+          "output": 0.16
         },
         "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
         "family": "deepseek",
@@ -221338,7 +221379,7 @@
         "last_updated": "2026-08-01",
         "limit": {
           "context": 1310720,
-          "output": 131072
+          "output": 393216
         },
         "modalities": {
           "input": [
@@ -221702,9 +221743,9 @@
       "~z-ai/glm-flash-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.015,
-          "input": 0.075,
-          "output": 0.25
+          "cache_read": 0.01425,
+          "input": 0.07125,
+          "output": 0.2375
         },
         "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
         "family": "glm-flash",
@@ -221712,7 +221753,7 @@
         "last_updated": "2026-08-27",
         "limit": {
           "context": 1310720,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -255971,6 +256012,52 @@
         "temperature": true,
         "tool_call": true
       },
+      "deepseek-v4-pro": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0,
+          "input": 0,
+          "output": 0
+        },
+        "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
+        "family": "deepseek-thinking",
+        "id": "deepseek-v4-pro",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-08-22",
+        "limit": {
+          "context": 1048576,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Pro",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          },
+          {
+            "type": "effort",
+            "values": [
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-08-12",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "glm-5.2": {
         "attachment": false,
         "cost": {
@@ -256012,6 +256099,51 @@
         "release_date": "2026-06-13",
         "structured_output": true,
         "temperature": true,
+        "tool_call": true
+      },
+      "kimi-k3": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0,
+          "input": 0,
+          "output": 0
+        },
+        "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+        "family": "kimi-k3",
+        "id": "kimi-k3",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-07-16",
+        "limit": {
+          "context": 1048576,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K3",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-07-16",
+        "structured_output": true,
+        "temperature": false,
         "tool_call": true
       },
       "sensenova-6.8-flash-lite": {
@@ -264531,17 +264663,7 @@
         },
         "name": "gpt-oss-safeguard-120b",
         "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
+        "reasoning": false,
         "release_date": "2025-10-29",
         "structured_output": true,
         "temperature": true,
@@ -272287,6 +272409,7 @@
         "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
         "family": "gpt",
         "id": "openai-gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -279681,36 +279804,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "minimax/minimax-m2.7-free": {
-        "attachment": false,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "description": "Open MiniMax flagship for coding agents, office automation, and complex environments",
-        "family": "minimax",
-        "id": "minimax/minimax-m2.7-free",
-        "last_updated": "2026-03-18",
-        "limit": {
-          "context": 196608,
-          "output": 196608
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Minimax M2.7 (Free)",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [],
-        "release_date": "2026-03-18",
-        "temperature": true,
-        "tool_call": true
-      },
       "minimax/minimax-m2.7-highspeed": {
         "attachment": true,
         "cost": {
@@ -279769,42 +279862,6 @@
           ]
         },
         "name": "MiniMax M3",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
-        "release_date": "2026-06-01",
-        "temperature": true,
-        "tool_call": true
-      },
-      "minimax/minimax-m3-free": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0,
-          "input": 0,
-          "output": 0
-        },
-        "description": "MiniMax multimodal model for long-context coding, perception, and agent planning",
-        "family": "minimax",
-        "id": "minimax/minimax-m3-free",
-        "last_updated": "2026-06-01",
-        "limit": {
-          "context": 1048576,
-          "output": 1048576
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "MiniMax M3 (Free)",
         "open_weights": true,
         "reasoning": true,
         "reasoning_options": [
@@ -282813,6 +282870,7 @@
         "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
         "family": "gpt-astra",
         "id": "openai/gpt-6-astra",
+        "knowledge": "2026-04-30",
         "last_updated": "2026-09-04",
         "limit": {
           "context": 1050000,
@@ -287371,6 +287429,72 @@
         "release_date": "2026-07-09",
         "structured_output": true,
         "temperature": true,
+        "tool_call": true
+      },
+      "gpt-6-astra": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 1,
+          "cache_write": 12.5,
+          "context_over_200k": {
+            "cache_read": 2,
+            "cache_write": 25,
+            "input": 20,
+            "output": 75
+          },
+          "input": 10,
+          "output": 50,
+          "tiers": [
+            {
+              "cache_read": 2,
+              "cache_write": 25,
+              "input": 20,
+              "output": 75,
+              "tier": {
+                "size": 272000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+        "family": "gpt-astra",
+        "id": "gpt-6-astra",
+        "knowledge": "2026-04-30",
+        "last_updated": "2026-09-04",
+        "limit": {
+          "context": 1050000,
+          "input": 922000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GPT-6 Astra",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-09-04",
+        "structured_output": true,
+        "temperature": false,
         "tool_call": true
       },
       "kimi-k3": {
