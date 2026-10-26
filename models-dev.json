@@ -37681,6 +37681,54 @@
         "temperature": false,
         "tool_call": true
       },
+      "au.anthropic.claude-sonnet-5-5": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-sonnet-5-5",
+        "cost": {
+          "cache_read": 0.11,
+          "cache_write": 2.75,
+          "input": 2.2,
+          "output": 11
+        },
+        "description": "Fast Claude model for everyday coding, agents, and knowledge work",
+        "family": "claude-sonnet",
+        "id": "au.anthropic.claude-sonnet-5-5",
+        "knowledge": "2026-06",
+        "last_updated": "2026-09-28",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Sonnet 5.5 (AU)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-09-28",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "ca.amazon.nova-lite-v1:0": {
         "attachment": true,
         "canonical_model_id": "amazon/nova-lite",
@@ -61274,6 +61322,31 @@
         "temperature": true,
         "tool_call": true
       },
+      "Qwen/Qwen3.8-Max-0902": {
+        "attachment": false,
+        "description": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
+        "family": "qwen3.8-max",
+        "id": "Qwen/Qwen3.8-Max-0902",
+        "last_updated": "2026-10-25",
+        "limit": {
+          "context": 0,
+          "output": 0
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.8 Max 0902",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2026-10-20",
+        "temperature": true,
+        "tool_call": false
+      },
       "deepseek-ai/DeepSeek-V3.2-TEE": {
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v3.2",
@@ -61352,6 +61425,31 @@
         "structured_output": true,
         "temperature": true,
         "tool_call": true
+      },
+      "deepseek-ai/DeepSeek-V4-Pro-0813": {
+        "attachment": false,
+        "description": "Flagship DeepSeek model for coding, reasoning, and agentic work",
+        "family": "deepseek",
+        "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+        "last_updated": "2026-10-25",
+        "limit": {
+          "context": 0,
+          "output": 0
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Pro 0813",
+        "open_weights": true,
+        "reasoning": false,
+        "release_date": "2026-10-20",
+        "temperature": true,
+        "tool_call": false
       },
       "google/gemma-4-31B-turbo-TEE": {
         "attachment": true,
@@ -117448,6 +117546,56 @@
         "temperature": true,
         "tool_call": true
       },
+      "duo-chat-haiku-5-5": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-haiku-5-5",
+        "cost": {
+          "cache_read": 0,
+          "cache_write": 0,
+          "input": 0,
+          "output": 0
+        },
+        "description": "Fast Claude model for responsive assistance, classification, and lightweight agents",
+        "family": "claude-haiku",
+        "id": "duo-chat-haiku-5-5",
+        "knowledge": "2026-06",
+        "last_updated": "2026-10-07",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Agentic Chat (Claude Haiku 5.5)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          },
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-10-07",
+        "temperature": false,
+        "tool_call": true
+      },
       "duo-chat-opus-4-5": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-opus-4-5-20251101",
@@ -137414,7 +137562,7 @@
           "cache_read": 0.027,
           "cache_write": 0,
           "input": 0.11,
-          "output": 0.3666
+          "output": 0.4125
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -137457,9 +137605,9 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k2.6",
         "cost": {
-          "cache_read": 0.169,
+          "cache_read": 0.126,
           "cache_write": 0,
-          "input": 0.6026,
+          "input": 0.603,
           "output": 3.2
         },
         "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
@@ -137538,7 +137686,7 @@
           "cache_read": 0.16,
           "cache_write": 0,
           "input": 0.99,
-          "output": 1.188
+          "output": 2.88
         },
         "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
         "family": "glm",
@@ -137626,10 +137774,10 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.3-flash",
         "cost": {
-          "cache_read": 0.075,
+          "cache_read": 0.05,
           "cache_write": 0,
-          "input": 0.2,
-          "output": 0.75
+          "input": 0.15,
+          "output": 0.55
         },
         "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
         "family": "glm-flash",
@@ -147931,7 +148079,7 @@
         "last_updated": "2026-07-31",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -149547,7 +149695,7 @@
         "last_updated": "2026-04-02",
         "limit": {
           "context": 262144,
-          "output": 16384
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -153508,7 +153656,7 @@
         "last_updated": "2025-04-14",
         "limit": {
           "context": 1047576,
-          "output": 32768
+          "output": 942818
         },
         "modalities": {
           "input": [
@@ -157659,7 +157807,7 @@
         "last_updated": "2026-04-22",
         "limit": {
           "context": 262144,
-          "output": 65536
+          "output": 81920
         },
         "modalities": {
           "input": [
@@ -161023,8 +161171,8 @@
         "id": "z-ai/glm-5.3-flash",
         "last_updated": "2026-08-26",
         "limit": {
-          "context": 1048576,
-          "output": 131072
+          "context": 1048575,
+          "output": 943717
         },
         "modalities": {
           "input": [
@@ -161413,8 +161561,8 @@
       "~deepseek/deepseek-pro-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.12,
-          "input": 0.1188,
+          "cache_read": 0.26,
+          "input": 0.2565,
           "output": 8
         },
         "description": "This model always redirects to the latest model in the DeepSeek Pro family.",
@@ -161456,8 +161604,8 @@
         "attachment": false,
         "cost": {
           "cache_read": 0.028,
-          "input": 0.0422,
-          "output": 0.1694
+          "input": 0.0475,
+          "output": 0.1568
         },
         "description": "This model always redirects to the latest model in the DeepSeek V4 Flash family.",
         "family": "deepseek",
@@ -161591,9 +161739,9 @@
       "~moonshotai/kimi-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.19,
-          "input": 0.19,
-          "output": 8.94
+          "cache_read": 0.142,
+          "input": 0.152,
+          "output": 20
         },
         "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
         "family": "kimi",
@@ -161941,9 +162089,9 @@
       "~z-ai/glm-flash-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.043,
-          "input": 0.044,
-          "output": 0.2
+          "cache_read": 0.03,
+          "input": 0.0413,
+          "output": 0.0758
         },
         "description": "This model always redirects to the latest model in the GLM Flash family.",
         "family": "glm-flash",
@@ -161984,9 +162132,9 @@
       "~z-ai/glm-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.0703,
-          "input": 0.0703,
-          "output": 4.3843
+          "cache_read": 0.0689,
+          "input": 0.0699,
+          "output": 1.4
         },
         "description": "This model always redirects to the latest GLM model from Z.ai.",
         "family": "glm",
@@ -161994,7 +162142,7 @@
         "last_updated": "2026-08-19",
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -209113,8 +209261,386 @@
         "temperature": false,
         "tool_call": false
       },
+      "morph-dsv41flash": {
+        "attachment": true,
+        "canonical_model_id": "deepseek/deepseek-v4.1-flash",
+        "cost": {
+          "cache_read": 0.008,
+          "input": 0.12,
+          "output": 0.8
+        },
+        "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+        "family": "deepseek-flash",
+        "id": "morph-dsv41flash",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-05",
+        "last_updated": "2026-09-10",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4.1 Flash",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-09-10",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "morph-dsv41flash-1017": {
+        "attachment": true,
+        "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+        "cost": {
+          "cache_read": 0.008,
+          "input": 0.12,
+          "output": 0.8
+        },
+        "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+        "family": "deepseek-flash",
+        "id": "morph-dsv41flash-1017",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-05",
+        "last_updated": "2026-10-17",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4.1 Flash 1017",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-10-17",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "morph-dsv4flash": {
+        "attachment": false,
+        "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
+        "cost": {
+          "cache_read": 0.0359375,
+          "input": 0.141953125,
+          "output": 0.399625
+        },
+        "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
+        "family": "deepseek-flash",
+        "id": "morph-dsv4flash",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "knowledge": "2025-05",
+        "last_updated": "2026-07-31",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4 Flash 0731",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-07-31",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "morph-glm52-744b": {
+        "attachment": false,
+        "canonical_model_id": "zhipuai/glm-5.2",
+        "cost": {
+          "cache_read": 0.1955,
+          "input": 1.19,
+          "output": 6
+        },
+        "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
+        "family": "glm",
+        "id": "morph-glm52-744b",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-06-13",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.2",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-06-13",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "morph-glm53-744b": {
+        "attachment": false,
+        "canonical_model_id": "zhipuai/glm-5.3",
+        "cost": {
+          "cache_read": 0.1955,
+          "input": 1.19,
+          "output": 6
+        },
+        "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+        "family": "glm",
+        "id": "morph-glm53-744b",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-08-14",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.3",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-08-14",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "morph-glm53flash": {
+        "attachment": true,
+        "canonical_model_id": "zhipuai/glm-5.3-flash",
+        "cost": {
+          "cache_read": 0.04,
+          "input": 0.2,
+          "output": 0.7
+        },
+        "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+        "family": "glm-flash",
+        "id": "morph-glm53flash",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-08-26",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "GLM-5.3-Flash",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-08-26",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "morph-kimik3": {
+        "attachment": true,
+        "canonical_model_id": "moonshotai/kimi-k3",
+        "cost": {
+          "cache_read": 0.29,
+          "input": 2.5,
+          "output": 14
+        },
+        "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+        "family": "kimi-k3",
+        "id": "morph-kimik3",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-07-16",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K3",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-07-16",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "morph-kimik3-fast": {
+        "attachment": true,
+        "canonical_model_id": "moonshotai/kimi-k3",
+        "cost": {
+          "cache_read": 0.6,
+          "input": 6,
+          "output": 22.5
+        },
+        "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+        "family": "kimi-k3",
+        "id": "morph-kimik3-fast",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-07-16",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K3 Fast",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high"
+            ]
+          }
+        ],
+        "release_date": "2026-07-16",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "morph-v3-fast": {
         "attachment": false,
+        "canonical_model_id": "morph/morph-v3-fast",
         "cost": {
           "input": 0.8,
           "output": 1.2
@@ -209122,10 +209648,10 @@
         "description": "Efficient model for low-latency assistance, extraction, and routine automation",
         "family": "morph",
         "id": "morph-v3-fast",
-        "last_updated": "2024-08-15",
+        "last_updated": "2025-07-07",
         "limit": {
-          "context": 16000,
-          "output": 16000
+          "context": 262144,
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -209135,15 +209661,16 @@
             "text"
           ]
         },
-        "name": "Morph v3 Fast",
+        "name": "Morph V3 Fast",
         "open_weights": false,
         "reasoning": false,
-        "release_date": "2024-08-15",
-        "temperature": false,
+        "release_date": "2025-07-07",
+        "temperature": true,
         "tool_call": false
       },
       "morph-v3-large": {
         "attachment": false,
+        "canonical_model_id": "morph/morph-v3-large",
         "cost": {
           "input": 0.9,
           "output": 1.9
@@ -209151,10 +209678,10 @@
         "description": "Flagship model for demanding analysis, coding, and production agent workflows",
         "family": "morph",
         "id": "morph-v3-large",
-        "last_updated": "2024-08-15",
+        "last_updated": "2025-07-07",
         "limit": {
-          "context": 32000,
-          "output": 32000
+          "context": 262144,
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -209164,11 +209691,11 @@
             "text"
           ]
         },
-        "name": "Morph v3 Large",
+        "name": "Morph V3 Large",
         "open_weights": false,
         "reasoning": false,
-        "release_date": "2024-08-15",
-        "temperature": false,
+        "release_date": "2025-07-07",
+        "temperature": true,
         "tool_call": false
       }
     },
@@ -216687,9 +217214,9 @@
       "deepseek/deepseek-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.0042,
-          "input": 0.132,
-          "output": 0.396
+          "cache_read": 0.065,
+          "input": 0.45,
+          "output": 0.8
         },
         "description": "DeepSeek chat model for instruction following, coding, and analysis",
         "family": "deepseek",
@@ -216935,9 +217462,9 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
         "cost": {
-          "cache_read": 0.001414,
-          "input": 0.04444,
-          "output": 0.13332
+          "cache_read": 0.013,
+          "input": 0.05,
+          "output": 0.16
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -216980,9 +217507,9 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
         "cost": {
-          "cache_read": 0.001414,
-          "input": 0.04444,
-          "output": 0.13332
+          "cache_read": 0.013,
+          "input": 0.05,
+          "output": 0.16
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -217201,9 +217728,9 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
         "cost": {
-          "cache_read": 0.0042,
-          "input": 0.132,
-          "output": 0.396
+          "cache_read": 0.065,
+          "input": 0.45,
+          "output": 0.8
         },
         "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
         "family": "deepseek-thinking",
@@ -217245,9 +217772,9 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
         "cost": {
-          "cache_read": 0.0042,
-          "input": 0.132,
-          "output": 0.396
+          "cache_read": 0.065,
+          "input": 0.45,
+          "output": 0.8
         },
         "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
         "family": "deepseek-thinking",
@@ -217333,9 +217860,9 @@
         "attachment": true,
         "canonical_model_id": "deepseek/deepseek-v4.1-flash",
         "cost": {
-          "cache_read": 0.001074,
-          "input": 0.0537,
-          "output": 0.2148
+          "cache_read": 0.006,
+          "input": 0.09,
+          "output": 0.25
         },
         "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
         "family": "deepseek-flash",
@@ -217555,9 +218082,9 @@
         "attachment": true,
         "canonical_model_id": "deepseek/deepseek-v4.1-flash",
         "cost": {
-          "cache_read": 0.001074,
-          "input": 0.0537,
-          "output": 0.2148
+          "cache_read": 0.006,
+          "input": 0.09,
+          "output": 0.25
         },
         "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
         "family": "deepseek-flash",
@@ -224174,9 +224701,9 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k2.6",
         "cost": {
-          "cache_read": 0.07568,
-          "input": 0.44935,
-          "output": 1.892
+          "cache_read": 0.045,
+          "input": 0.45,
+          "output": 1.95
         },
         "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
         "family": "kimi-k2",
@@ -224209,9 +224736,9 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k2.6",
         "cost": {
-          "cache_read": 0.07568,
-          "input": 0.44935,
-          "output": 1.892
+          "cache_read": 0.045,
+          "input": 0.45,
+          "output": 1.95
         },
         "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
         "family": "kimi-k2",
@@ -224452,8 +224979,9 @@
         "attachment": true,
         "cost": {
           "cache_read": 0.2,
-          "input": 1.2,
-          "output": 5.5
+          "cache_write": 2,
+          "input": 2,
+          "output": 10
         },
         "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
         "family": "kimi",
@@ -224475,7 +225003,7 @@
           ]
         },
         "name": "Kimi Latest",
-        "open_weights": true,
+        "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
           {
@@ -228653,8 +229181,8 @@
         "canonical_model_id": "alibaba/qwen3-32b",
         "cost": {
           "cache_read": 0.05,
-          "input": 0.1,
-          "output": 0.3
+          "input": 0.08,
+          "output": 0.24
         },
         "description": "Dense open Qwen model for self-hosted chat, reasoning, and coding",
         "family": "qwen",
@@ -233759,9 +234287,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-4.7",
         "cost": {
-          "cache_read": 0.11,
-          "input": 0.6,
-          "output": 2.2
+          "cache_read": 0.08008,
+          "input": 0.4004,
+          "output": 1.9292
         },
         "description": "GLM-4.7 is a next-gen GLM series text model with stronger reasoning, long-context chat, and reliable tool use. Routed directly via Z-AI (Zhipu).",
         "family": "glm",
@@ -233794,9 +234322,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-4.7",
         "cost": {
-          "cache_read": 0.11,
-          "input": 0.6,
-          "output": 2.2
+          "cache_read": 0.08008,
+          "input": 0.4004,
+          "output": 1.9292
         },
         "description": "GLM-4.7 original with extended thinking capabilities for complex reasoning.",
         "family": "glm",
@@ -234083,9 +234611,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.2",
         "cost": {
-          "cache_read": 0.0351,
-          "input": 0.189,
-          "output": 0.594
+          "cache_read": 0.078,
+          "input": 0.42,
+          "output": 1.32
         },
         "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
         "family": "glm",
@@ -234126,9 +234654,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.2",
         "cost": {
-          "cache_read": 0.0351,
-          "input": 0.189,
-          "output": 0.594
+          "cache_read": 0.078,
+          "input": 0.42,
+          "output": 1.32
         },
         "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
         "family": "glm",
@@ -269399,9 +269927,9 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
         "cost": {
-          "cache_read": 0.028,
-          "input": 0.0422,
-          "output": 0.1694
+          "cache_read": 0.014,
+          "input": 0.44,
+          "output": 1.32
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -269410,7 +269938,7 @@
         "last_updated": "2026-07-31",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -269487,9 +270015,9 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-pro",
         "cost": {
-          "cache_read": 0.0174,
-          "input": 0.2088,
-          "output": 0.4176
+          "cache_read": 0.079605,
+          "input": 0.95526,
+          "output": 1.91052
         },
         "description": "Open MoE flagship with million-token context for coding and long agent runs",
         "family": "deepseek-thinking",
@@ -271106,8 +271634,9 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-31b-it",
         "cost": {
-          "input": 0.2,
-          "output": 0.4
+          "cache_read": 0.1,
+          "input": 0.1,
+          "output": 0.34
         },
         "description": "Largest Gemma 4 instruction model for open, self-hosted chat and reasoning",
         "family": "gemma",
@@ -271116,7 +271645,7 @@
         "last_updated": "2026-04-02",
         "limit": {
           "context": 262144,
-          "output": 16384
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -273801,9 +274330,9 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k3",
         "cost": {
-          "cache_read": 0.21,
-          "input": 0.239,
-          "output": 10.8
+          "cache_read": 0.142,
+          "input": 0.152,
+          "output": 20
         },
         "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
         "family": "kimi-k3",
@@ -274824,7 +275353,7 @@
         "attachment": true,
         "canonical_model_id": "openai/gpt-4.1-nano",
         "cost": {
-          "cache_read": 0.025,
+          "cache_read": 0.03,
           "input": 0.1,
           "output": 0.4
         },
@@ -274835,7 +275364,7 @@
         "last_updated": "2025-04-14",
         "limit": {
           "context": 1047576,
-          "output": 32768
+          "output": 942818
         },
         "modalities": {
           "input": [
@@ -278922,8 +279451,8 @@
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.5-122b-a10b",
         "cost": {
-          "input": 0.4,
-          "output": 3.2
+          "input": 0.26,
+          "output": 2.08
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -279259,9 +279788,8 @@
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.6-27b",
         "cost": {
-          "cache_read": 0.025,
-          "input": 0.25,
-          "output": 2
+          "input": 0.32,
+          "output": 3.2
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -279269,7 +279797,7 @@
         "last_updated": "2026-04-22",
         "limit": {
           "context": 262144,
-          "output": 65536
+          "output": 81920
         },
         "modalities": {
           "input": [
@@ -282425,8 +282953,8 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.3",
         "cost": {
-          "cache_read": 0.078,
-          "input": 0.079,
+          "cache_read": 0.0689,
+          "input": 0.0699,
           "output": 1.4
         },
         "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
@@ -282467,9 +282995,9 @@
         "attachment": true,
         "canonical_model_id": "zhipuai/glm-5.3-flash",
         "cost": {
-          "cache_read": 0.043,
-          "input": 0.044,
-          "output": 0.2
+          "cache_read": 0.03,
+          "input": 0.15,
+          "output": 0.5
         },
         "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
         "family": "glm-flash",
@@ -282477,7 +283005,7 @@
         "last_updated": "2026-08-26",
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 943717
         },
         "modalities": {
           "input": [
@@ -282874,8 +283402,8 @@
       "~deepseek/deepseek-pro-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.12,
-          "input": 0.1188,
+          "cache_read": 0.26,
+          "input": 0.2565,
           "output": 8
         },
         "description": "Flagship DeepSeek model for coding, reasoning, and agentic work",
@@ -282917,8 +283445,8 @@
         "attachment": false,
         "cost": {
           "cache_read": 0.028,
-          "input": 0.0422,
-          "output": 0.1694
+          "input": 0.0475,
+          "output": 0.1568
         },
         "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
         "family": "deepseek",
@@ -283072,9 +283600,9 @@
       "~moonshotai/kimi-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.19,
-          "input": 0.19,
-          "output": 8.94
+          "cache_read": 0.142,
+          "input": 0.152,
+          "output": 20
         },
         "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
         "family": "kimi",
@@ -283514,9 +284042,9 @@
       "~z-ai/glm-flash-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.043,
-          "input": 0.044,
-          "output": 0.2
+          "cache_read": 0.03,
+          "input": 0.0413,
+          "output": 0.0758
         },
         "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
         "family": "glm-flash",
@@ -283557,9 +284085,9 @@
       "~z-ai/glm-latest": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.0703,
-          "input": 0.0703,
-          "output": 4.3843
+          "cache_read": 0.0689,
+          "input": 0.0699,
+          "output": 1.4
         },
         "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
         "family": "glm",
@@ -283567,7 +284095,7 @@
         "last_updated": "2026-08-19",
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 943718
         },
         "modalities": {
           "input": [
@@ -301308,7 +301836,7 @@
         "last_updated": "2026-07-31",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -302238,7 +302766,7 @@
         "last_updated": "2025-04-14",
         "limit": {
           "context": 1047576,
-          "output": 32768
+          "output": 942818
         },
         "modalities": {
           "input": [
@@ -315311,6 +315839,52 @@
           ]
         },
         "name": "MiniMax-M3.1-Flash",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-10-19",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "minimax-m3.1-flash@eu": {
+        "attachment": true,
+        "canonical_model_id": "minimax/MiniMax-M3.1-Flash",
+        "cost": {
+          "cache_read": 0.07,
+          "input": 0.3,
+          "output": 1.2
+        },
+        "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+        "family": "minimax",
+        "id": "minimax-m3.1-flash@eu",
+        "last_updated": "2026-10-19",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "MiniMax-M3.1-Flash (EU)",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -350393,7 +350967,8 @@
         "name": "Qwen3 Embedding 0.6B",
         "open_weights": true,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-06-05",
@@ -350423,7 +350998,8 @@
         "name": "Qwen3 Embedding 4B",
         "open_weights": true,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-06-05",
@@ -350453,7 +351029,8 @@
         "name": "Qwen3 Embedding 8B",
         "open_weights": true,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-06-05",
@@ -351866,7 +352443,8 @@
         "name": "Titan Text Embeddings V2",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-04-30",
@@ -352817,7 +353395,8 @@
         "name": "FLUX.2 [flex]",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-11-25",
@@ -352846,7 +353425,8 @@
         "name": "FLUX.2 [klein] 4B",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-01-15",
@@ -352875,7 +353455,8 @@
         "name": "FLUX.2 [klein] 9B",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-01-15",
@@ -352904,7 +353485,8 @@
         "name": "FLUX.2 [max]",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-12-16",
@@ -352933,7 +353515,8 @@
         "name": "FLUX.2 [pro]",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-11-25",
@@ -352962,7 +353545,8 @@
         "name": "FLUX 3 Image",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-10-05",
@@ -352991,7 +353575,8 @@
         "name": "FLUX 3 Image Klein",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-10-15",
@@ -353051,7 +353636,8 @@
         "name": "FLUX.1 Kontext Max",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-05-29",
@@ -353080,7 +353666,8 @@
         "name": "FLUX.1 Kontext Pro",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-05-29",
@@ -353109,7 +353696,8 @@
         "name": "FLUX.1 Fill [pro]",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-10-01",
@@ -353138,7 +353726,8 @@
         "name": "FLUX1.1 [pro]",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-10-02",
@@ -353167,7 +353756,8 @@
         "name": "FLUX1.1 [pro] Ultra",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-11-01",
@@ -353562,7 +354152,8 @@
         "name": "Seedream 4.0",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-09-09",
@@ -353591,7 +354182,8 @@
         "name": "Seedream 4.5",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-12-03",
@@ -353620,7 +354212,8 @@
         "name": "Seedream 5.0 Lite",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-02-13",
@@ -353649,7 +354242,8 @@
         "name": "Seedream 5.0 Pro",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-07-11",
@@ -353751,7 +354345,8 @@
         "name": "Embed v4.0",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-04-15",
@@ -353781,7 +354376,8 @@
         "name": "Embed 5 Fast",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-09-30",
@@ -353811,7 +354407,8 @@
         "name": "Embed 5 Pro",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-09-30",
@@ -353840,7 +354437,8 @@
         "name": "Cohere Rerank 3.5",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2024-12-02",
@@ -353869,7 +354467,8 @@
         "name": "Cohere Rerank 4 Fast",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2025-12-11",
@@ -353898,7 +354497,8 @@
         "name": "Cohere Rerank 4 Pro",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2025-12-11",
@@ -353926,7 +354526,8 @@
         "name": "Cohere Rerank 5 Fast",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2026-10-21",
@@ -353954,7 +354555,8 @@
         "name": "Cohere Rerank 5 Pro",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2026-10-21",
@@ -355749,7 +356351,8 @@
         "name": "Gemini Embedding 001",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-05-20",
@@ -355780,7 +356383,8 @@
         "name": "Gemini Embedding 2",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-04-22",
@@ -355970,7 +356574,8 @@
         "name": "Text Embedding 005",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-08-01",
@@ -355999,7 +356604,8 @@
         "name": "Text Multilingual Embedding 002",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-03-01",
@@ -357173,7 +357779,8 @@
         "name": "Muse Image 1.0",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-07-07",
@@ -357524,7 +358131,8 @@
         "name": "MAI-Image-2.6",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-10-13",
@@ -357557,7 +358165,8 @@
         "name": "MAI-Image-2.6-Flash",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-10-13",
@@ -358198,7 +358807,8 @@
         "name": "Codestral Embed",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-05-28",
@@ -358325,7 +358935,8 @@
         "name": "Mistral Embed",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2023-12-11",
@@ -359013,6 +359624,7 @@
       },
       "morph/morph-v3-fast": {
         "attachment": false,
+        "canonical_model_id": "morph/morph-v3-fast",
         "cost": {
           "input": 0.8,
           "output": 1.2
@@ -359020,10 +359632,10 @@
         "description": "Efficient model for low-latency assistance, extraction, and routine automation",
         "family": "morph",
         "id": "morph/morph-v3-fast",
-        "last_updated": "2024-08-15",
+        "last_updated": "2025-07-07",
         "limit": {
-          "context": 16000,
-          "output": 16000
+          "context": 262144,
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -359033,15 +359645,16 @@
             "text"
           ]
         },
-        "name": "Morph v3 Fast",
+        "name": "Morph V3 Fast",
         "open_weights": false,
         "reasoning": false,
-        "release_date": "2024-08-15",
-        "temperature": false,
+        "release_date": "2025-07-07",
+        "temperature": true,
         "tool_call": false
       },
       "morph/morph-v3-large": {
         "attachment": false,
+        "canonical_model_id": "morph/morph-v3-large",
         "cost": {
           "input": 0.9,
           "output": 1.9
@@ -359049,10 +359662,10 @@
         "description": "Flagship model for demanding analysis, coding, and production agent workflows",
         "family": "morph",
         "id": "morph/morph-v3-large",
-        "last_updated": "2024-08-15",
+        "last_updated": "2025-07-07",
         "limit": {
-          "context": 32000,
-          "output": 32000
+          "context": 262144,
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -359062,11 +359675,11 @@
             "text"
           ]
         },
-        "name": "Morph v3 Large",
+        "name": "Morph V3 Large",
         "open_weights": false,
         "reasoning": false,
-        "release_date": "2024-08-15",
-        "temperature": false,
+        "release_date": "2025-07-07",
+        "temperature": true,
         "tool_call": false
       },
       "nvidia/nemotron-3-nano-30b-a3b": {
@@ -362279,7 +362892,8 @@
         "name": "GPT Image 1 Mini",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-10-06",
@@ -362314,7 +362928,8 @@
         "name": "GPT Image 1.5",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-11-25",
@@ -362349,7 +362964,8 @@
         "name": "GPT Image 2",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-04-21",
@@ -362384,7 +363000,8 @@
         "name": "GPT Image 2.5 Flare",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-09-08",
@@ -362419,7 +363036,8 @@
         "name": "GPT Image 2.5 Sunburst",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-09-08",
@@ -363187,7 +363805,8 @@
         "name": "text-embedding-3-large",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-01-25",
@@ -363217,7 +363836,8 @@
         "name": "text-embedding-3-small",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-01-25",
@@ -363247,7 +363867,8 @@
         "name": "text-embedding-ada-002",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2022-12-15",
@@ -363364,7 +363985,8 @@
         "name": "Embed v1 0.6b",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-02-26",
@@ -363392,7 +364014,8 @@
         "name": "Embed v1 4b",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-02-26",
@@ -363526,7 +364149,8 @@
         "name": "Flux Schnell",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-08-02",
@@ -363643,7 +364267,8 @@
         "name": "Recraft V2",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-03-13",
@@ -363672,7 +364297,8 @@
         "name": "Recraft V3",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-10-30",
@@ -363701,7 +364327,8 @@
         "name": "Recraft V4",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-02-17",
@@ -363730,7 +364357,8 @@
         "name": "Recraft V4 Pro",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-02-17",
@@ -363759,7 +364387,8 @@
         "name": "Recraft V4.1",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-05-14",
@@ -363788,7 +364417,8 @@
         "name": "Recraft V4.1 Flash",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-09-23",
@@ -363817,7 +364447,8 @@
         "name": "Recraft V4.1 Pro",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-05-14",
@@ -363846,7 +364477,8 @@
         "name": "Recraft V4.1 Utility",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-05-14",
@@ -363875,7 +364507,8 @@
         "name": "Recraft V4.1 Utility Pro",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-05-14",
@@ -364889,7 +365522,8 @@
         "name": "Grok Imagine Image",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-01-28",
@@ -364919,7 +365553,8 @@
         "name": "Grok Imagine Image 2.0",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-08-07",
@@ -365556,7 +366191,8 @@
         "name": "Wonder 3.5",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-10-06",
@@ -365586,7 +366222,8 @@
         "name": "Voyage Rerank 2.5",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2025-08-11",
@@ -365616,7 +366253,8 @@
         "name": "Voyage Rerank 2.5 Lite",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2025-08-11",
@@ -365646,7 +366284,8 @@
         "name": "Voyage Rerank 3",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2026-09-30",
@@ -365676,7 +366315,8 @@
         "name": "Voyage Rerank 3 Lite",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/cohere"
         },
         "reasoning": false,
         "release_date": "2026-09-30",
@@ -365705,7 +366345,8 @@
         "name": "voyage-3-large",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-01-07",
@@ -365734,7 +366375,8 @@
         "name": "voyage-3.5",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-05-20",
@@ -365763,7 +366405,8 @@
         "name": "voyage-3.5-lite",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2025-05-20",
@@ -365793,7 +366436,8 @@
         "name": "voyage-4",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-01-15",
@@ -365823,7 +366467,8 @@
         "name": "voyage-4-large",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-01-15",
@@ -365853,7 +366498,8 @@
         "name": "voyage-4-lite",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2026-01-15",
@@ -365882,7 +366528,8 @@
         "name": "voyage-code-2",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-01-01",
@@ -365911,7 +366558,8 @@
         "name": "voyage-code-3",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-12-04",
@@ -365940,7 +366588,8 @@
         "name": "voyage-finance-2",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-06-03",
@@ -365969,7 +366618,8 @@
         "name": "voyage-law-2",
         "open_weights": false,
         "provider": {
-          "api": "https://ai-gateway.vercel.sh/v4/ai"
+          "api": "https://ai-gateway.vercel.sh/v1",
+          "npm": "@ai-sdk/openai"
         },
         "reasoning": false,
         "release_date": "2024-04-15",
