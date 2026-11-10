@@ -4681,7 +4681,7 @@
           "input": 2.4,
           "output": 12
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro",
         "interleaved": {
@@ -10814,7 +10814,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/kimi-k3.1-pro",
         "interleaved": {
@@ -36043,6 +36043,54 @@
         "temperature": false,
         "tool_call": true
       },
+      "anthropic.claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "anthropic.claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "anthropic.claude-haiku-4-5-20251001-v1:0": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-haiku-4-5-20251001",
@@ -38608,6 +38656,54 @@
         "temperature": false,
         "tool_call": true
       },
+      "global.anthropic.claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "global.anthropic.claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2 (Global)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "global.anthropic.claude-haiku-4-5-20251001-v1:0": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-haiku-4-5-20251001",
@@ -39300,6 +39396,53 @@
         "reasoning": true,
         "reasoning_options": [],
         "release_date": "2026-07-16",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "global.moonshotai.kimi-k3.1": {
+        "attachment": true,
+        "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 5,
+          "input": 4,
+          "output": 20
+        },
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+        "family": "kimi-k3",
+        "id": "global.moonshotai.kimi-k3.1",
+        "last_updated": "2026-10-23",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K3.1 Pro Highspeed (Global)",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-10-23",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -43406,6 +43549,54 @@
         "temperature": false,
         "tool_call": true
       },
+      "us.anthropic.claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.22,
+          "cache_write": 11,
+          "input": 8.8,
+          "output": 44
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "us.anthropic.claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2 (US)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "us.anthropic.claude-haiku-4-5-20251001-v1:0": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-haiku-4-5-20251001",
@@ -44376,6 +44567,53 @@
         "reasoning": true,
         "reasoning_options": [],
         "release_date": "2026-07-16",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "us.moonshotai.kimi-k3.1": {
+        "attachment": true,
+        "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+        "cost": {
+          "cache_read": 0.22,
+          "cache_write": 5.5,
+          "input": 4.4,
+          "output": 22
+        },
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+        "family": "kimi-k3",
+        "id": "us.moonshotai.kimi-k3.1",
+        "last_updated": "2026-10-23",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K3.1 Pro Highspeed (US)",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-10-23",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -46379,6 +46617,71 @@
           }
         ],
         "release_date": "2026-09-01",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 0.4,
+                "cache_write": 20,
+                "input": 16,
+                "output": 80
+              },
+              "provider": {
+                "body": {
+                  "speed": "fast"
+                }
+              }
+            }
+          }
+        },
+        "family": "claude-fable",
+        "id": "claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -49853,6 +50156,57 @@
           }
         ],
         "release_date": "2026-09-01",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "provider": {
+          "api": "https://${AZURE_RESOURCE_NAME}.services.ai.azure.com/anthropic/v1",
+          "npm": "@ai-sdk/anthropic"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -54221,6 +54575,57 @@
           }
         ],
         "release_date": "2026-09-01",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "provider": {
+          "api": "https://${AZURE_COGNITIVE_SERVICES_RESOURCE_NAME}.services.ai.azure.com/anthropic/v1",
+          "npm": "@ai-sdk/anthropic"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -58903,7 +59308,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/Kimi-K3.1-Pro",
         "last_updated": "2026-10-23",
@@ -61171,11 +61576,52 @@
     ],
     "id": "chutes",
     "models": {
+      "Qwen/Qwen3.5-27B-TEE": {
+        "attachment": true,
+        "canonical_model_id": "alibaba/qwen3.5-27b",
+        "cost": {
+          "cache_read": 0.02,
+          "input": 0.2,
+          "output": 1.75
+        },
+        "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+        "family": "qwen",
+        "id": "Qwen/Qwen3.5-27B-TEE",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-02-23",
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.5 27B TEE",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "release_date": "2026-02-23",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "Qwen/Qwen3.5-397B-A17B-TEE": {
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
         "cost": {
-          "cache_read": 0.04499999999999999,
+          "cache_read": 0.045,
           "input": 0.45,
           "output": 3
         },
@@ -61216,7 +61662,7 @@
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.6-27b",
         "cost": {
-          "cache_read": 0.024999999999999994,
+          "cache_read": 0.025,
           "input": 0.25,
           "output": 2
         },
@@ -61279,7 +61725,7 @@
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.8-27b",
         "cost": {
-          "cache_read": 0.003899999999999999,
+          "cache_read": 0.0039,
           "input": 0.039,
           "output": 1.25
         },
@@ -61338,7 +61784,7 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v3.2",
         "cost": {
-          "cache_read": 0.09999999999999998,
+          "cache_read": 0.1,
           "input": 1,
           "output": 1
         },
@@ -61379,7 +61825,7 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
         "cost": {
-          "cache_read": 0.04399999999999999,
+          "cache_read": 0.044,
           "input": 0.44,
           "output": 1.32
         },
@@ -61467,7 +61913,7 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-31b-it",
         "cost": {
-          "cache_read": 0.011999999999999997,
+          "cache_read": 0.012,
           "input": 0.12,
           "output": 0.37
         },
@@ -61506,7 +61952,7 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k2.6",
         "cost": {
-          "cache_read": 0.03899999999999999,
+          "cache_read": 0.039,
           "input": 0.39,
           "output": 1.8
         },
@@ -61574,7 +62020,7 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k3",
         "cost": {
-          "cache_read": 0.18499999999999997,
+          "cache_read": 0.185,
           "input": 1.85,
           "output": 9.5
         },
@@ -61637,7 +62083,7 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.1",
         "cost": {
-          "cache_read": 0.08999999999999998,
+          "cache_read": 0.09,
           "input": 0.9,
           "output": 2.9
         },
@@ -61702,7 +62148,7 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.2",
         "cost": {
-          "cache_read": 0.12499999999999997,
+          "cache_read": 0.125,
           "input": 1.25,
           "output": 3.95
         },
@@ -84827,7 +85273,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/Kimi-K3.1-Pro",
         "last_updated": "2026-10-23",
@@ -91047,6 +91493,54 @@
         "temperature": false,
         "tool_call": true
       },
+      "anthropic/claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "anthropic/claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "anthropic/claude-fable-latest": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-fable-5-1",
@@ -91910,7 +92404,7 @@
         "tool_call": true
       },
       "arkanecloud/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
-        "attachment": false,
+        "attachment": true,
         "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
         "cost": {
           "cache_read": 0.075,
@@ -91928,7 +92422,8 @@
         },
         "modalities": {
           "input": [
-            "text"
+            "text",
+            "image"
           ],
           "output": [
             "text"
@@ -96975,9 +97470,9 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
         "cost": {
-          "cache_read": 0.04466,
-          "input": 0.15631,
-          "output": 0.390775
+          "cache_read": 0.044772,
+          "input": 0.156702,
+          "output": 0.391755
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -97019,9 +97514,9 @@
         "attachment": true,
         "canonical_model_id": "deepseek/deepseek-v4.1-flash",
         "cost": {
-          "cache_read": 0.012282,
-          "input": 0.24563,
-          "output": 1.22815
+          "cache_read": 0.012312,
+          "input": 0.246246,
+          "output": 1.231229
         },
         "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
         "family": "deepseek-flash",
@@ -97064,8 +97559,8 @@
         "attachment": false,
         "canonical_model_id": "openai/gpt-oss-120b",
         "cost": {
-          "input": 0.2233,
-          "output": 0.78155
+          "input": 0.22386,
+          "output": 0.78351
         },
         "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
@@ -97106,8 +97601,8 @@
         "attachment": false,
         "canonical_model_id": "meta/llama-3.3-70b-instruct",
         "cost": {
-          "input": 1.22815,
-          "output": 1.22815
+          "input": 1.231229,
+          "output": 1.231229
         },
         "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
         "family": "llama",
@@ -97138,8 +97633,8 @@
         "attachment": false,
         "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
         "cost": {
-          "input": 1.00485,
-          "output": 3.01455
+          "input": 1.007369,
+          "output": 3.022108
         },
         "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
         "family": "qwen",
@@ -97361,8 +97856,8 @@
         "attachment": true,
         "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
         "cost": {
-          "input": 0.33495,
-          "output": 0.4466
+          "input": 0.33579,
+          "output": 0.44772
         },
         "description": "Open vision-language model for efficient local deployment, instruction following, and tool use",
         "family": "ministral",
@@ -97393,8 +97888,8 @@
         "attachment": false,
         "canonical_model_id": "alibaba/qwen3-coder-next",
         "cost": {
-          "input": 0.167475,
-          "output": 0.8932
+          "input": 0.167895,
+          "output": 0.89544
         },
         "description": "Open-weight Qwen coding model for agents, repository edits, and multi-turn tool use",
         "family": "qwen",
@@ -97425,8 +97920,8 @@
         "attachment": false,
         "canonical_model_id": "meta/llama-3.3-70b-instruct",
         "cost": {
-          "input": 0.725725,
-          "output": 0.725725
+          "input": 0.727545,
+          "output": 0.727545
         },
         "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
         "family": "llama",
@@ -97457,8 +97952,8 @@
         "attachment": false,
         "canonical_model_id": "openai/gpt-oss-120b",
         "cost": {
-          "input": 0.167475,
-          "output": 0.725725
+          "input": 0.167895,
+          "output": 0.727545
         },
         "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
@@ -97926,9 +98421,9 @@
         "attachment": true,
         "canonical_model_id": "minimax/MiniMax-M3.1-Flash",
         "cost": {
-          "cache_read": 0.0075,
-          "input": 0.075,
-          "output": 0.3
+          "cache_read": 0.015,
+          "input": 0.15,
+          "output": 0.6
         },
         "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
         "family": "minimax",
@@ -99558,7 +100053,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshot/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -99658,50 +100153,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "nebius/deepseek-ai/DeepSeek-V4-Flash-0731": {
-        "attachment": false,
-        "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
-        "cost": {
-          "cache_read": 0.14,
-          "input": 0.14,
-          "output": 0.28
-        },
-        "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
-        "family": "deepseek-flash",
-        "id": "nebius/deepseek-ai/DeepSeek-V4-Flash-0731",
-        "knowledge": "2025-05",
-        "last_updated": "2026-07-31",
-        "limit": {
-          "context": 1048576,
-          "output": 384000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "DeepSeek V4 Flash 0731 (Nebius)",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "release_date": "2026-07-31",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "nebius/deepseek-ai/DeepSeek-V4-Pro-0813": {
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
@@ -99742,51 +100193,6 @@
         ],
         "release_date": "2026-08-13",
         "structured_output": false,
-        "temperature": true,
-        "tool_call": true
-      },
-      "nebius/deepseek-ai/DeepSeek-V4.1-Flash": {
-        "attachment": true,
-        "canonical_model_id": "deepseek/deepseek-v4.1-flash",
-        "cost": {
-          "cache_read": 0.3,
-          "input": 0.3,
-          "output": 1.2
-        },
-        "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
-        "family": "deepseek-flash",
-        "id": "nebius/deepseek-ai/DeepSeek-V4.1-Flash",
-        "knowledge": "2025-05",
-        "last_updated": "2026-09-10",
-        "limit": {
-          "context": 1048576,
-          "output": 384000
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "DeepSeek V4.1 Flash (Nebius)",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "release_date": "2026-09-10",
-        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -102624,9 +103030,9 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
         "cost": {
-          "cache_read": 0.08932,
-          "input": 0.4466,
-          "output": 0.8932
+          "cache_read": 0.089544,
+          "input": 0.44772,
+          "output": 0.89544
         },
         "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
         "family": "deepseek-flash",
@@ -102713,9 +103119,9 @@
         "attachment": true,
         "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
         "cost": {
-          "cache_read": 0.13398,
-          "input": 0.6699,
-          "output": 2.0097
+          "cache_read": 0.134316,
+          "input": 0.67158,
+          "output": 2.014739
         },
         "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
         "family": "deepseek-flash",
@@ -102791,8 +103197,8 @@
         "attachment": false,
         "canonical_model_id": "openai/gpt-oss-120b",
         "cost": {
-          "input": 0.167475,
-          "output": 0.6699
+          "input": 0.167895,
+          "output": 0.67158
         },
         "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
@@ -102833,8 +103239,8 @@
         "attachment": false,
         "canonical_model_id": "meta/llama-3.3-70b-instruct",
         "cost": {
-          "input": 1.00485,
-          "output": 1.00485
+          "input": 1.007369,
+          "output": 1.007369
         },
         "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
         "family": "llama",
@@ -102865,8 +103271,8 @@
         "attachment": false,
         "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
         "cost": {
-          "input": 0.837375,
-          "output": 2.512125
+          "input": 0.839475,
+          "output": 2.518424
         },
         "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
         "family": "qwen",
@@ -104262,7 +104668,6 @@
           "cache_write": 0.375,
           "context_over_200k": {
             "cache_read": 0.4,
-            "cache_write": 0.25,
             "input": 4,
             "output": 18
           },
@@ -104273,7 +104678,6 @@
           "tiers": [
             {
               "cache_read": 0.4,
-              "cache_write": 0.25,
               "input": 4,
               "output": 18,
               "tier": {
@@ -107276,7 +107680,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3-1-pro",
         "last_updated": "2026-10-23",
@@ -112405,7 +112809,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "experimental": {
           "modes": {
             "priority": {
@@ -119716,7 +120120,7 @@
         "knowledge": "2025-01",
         "last_updated": "2026-04-21",
         "limit": {
-          "context": 131072,
+          "context": 1048576,
           "output": 65536
         },
         "modalities": {
@@ -119770,7 +120174,7 @@
         "knowledge": "2025-01",
         "last_updated": "2026-04-21",
         "limit": {
-          "context": 131072,
+          "context": 1048576,
           "output": 65536
         },
         "modalities": {
@@ -121350,6 +121754,74 @@
           }
         ],
         "release_date": "2026-09-01",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "claude-fable-5-2@default": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 0.4,
+                "cache_write": 20,
+                "input": 16,
+                "output": 80
+              },
+              "provider": {
+                "body": {
+                  "speed": "fast"
+                }
+              }
+            }
+          }
+        },
+        "family": "claude-fable",
+        "id": "claude-fable-5-2@default",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "provider": {
+          "npm": "@ai-sdk/google-vertex/anthropic"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -124227,6 +124699,71 @@
           }
         ],
         "release_date": "2026-09-01",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "claude-fable-5-2@default": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "experimental": {
+          "modes": {
+            "fast": {
+              "cost": {
+                "cache_read": 0.4,
+                "cache_write": 20,
+                "input": 16,
+                "output": 80
+              },
+              "provider": {
+                "body": {
+                  "speed": "fast"
+                }
+              }
+            }
+          }
+        },
+        "family": "claude-fable",
+        "id": "claude-fable-5-2@default",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -134256,7 +134793,7 @@
           "input": 2.2,
           "output": 11
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -138557,7 +139094,7 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.3-flash",
         "cost": {
-          "cache_read": 0.04,
+          "cache_read": 0.03,
           "cache_write": 0,
           "input": 0.175,
           "output": 0.45
@@ -147343,6 +147880,54 @@
         "temperature": false,
         "tool_call": true
       },
+      "anthropic/claude-fable-5.2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning, and vision. In prerelease testing it completed otherwise-infeasible...",
+        "family": "claude-fable",
+        "id": "anthropic/claude-fable-5.2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Anthropic: Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "anthropic/claude-haiku-4.5": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-haiku-4-5",
@@ -150473,17 +151058,17 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-26b-a4b-it",
         "cost": {
-          "cache_read": 0.015,
-          "input": 0.031,
-          "output": 0.092
+          "cache_read": 0.009,
+          "input": 0.017,
+          "output": 0.052
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
         "id": "google/gemma-4-26b-a4b-it",
         "last_updated": "2026-04-02",
         "limit": {
-          "context": 262144,
-          "output": 235929
+          "context": 256000,
+          "output": 128000
         },
         "modalities": {
           "input": [
@@ -151465,8 +152050,8 @@
         "knowledge": "2023-12",
         "last_updated": "2024-12-06",
         "limit": {
-          "context": 131072,
-          "output": 32768
+          "context": 128000,
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -151488,9 +152073,9 @@
         "attachment": true,
         "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
         "cost": {
-          "cache_read": 0.05,
-          "input": 0.1875,
-          "output": 0.6525
+          "cache_read": 0.17,
+          "input": 0.35,
+          "output": 1
         },
         "description": "Open multimodal Llama model for strong reasoning and fast responses",
         "family": "llama",
@@ -151582,6 +152167,55 @@
         "structured_output": false,
         "temperature": true,
         "tool_call": false
+      },
+      "meta/muse-ember": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.004,
+          "cache_write": 0.125,
+          "input": 0.1,
+          "output": 0.5
+        },
+        "description": "Muse Ember is the smallest and most efficient model from Meta that’s designed for complex reasoning execution and the work agents repeat all day: tool calls, coding agent subtasks, routing,...",
+        "family": "muse",
+        "id": "meta/muse-ember",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048576,
+          "output": 943718
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf",
+            "audio"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Meta: Muse Ember",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
       },
       "meta/muse-glimmer-30b": {
         "attachment": true,
@@ -151879,7 +152513,7 @@
         "last_updated": "2026-10-15",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -151990,50 +152624,11 @@
         "temperature": true,
         "tool_call": false
       },
-      "minimax/minimax-m1": {
-        "attachment": false,
-        "cost": {
-          "input": 0.55,
-          "output": 2.2
-        },
-        "description": "MiniMax model for chat, coding, office work, and agentic tasks",
-        "family": "minimax",
-        "id": "minimax/minimax-m1",
-        "last_updated": "2025-06-17",
-        "limit": {
-          "context": 1000000,
-          "output": 40000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "MiniMax: MiniMax M1",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2025-06-17",
-        "structured_output": false,
-        "temperature": true,
-        "tool_call": true
-      },
       "minimax/minimax-m2.5": {
         "attachment": false,
         "canonical_model_id": "minimax/MiniMax-M2.5",
         "cost": {
-          "cache_read": 0.03,
+          "cache_read": 0.06,
           "input": 0.3,
           "output": 1.2
         },
@@ -152073,9 +152668,9 @@
         "attachment": false,
         "canonical_model_id": "minimax/MiniMax-M2.7",
         "cost": {
-          "cache_read": 0.06,
-          "input": 0.3,
-          "output": 1.2
+          "cache_read": 0.042,
+          "input": 0.21,
+          "output": 0.84
         },
         "description": "MiniMax model for chat, coding, office work, and agentic tasks",
         "family": "minimax",
@@ -152810,8 +153405,8 @@
         "knowledge": "2023-10-31",
         "last_updated": "2025-06-20",
         "limit": {
-          "context": 128000,
-          "output": 16384
+          "context": 32768,
+          "output": 26214
         },
         "modalities": {
           "input": [
@@ -153440,6 +154035,47 @@
           }
         ],
         "release_date": "2026-09-08",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "nex-agi/nex-n2.6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.03,
+          "input": 0.15,
+          "output": 0.5
+        },
+        "description": "Nex-N2.6 is an agentic model from Nex AGI, built on [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16) with about 321B parameters. It is suited for computer use, coding, and long-horizon tasks that involve tools. Compared with...",
+        "family": "agi",
+        "id": "nex-agi/nex-n2.6",
+        "last_updated": "2026-11-10",
+        "limit": {
+          "context": 262144,
+          "output": 235929
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Nex AGI: Nex-N2.6",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "medium",
+              "high"
+            ]
+          }
+        ],
+        "release_date": "2026-11-10",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -157062,8 +157698,8 @@
       "qwen/qwen3-14b": {
         "attachment": false,
         "cost": {
-          "input": 0.12,
-          "output": 0.24
+          "input": 0.1,
+          "output": 0.22
         },
         "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
         "family": "qwen",
@@ -157071,7 +157707,7 @@
         "last_updated": "2025-04-28",
         "limit": {
           "context": 40960,
-          "output": 16384
+          "output": 36864
         },
         "modalities": {
           "input": [
@@ -158672,9 +159308,9 @@
       "ricursiveai/ripple-65b-preview": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.05,
-          "input": 0.2,
-          "output": 0.6
+          "cache_read": 0.025,
+          "input": 0.1,
+          "output": 0.3
         },
         "description": "Ripple-65B-Preview by ricursiveAI, a 65B model with native tool calling, served in BF16.",
         "id": "ricursiveai/ripple-65b-preview",
@@ -158693,9 +159329,18 @@
         },
         "name": "Ricursive: Ripple 65B Preview",
         "open_weights": false,
-        "reasoning": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
+          }
+        ],
         "release_date": "2026-11-04",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -158999,53 +159644,6 @@
         "structured_output": false,
         "temperature": false,
         "tool_call": false
-      },
-      "stealth/crouton-alpha": {
-        "attachment": true,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
-        "family": "alpha",
-        "id": "stealth/crouton-alpha",
-        "last_updated": "2026-11-03",
-        "limit": {
-          "context": 1048576,
-          "output": 943718
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video",
-            "pdf",
-            "audio"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Crouton Alpha",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "minimal",
-              "low",
-              "medium",
-              "high",
-              "xhigh",
-              "max"
-            ]
-          }
-        ],
-        "release_date": "2026-11-03",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
       },
       "stealth/glyph-cluster": {
         "attachment": false,
@@ -159660,6 +160258,50 @@
           }
         ],
         "release_date": "2026-07-15",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
+      "thinkingmachines/inkling-2-small:free": {
+        "attachment": true,
+        "canonical_model_id": "thinkingmachines/inkling-2-small",
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in the second Inkling...",
+        "family": "ling",
+        "id": "thinkingmachines/inkling-2-small:free",
+        "last_updated": "2026-11-05",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Thinking Machines: Inkling 2 Small (free)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-05",
         "structured_output": false,
         "temperature": true,
         "tool_call": true
@@ -160309,7 +160951,7 @@
         "attachment": false,
         "canonical_model_id": "xiaomi/mimo-v2.5-pro",
         "cost": {
-          "cache_read": 0.004,
+          "cache_read": 0.0036,
           "context_over_200k": {
             "cache_read": 0.4,
             "input": 2,
@@ -160545,9 +161187,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-4.5-air",
         "cost": {
-          "cache_read": 0.025,
-          "input": 0.13,
-          "output": 0.85
+          "cache_read": 0.03,
+          "input": 0.2,
+          "output": 1.1
         },
         "description": "Efficient GLM model for fast reasoning, coding, and agent workflows",
         "family": "glm-air",
@@ -160726,7 +161368,7 @@
         "knowledge": "2025-04",
         "last_updated": "2025-12-22",
         "limit": {
-          "context": 202752,
+          "context": 204800,
           "output": 131072
         },
         "modalities": {
@@ -161015,8 +161657,8 @@
         "id": "z-ai/glm-5.3-flash",
         "last_updated": "2026-08-26",
         "limit": {
-          "context": 1048576,
-          "output": 131072
+          "context": 1048575,
+          "output": 943717
         },
         "modalities": {
           "input": [
@@ -161219,10 +161861,10 @@
       "~anthropic/claude-fable-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.25,
-          "cache_write": 12.5,
-          "input": 10,
-          "output": 50
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
         },
         "description": "This model always redirects to the latest model in the Claude Fable family.",
         "family": "claude-fable",
@@ -161242,7 +161884,7 @@
             "text"
           ]
         },
-        "name": "Anthropic: Claude Fable Latest ($$$$)",
+        "name": "Anthropic: Claude Fable Latest",
         "open_weights": false,
         "reasoning": true,
         "reasoning_options": [
@@ -162176,7 +162818,7 @@
           "input": 0,
           "output": 0
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "k3.1-pro",
         "interleaved": {
@@ -162224,7 +162866,7 @@
           "input": 0,
           "output": 0
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "k3.1-pro-highspeed",
         "interleaved": {
@@ -162469,7 +163111,7 @@
           "input": 0,
           "output": 0
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "k3.1-pro",
         "interleaved": {
@@ -162517,7 +163159,7 @@
           "input": 0,
           "output": 0
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "k3.1-pro-highspeed",
         "interleaved": {
@@ -163264,6 +163906,53 @@
         ],
         "release_date": "2026-09-01",
         "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "temperature": false,
         "tool_call": true
       },
@@ -164110,6 +164799,39 @@
         "temperature": true,
         "tool_call": true
       },
+      "deepseek-v4-flash-0731": {
+        "attachment": false,
+        "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
+        "cost": {
+          "cache_read": 0.04,
+          "input": 0.44,
+          "output": 1.32
+        },
+        "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
+        "family": "deepseek-flash",
+        "id": "deepseek-v4-flash-0731",
+        "knowledge": "2025-05",
+        "last_updated": "2026-07-31",
+        "limit": {
+          "context": 1000000,
+          "output": 384000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "deepseek-v4-flash-0731",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-07-31",
+        "temperature": true,
+        "tool_call": true
+      },
       "deepseek-v4-pro": {
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v4-pro",
@@ -164294,6 +165016,49 @@
         ],
         "release_date": "2026-10-29",
         "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "deepseek-v4.1-flash-uncensored": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.005,
+          "input": 0.18,
+          "output": 0.65
+        },
+        "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
+        "family": "deepseek",
+        "id": "deepseek-v4.1-flash-uncensored",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4.1 Flash 1017 Uncensored (HeimdaLLM)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": false,
         "temperature": true,
         "tool_call": true
       },
@@ -168535,7 +169300,7 @@
           "input": 1.9,
           "output": 9.5
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -173089,6 +173854,54 @@
         "temperature": false,
         "tool_call": true
       },
+      "anthropic/claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "anthropic/claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2 (Anthropic)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "anthropic/claude-haiku-4-5": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-haiku-4-5",
@@ -173879,6 +174692,54 @@
           }
         ],
         "release_date": "2026-09-01",
+        "structured_output": false,
+        "temperature": false,
+        "tool_call": true
+      },
+      "aws-bedrock/claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "aws-bedrock/claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2 (AWS Bedrock)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": false,
         "temperature": false,
         "tool_call": true
@@ -178078,6 +178939,40 @@
         "temperature": true,
         "tool_call": true
       },
+      "canopywave/deepseek-v4-flash-0731": {
+        "attachment": false,
+        "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
+        "cost": {
+          "cache_read": 0.04,
+          "input": 0.44,
+          "output": 1.32
+        },
+        "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
+        "family": "deepseek-flash",
+        "id": "canopywave/deepseek-v4-flash-0731",
+        "knowledge": "2025-05",
+        "last_updated": "2026-07-31",
+        "limit": {
+          "context": 1000000,
+          "output": 384000
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "deepseek-v4-flash-0731 (CanopyWave)",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-07-31",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
       "canopywave/glm-5.2": {
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.2",
@@ -178162,9 +179057,7 @@
             "type": "effort",
             "values": [
               "none",
-              "minimal",
               "low",
-              "medium",
               "high",
               "xhigh",
               "max"
@@ -178318,6 +179211,54 @@
           }
         ],
         "release_date": "2026-10-19",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
+      "canopywave/qwen3.8-flash": {
+        "attachment": true,
+        "canonical_model_id": "alibaba/qwen3.8-flash",
+        "cost": {
+          "cache_read": 0.02,
+          "input": 0.15,
+          "output": 0.5
+        },
+        "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+        "family": "qwen",
+        "id": "canopywave/qwen3.8-flash",
+        "last_updated": "2026-08-26",
+        "limit": {
+          "context": 1000000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen3.8 Flash (CanopyWave)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-08-26",
         "structured_output": false,
         "temperature": true,
         "tool_call": true
@@ -178734,6 +179675,49 @@
           }
         ],
         "release_date": "2026-09-10",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
+      "consensusprotocol/deepseek-v4.1-flash-uncensored": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.005,
+          "input": 0.18,
+          "output": 0.65
+        },
+        "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
+        "family": "deepseek",
+        "id": "consensusprotocol/deepseek-v4.1-flash-uncensored",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "DeepSeek V4.1 Flash 1017 Uncensored (HeimdaLLM) (consensusprotocol)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": false,
         "temperature": true,
         "tool_call": true
@@ -181554,7 +182538,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "inference.net/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -183082,7 +184066,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshot/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -186630,7 +187614,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "runpod/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -187132,6 +188116,54 @@
         "temperature": false,
         "tool_call": true
       },
+      "runware/kimi-k3.1-pro": {
+        "attachment": true,
+        "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+        "cost": {
+          "cache_read": 0.2,
+          "input": 2,
+          "output": 10
+        },
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+        "family": "kimi-k3",
+        "id": "runware/kimi-k3.1-pro",
+        "last_updated": "2026-10-23",
+        "limit": {
+          "context": 950000,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K3.1 Pro (runware)",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-10-23",
+        "structured_output": false,
+        "temperature": false,
+        "tool_call": true
+      },
       "sakana/fugu-max": {
         "attachment": true,
         "canonical_model_id": "sakana/fugu-max",
@@ -187370,11 +188402,22 @@
         },
         "name": "DeepSeek V4.1 Flash 1017 (scx-ai-gp)",
         "open_weights": true,
-        "reasoning": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        ],
         "release_date": "2026-10-17",
         "structured_output": false,
         "temperature": true,
-        "tool_call": false
+        "tool_call": true
       },
       "scx-ai-gp/glm-5.2": {
         "attachment": false,
@@ -187684,7 +188727,7 @@
           "input": 1.9,
           "output": 9.5
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "scx-ai-gp/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -195468,6 +196511,43 @@
         "temperature": false,
         "tool_call": true
       },
+      "anthropic/claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "anthropic/claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "anthropic/claude-haiku-4-5-20251001": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-haiku-4-5-20251001",
@@ -199099,7 +200179,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshot/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -203713,6 +204793,71 @@
     ],
     "id": "meta",
     "models": {
+      "muse-ember-1.0": {
+        "attachment": true,
+        "canonical_model_id": "meta/muse-ember-1.0",
+        "cost": {
+          "cache_read": 0.004,
+          "context_over_200k": {
+            "cache_read": 0.012,
+            "input": 0.3,
+            "output": 1.5
+          },
+          "input": 0.1,
+          "output": 0.5,
+          "tiers": [
+            {
+              "cache_read": 0.012,
+              "input": 0.3,
+              "output": 1.5,
+              "tier": {
+                "size": 200000,
+                "type": "context"
+              }
+            }
+          ]
+        },
+        "description": "Muse Ember is Meta's smallest and most efficient reasoning model, built for the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long-document parsing. It pairs with Muse Wonder or Muse Spark, which plan while Muse Ember handles the volume.",
+        "family": "muse",
+        "id": "muse-ember-1.0",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048576,
+          "output": 524288
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf",
+            "audio"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Muse Ember",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "muse-spark-1.1": {
         "attachment": true,
         "canonical_model_id": "meta/muse-spark-1.1",
@@ -209151,7 +210296,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro",
         "interleaved": {
@@ -209199,7 +210344,7 @@
           "input": 4,
           "output": 20
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro-highspeed",
         "interleaved": {
@@ -209428,7 +210573,7 @@
           "input": 1.9437,
           "output": 10.1671
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro",
         "interleaved": {
@@ -209476,7 +210621,7 @@
           "input": 3.8874,
           "output": 20.3342
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro-highspeed",
         "interleaved": {
@@ -209941,7 +211086,7 @@
           "input": 2.5,
           "output": 14
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "morph-kimik31",
         "interleaved": {
@@ -212779,8 +213924,8 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v3.2",
         "cost": {
-          "cache_read": 0.25,
-          "input": 0.5,
+          "cache_read": 0.5,
+          "input": 1,
           "output": 1
         },
         "description": "Hybrid-reasoning DeepSeek model with thinking and non-thinking modes, sparse attention, and tool-use",
@@ -212813,8 +213958,8 @@
         "attachment": true,
         "canonical_model_id": "deepseek/deepseek-v4.1-flash",
         "cost": {
-          "cache_read": 0.13,
-          "input": 0.65,
+          "cache_read": 0.01,
+          "input": 0.6,
           "output": 1.45
         },
         "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
@@ -212859,7 +214004,7 @@
       "TEE/gemma-4-26b-a4b-uncensored": {
         "attachment": false,
         "cost": {
-          "cache_read": 0.075,
+          "cache_read": 0.05,
           "input": 0.15,
           "output": 0.7
         },
@@ -212930,9 +214075,9 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-31b-it",
         "cost": {
-          "cache_read": 0.4,
-          "input": 0.4,
-          "output": 1
+          "cache_read": 0.012,
+          "input": 0.12,
+          "output": 0.37
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -212965,9 +214110,9 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-31b-it",
         "cost": {
-          "cache_read": 0.4,
-          "input": 0.4,
-          "output": 1
+          "cache_read": 0.012,
+          "input": 0.12,
+          "output": 0.37
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -213001,9 +214146,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.1",
         "cost": {
-          "cache_read": 0.18,
-          "input": 0.7,
-          "output": 2.5
+          "cache_read": 0.09,
+          "input": 0.9,
+          "output": 2.9
         },
         "description": "Strong GLM coding model for agentic engineering, terminals, and repository generation",
         "family": "glm",
@@ -213043,9 +214188,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.1",
         "cost": {
-          "cache_read": 0.18,
-          "input": 0.7,
-          "output": 2.5
+          "cache_read": 0.09,
+          "input": 0.9,
+          "output": 2.9
         },
         "description": "Strong GLM coding model for agentic engineering, terminals, and repository generation",
         "family": "glm",
@@ -213085,9 +214230,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.2",
         "cost": {
-          "cache_read": 0.7,
-          "input": 1.4,
-          "output": 4.4
+          "cache_read": 0.125,
+          "input": 1.25,
+          "output": 3.95
         },
         "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
         "family": "glm",
@@ -213119,9 +214264,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.2",
         "cost": {
-          "cache_read": 0.7,
-          "input": 1.4,
-          "output": 4.4
+          "cache_read": 0.125,
+          "input": 1.25,
+          "output": 3.95
         },
         "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
         "family": "glm",
@@ -213251,9 +214396,9 @@
         "attachment": false,
         "canonical_model_id": "openai/gpt-oss-120b",
         "cost": {
-          "cache_read": 2,
-          "input": 2,
-          "output": 2
+          "cache_read": 0.15,
+          "input": 0.15,
+          "output": 0.6
         },
         "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
         "family": "gpt-oss",
@@ -213285,9 +214430,9 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k2.6",
         "cost": {
-          "cache_read": 0.375,
-          "input": 1.5,
-          "output": 5.25
+          "cache_read": 0.039,
+          "input": 0.39,
+          "output": 1.8
         },
         "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
         "family": "kimi-k2",
@@ -213320,9 +214465,9 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k3",
         "cost": {
-          "cache_read": 1.5,
-          "input": 3,
-          "output": 15
+          "cache_read": 0.185,
+          "input": 1.85,
+          "output": 9.5
         },
         "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
         "family": "kimi-k3",
@@ -213356,6 +214501,50 @@
           }
         ],
         "release_date": "2026-07-16",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "TEE/kimi-k3.1-pro": {
+        "attachment": true,
+        "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+        "cost": {
+          "cache_read": 0.4,
+          "input": 4,
+          "output": 20
+        },
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+        "family": "kimi-k3",
+        "id": "TEE/kimi-k3.1-pro",
+        "last_updated": "2026-10-23",
+        "limit": {
+          "context": 262144,
+          "input": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Kimi K3.1 Pro TEE",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-10-23",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -213394,81 +214583,13 @@
         "temperature": true,
         "tool_call": false
       },
-      "TEE/qwen2.5-vl-72b-instruct": {
-        "attachment": true,
-        "canonical_model_id": "alibaba/qwen2-5-vl-72b-instruct",
-        "cost": {
-          "cache_read": 0.35,
-          "input": 0.7,
-          "output": 0.7
-        },
-        "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-        "family": "qwen",
-        "id": "TEE/qwen2.5-vl-72b-instruct",
-        "knowledge": "2024-04",
-        "last_updated": "2025-01-26",
-        "limit": {
-          "context": 65536,
-          "input": 65536,
-          "output": 8192
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen2.5 VL 72B TEE",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2025-01-26",
-        "structured_output": false,
-        "temperature": true,
-        "tool_call": false
-      },
-      "TEE/qwen3.5-397b-a17b": {
-        "attachment": false,
-        "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
-        "cost": {
-          "cache_read": 0.275,
-          "input": 0.55,
-          "output": 3.5
-        },
-        "description": "Large open Qwen multimodal MoE for visual agents and long technical tasks",
-        "family": "qwen",
-        "id": "TEE/qwen3.5-397b-a17b",
-        "last_updated": "2026-02-15",
-        "limit": {
-          "context": 262144,
-          "input": 262144,
-          "output": 65536
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen3.5 397B A17B TEE",
-        "open_weights": true,
-        "reasoning": false,
-        "release_date": "2026-02-15",
-        "structured_output": false,
-        "temperature": true,
-        "tool_call": false
-      },
       "TEE/qwen3.6-27b": {
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.6-27b",
         "cost": {
-          "cache_read": 0.16,
+          "cache_read": 0.03,
           "input": 0.32,
-          "output": 2.7
+          "output": 3.25
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -213501,7 +214622,7 @@
         "attachment": false,
         "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
         "cost": {
-          "cache_read": 0.1,
+          "cache_read": 0.056,
           "input": 0.2,
           "output": 1.27
         },
@@ -213534,9 +214655,9 @@
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.8-27b",
         "cost": {
-          "cache_read": 0.15,
-          "input": 0.4,
-          "output": 3
+          "cache_read": 0.05,
+          "input": 0.2,
+          "output": 2.5
         },
         "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
         "family": "qwen",
@@ -214172,38 +215293,6 @@
         "structured_output": true,
         "tool_call": true
       },
-      "agnes-3.0-flash": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.005,
-          "input": 0.05,
-          "output": 0.15
-        },
-        "description": "Agnes 3.0 Flash is a low-cost model for coding, tool use, and multi-turn agent tasks. It supports text and image input, optional thinking, and a 512K-token context window.",
-        "id": "agnes-3.0-flash",
-        "last_updated": "2026-09-09",
-        "limit": {
-          "context": 524288,
-          "input": 524288,
-          "output": 65536
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Agnes 3.0 Flash",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [],
-        "release_date": "2026-09-09",
-        "structured_output": false,
-        "tool_call": true
-      },
       "aion-labs/aion-2.0": {
         "attachment": false,
         "canonical_model_id": "aion-labs/aion-2.0",
@@ -214769,6 +215858,55 @@
         "temperature": false,
         "tool_call": true
       },
+      "anthropic/claude-fable-5.2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.25,
+          "cache_write": 12.5,
+          "input": 10,
+          "output": 50
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "anthropic/claude-fable-5.2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "input": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "anthropic/claude-fable-latest": {
         "attachment": true,
         "cost": {
@@ -214820,6 +215958,7 @@
         "canonical_model_id": "anthropic/claude-haiku-4-5",
         "cost": {
           "cache_read": 0.1,
+          "cache_write": 1.25,
           "input": 1,
           "output": 5
         },
@@ -214856,6 +215995,7 @@
         "canonical_model_id": "anthropic/claude-haiku-4-5",
         "cost": {
           "cache_read": 0.1,
+          "cache_write": 1.25,
           "input": 1,
           "output": 5
         },
@@ -215012,6 +216152,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-1",
         "cost": {
           "cache_read": 1.5,
+          "cache_write": 18.75,
           "input": 15,
           "output": 75
         },
@@ -215048,6 +216189,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-1",
         "cost": {
           "cache_read": 1.5,
+          "cache_write": 18.75,
           "input": 15,
           "output": 75
         },
@@ -215085,6 +216227,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-1",
         "cost": {
           "cache_read": 1.5,
+          "cache_write": 18.75,
           "input": 15,
           "output": 75
         },
@@ -215122,6 +216265,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-1",
         "cost": {
           "cache_read": 1.5,
+          "cache_write": 18.75,
           "input": 15,
           "output": 75
         },
@@ -215159,6 +216303,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-1",
         "cost": {
           "cache_read": 1.5,
+          "cache_write": 18.75,
           "input": 15,
           "output": 75
         },
@@ -215196,6 +216341,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-5",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215244,6 +216390,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-5",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215292,6 +216439,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-6",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215340,6 +216488,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-6",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215388,6 +216537,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-6",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215425,6 +216575,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-6",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215462,6 +216613,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-6",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215499,6 +216651,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-7",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215547,6 +216700,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-7",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215595,6 +216749,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-8",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215643,6 +216798,7 @@
         "canonical_model_id": "anthropic/claude-opus-4-8",
         "cost": {
           "cache_read": 0.5,
+          "cache_write": 6.25,
           "input": 5,
           "output": 25
         },
@@ -215835,6 +216991,7 @@
         "canonical_model_id": "anthropic/claude-sonnet-4-5",
         "cost": {
           "cache_read": 0.3,
+          "cache_write": 3.75,
           "input": 3,
           "output": 15
         },
@@ -215883,6 +217040,7 @@
         "canonical_model_id": "anthropic/claude-sonnet-4-5",
         "cost": {
           "cache_read": 0.3,
+          "cache_write": 3.75,
           "input": 3,
           "output": 15
         },
@@ -215931,6 +217089,7 @@
         "canonical_model_id": "anthropic/claude-sonnet-4-6",
         "cost": {
           "cache_read": 0.3,
+          "cache_write": 3.75,
           "input": 3,
           "output": 15
         },
@@ -215979,6 +217138,7 @@
         "canonical_model_id": "anthropic/claude-sonnet-4-6",
         "cost": {
           "cache_read": 0.3,
+          "cache_write": 3.75,
           "input": 3,
           "output": 15
         },
@@ -216284,36 +217444,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "asi1-mini": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.5,
-          "input": 1,
-          "output": 1
-        },
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "id": "asi1-mini",
-        "last_updated": "2025-03-25",
-        "limit": {
-          "context": 128000,
-          "input": 128000,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "ASI1 Mini",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-03-25",
-        "structured_output": false,
-        "tool_call": false
-      },
       "auto-model": {
         "attachment": false,
         "cost": {
@@ -216583,72 +217713,6 @@
         "reasoning": false,
         "release_date": "2026-02-14",
         "structured_output": true,
-        "temperature": true,
-        "tool_call": false
-      },
-      "bytedance/doubao-seed-2.1-pro": {
-        "attachment": false,
-        "canonical_model_id": "bytedance-seed/seed-2.1-pro",
-        "cost": {
-          "cache_read": 0.5,
-          "input": 1,
-          "output": 5
-        },
-        "description": "Higher-capability model in the Doubao Seed 2.1 family for agentic coding, long-context analysis, complex instruction following, and productivity workflows. Supports a 256k context window and up to 128k output tokens. Note: privacy and logging guarantees may be limited.",
-        "family": "seed",
-        "id": "bytedance/doubao-seed-2.1-pro",
-        "last_updated": "2026-06-23",
-        "limit": {
-          "context": 256000,
-          "input": 256000,
-          "output": 128000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Doubao Seed 2.1 Pro",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2026-06-23",
-        "structured_output": false,
-        "temperature": true,
-        "tool_call": false
-      },
-      "bytedance/doubao-seed-2.1-turbo": {
-        "attachment": false,
-        "canonical_model_id": "bytedance-seed/seed-2.1-turbo",
-        "cost": {
-          "cache_read": 0.25,
-          "input": 0.5,
-          "output": 2.5
-        },
-        "description": "Fast, lower-cost model in the Doubao Seed 2.1 family for everyday chat, coding assistance, document work, and high-throughput productivity tasks. Supports a 256k context window and up to 128k output tokens. Note: privacy and logging guarantees may be limited.",
-        "family": "seed",
-        "id": "bytedance/doubao-seed-2.1-turbo",
-        "last_updated": "2026-06-23",
-        "limit": {
-          "context": 256000,
-          "input": 256000,
-          "output": 128000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Doubao Seed 2.1 Turbo",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2026-06-23",
-        "structured_output": false,
         "temperature": true,
         "tool_call": false
       },
@@ -218094,92 +219158,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "deepseek/deepseek-v4.1-flash-1017-uncensored": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.00825,
-          "input": 0.33,
-          "output": 1.32
-        },
-        "description": "dealignai's uncensored release based on DeepSeek V4.1 Flash 1017, published October 18. This dated model stays separate from the September release, with text input, optional reasoning, and tool calling.",
-        "family": "deepseek",
-        "id": "deepseek/deepseek-v4.1-flash-1017-uncensored",
-        "last_updated": "2026-10-27",
-        "limit": {
-          "context": 1048576,
-          "input": 1048576,
-          "output": 393216
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "DeepSeek V4.1 Flash 1017 Uncensored",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "release_date": "2026-10-27",
-        "structured_output": false,
-        "tool_call": true
-      },
-      "deepseek/deepseek-v4.1-flash-1017-uncensored:thinking": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.00825,
-          "input": 0.33,
-          "output": 1.32
-        },
-        "description": "dealignai's uncensored release based on DeepSeek V4.1 Flash 1017, published October 18. This dated model stays separate from the September release, with text input, optional reasoning, and tool calling.",
-        "family": "deepseek",
-        "id": "deepseek/deepseek-v4.1-flash-1017-uncensored:thinking",
-        "last_updated": "2026-10-27",
-        "limit": {
-          "context": 1048576,
-          "input": 1048576,
-          "output": 393216
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "DeepSeek V4.1 Flash 1017 Uncensored Thinking",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "high",
-              "max"
-            ]
-          }
-        ],
-        "release_date": "2026-10-27",
-        "structured_output": false,
-        "tool_call": true
-      },
       "deepseek/deepseek-v4.1-flash-1017:thinking": {
         "attachment": true,
         "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -218224,92 +219202,6 @@
         "release_date": "2026-10-17",
         "structured_output": true,
         "temperature": true,
-        "tool_call": true
-      },
-      "deepseek/deepseek-v4.1-flash-uncensored": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.00825,
-          "input": 0.33,
-          "output": 1.32
-        },
-        "description": "A lower-refusal finetune of DeepSeek V4.1 Flash with text input, optional reasoning, and tool calling. Supports a context window of up to 1M tokens.",
-        "family": "deepseek",
-        "id": "deepseek/deepseek-v4.1-flash-uncensored",
-        "last_updated": "2026-10-01",
-        "limit": {
-          "context": 1048576,
-          "input": 1048576,
-          "output": 393216
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "DeepSeek V4.1 Flash Uncensored",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2026-10-01",
-        "structured_output": false,
-        "tool_call": true
-      },
-      "deepseek/deepseek-v4.1-flash-uncensored:thinking": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.00825,
-          "input": 0.33,
-          "output": 1.32
-        },
-        "description": "A lower-refusal finetune of DeepSeek V4.1 Flash with text input, optional reasoning, and tool calling. Supports a context window of up to 1M tokens.",
-        "family": "deepseek",
-        "id": "deepseek/deepseek-v4.1-flash-uncensored:thinking",
-        "last_updated": "2026-10-01",
-        "limit": {
-          "context": 1048576,
-          "input": 1048576,
-          "output": 393216
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "DeepSeek V4.1 Flash Uncensored Thinking",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2026-10-01",
-        "structured_output": false,
         "tool_call": true
       },
       "deepseek/deepseek-v4.1-flash:thinking": {
@@ -218522,102 +219414,6 @@
         "release_date": "2026-10-17",
         "structured_output": true,
         "tool_call": true
-      },
-      "ernie-5.0-thinking-preview": {
-        "attachment": true,
-        "cost": {
-          "cache_read": 0.5,
-          "input": 1,
-          "output": 3.5
-        },
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "ernie",
-        "id": "ernie-5.0-thinking-preview",
-        "last_updated": "2025-11-18",
-        "limit": {
-          "context": 128000,
-          "input": 128000,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Ernie 5.0 Thinking Preview",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [],
-        "release_date": "2025-11-18",
-        "structured_output": false,
-        "tool_call": false
-      },
-      "ernie-5.1": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.75,
-          "input": 0.75,
-          "output": 3
-        },
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "ernie",
-        "id": "ernie-5.1",
-        "last_updated": "2026-05-10",
-        "limit": {
-          "context": 119000,
-          "input": 119000,
-          "output": 64000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "ERNIE 5.1",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2026-05-10",
-        "structured_output": false,
-        "tool_call": false
-      },
-      "ernie-5.1:thinking": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.75,
-          "input": 0.75,
-          "output": 3
-        },
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "ernie",
-        "id": "ernie-5.1:thinking",
-        "last_updated": "2026-05-10",
-        "limit": {
-          "context": 119000,
-          "input": 119000,
-          "output": 64000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "ERNIE 5.1 Thinking",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [],
-        "release_date": "2026-05-10",
-        "structured_output": false,
-        "tool_call": false
       },
       "failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5": {
         "attachment": false,
@@ -220308,37 +221104,6 @@
         "structured_output": false,
         "tool_call": true
       },
-      "glm-4-long": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.1003,
-          "input": 0.2006,
-          "output": 0.2006
-        },
-        "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-        "family": "glm",
-        "id": "glm-4-long",
-        "last_updated": "2024-08-01",
-        "limit": {
-          "context": 1000000,
-          "input": 1000000,
-          "output": 4095
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "GLM-4 Long",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2024-01-01",
-        "structured_output": false,
-        "tool_call": false
-      },
       "google/diffusiongemma": {
         "attachment": false,
         "canonical_model_id": "google/diffusiongemma-26b-a4b-it",
@@ -221196,9 +221961,9 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-26b-a4b-it",
         "cost": {
-          "cache_read": 0.015,
-          "input": 0.031,
-          "output": 0.093
+          "cache_read": 0.018,
+          "input": 0.037,
+          "output": 0.11
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -221269,9 +222034,9 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-26b-a4b-it",
         "cost": {
-          "cache_read": 0.015,
-          "input": 0.031,
-          "output": 0.093
+          "cache_read": 0.018,
+          "input": 0.037,
+          "output": 0.11
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -222817,8 +223582,8 @@
         "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
         "cost": {
           "cache_read": 0.05,
-          "input": 0.1875,
-          "output": 0.6525
+          "input": 0.15,
+          "output": 0.6
         },
         "description": "Open multimodal Llama model for strong reasoning and fast responses",
         "family": "llama",
@@ -224955,7 +225720,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -228181,6 +228946,135 @@
         "temperature": false,
         "tool_call": true
       },
+      "orca/orcacyber-flash-1.0": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.15,
+          "input": 0.8,
+          "output": 1.6
+        },
+        "description": "An OrcaCyber model built on DeepSeek V4.1 Flash for authorized security research, coding, and tool use. Accepts text and images, with reasoning off by default. Supports a 1M-token context window, up to 393K output tokens, tool calling, and structured output. Offensive work is permitted only within an authorized security engagement.",
+        "family": "deepseek",
+        "id": "orca/orcacyber-flash-1.0",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048064,
+          "input": 1048064,
+          "output": 393216
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "OrcaCyber DeepSeek V4.1 Flash",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "tool_call": true
+      },
+      "orca/orcacyber-flash-1.0:thinking": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.15,
+          "input": 0.8,
+          "output": 1.6
+        },
+        "description": "An OrcaCyber model built on DeepSeek V4.1 Flash for authorized security research, coding, and tool use. Accepts text and images, with reasoning on by default. Supports a 1M-token context window, up to 393K output tokens, tool calling, and structured output. Offensive work is permitted only within an authorized security engagement.",
+        "family": "deepseek",
+        "id": "orca/orcacyber-flash-1.0:thinking",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048064,
+          "input": 1048064,
+          "output": 393216
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "OrcaCyber DeepSeek V4.1 Flash Thinking",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "tool_call": true
+      },
+      "orca/orcacyber-glm-5.3-flash": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.15,
+          "input": 0.8,
+          "output": 1.6
+        },
+        "description": "An OrcaCyber model built on GLM 5.3 Flash for authorized security research, coding, and tool use. Accepts text and images. Reasoning is always enabled, with selectable effort. Supports a 1M-token context window, up to 131K output tokens, tool calling, and structured output. Offensive work is permitted only within an authorized security engagement.",
+        "family": "glm",
+        "id": "orca/orcacyber-glm-5.3-flash",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048064,
+          "input": 1048064,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "OrcaCyber GLM 5.3 Flash",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "tool_call": true
+      },
       "orca/orcacyber-k3.1-pro": {
         "attachment": true,
         "cost": {
@@ -228220,6 +229114,46 @@
           }
         ],
         "release_date": "2026-11-05",
+        "structured_output": true,
+        "tool_call": true
+      },
+      "orca/orcacyber-mimo-flash": {
+        "attachment": false,
+        "cost": {
+          "cache_read": 0.15,
+          "input": 0.8,
+          "output": 1.6
+        },
+        "description": "An OrcaCyber model built on MiMo V2.6 Flash for authorized security research, coding, and tool use. Accepts text input, with reasoning enabled by default and an option to turn it off. Supports a 1M-token context window, up to 131K output tokens, tool calling, and structured output. Offensive work is permitted only within an authorized security engagement.",
+        "family": "mimo",
+        "id": "orca/orcacyber-mimo-flash",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048064,
+          "input": 1048064,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "OrcaCyber MiMo V2.6 Flash",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "high"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": true,
         "tool_call": true
       },
@@ -229678,9 +230612,9 @@
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.5-27b",
         "cost": {
-          "cache_read": 0.135,
-          "input": 0.25,
-          "output": 2
+          "cache_read": 0.02,
+          "input": 0.2,
+          "output": 1.75
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -229714,9 +230648,9 @@
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.5-27b",
         "cost": {
-          "cache_read": 0.135,
-          "input": 0.25,
-          "output": 2
+          "cache_read": 0.02,
+          "input": 0.2,
+          "output": 1.75
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -229873,8 +230807,7 @@
         "modalities": {
           "input": [
             "text",
-            "image",
-            "video"
+            "image"
           ],
           "output": [
             "text"
@@ -230063,6 +230996,7 @@
         "canonical_model_id": "alibaba/qwen3.5-plus",
         "cost": {
           "cache_read": 0.04,
+          "cache_write": 0.5,
           "input": 0.4,
           "output": 2.4
         },
@@ -230099,6 +231033,7 @@
         "canonical_model_id": "alibaba/qwen3.5-plus",
         "cost": {
           "cache_read": 0.04,
+          "cache_write": 0.5,
           "input": 0.4,
           "output": 2.4
         },
@@ -231247,7 +232182,6 @@
           "input": [
             "text",
             "image",
-            "video",
             "pdf"
           ],
           "output": [
@@ -232160,8 +233094,8 @@
         "id": "stepfun/step-5-preview",
         "last_updated": "2026-09-20",
         "limit": {
-          "context": 1000000,
-          "input": 1000000,
+          "context": 1048576,
+          "input": 1048576,
           "output": 65536
         },
         "modalities": {
@@ -234230,9 +235164,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-4.6",
         "cost": {
-          "cache_read": 0.1,
-          "input": 0.5,
-          "output": 2
+          "cache_read": 0.11,
+          "input": 0.55,
+          "output": 2.2
         },
         "description": "Late GLM-4 workhorse for coding agents, reasoning, and structured tasks",
         "family": "glm",
@@ -236688,7 +237622,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/kimi-k3.1-pro",
         "interleaved": {
@@ -245113,7 +246047,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/kimi-k3.1-pro",
         "interleaved": {
@@ -245164,7 +246098,7 @@
           "input": 4,
           "output": 20
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/kimi-k3.1-pro-highspeed",
         "interleaved": {
@@ -252488,7 +253422,7 @@
           "input": 2,
           "output": 11
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -256642,7 +257576,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -260421,6 +261355,57 @@
         "temperature": false,
         "tool_call": true
       },
+      "claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for demanding reasoning and long-horizon agentic work",
+        "family": "claude-fable",
+        "id": "claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "provider": {
+          "api": "https://opencode.ai/inference/anthropic/v1",
+          "npm": "@ai-sdk/anthropic"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "temperature": false,
+        "tool_call": true
+      },
       "claude-haiku-4-5": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-haiku-4-5",
@@ -261128,7 +262113,7 @@
         "attachment": true,
         "canonical_model_id": "anthropic/claude-sonnet-5-5",
         "cost": {
-          "cache_read": 0.2,
+          "cache_read": 0.1,
           "cache_write": 2.5,
           "input": 2,
           "output": 10
@@ -261221,6 +262206,7 @@
           }
         ],
         "release_date": "2026-11-03",
+        "status": "deprecated",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -261968,10 +262954,10 @@
         "attachment": true,
         "canonical_model_id": "google/gemini-3.6-flash",
         "cost": {
-          "cache_read": 0.15,
-          "input": 1.5,
-          "input_audio": 1.5,
-          "output": 7.5
+          "cache_read": 0.075,
+          "input": 0.75,
+          "input_audio": 0.75,
+          "output": 3.75
         },
         "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
         "family": "gemini-flash",
@@ -262021,10 +263007,10 @@
         "attachment": true,
         "canonical_model_id": "google/gemini-3.7-flash",
         "cost": {
-          "cache_read": 0.15,
-          "input": 1.5,
-          "input_audio": 1.5,
-          "output": 7.5
+          "cache_read": 0.075,
+          "input": 0.75,
+          "input_audio": 0.75,
+          "output": 3.75
         },
         "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
         "family": "gemini-flash",
@@ -262073,10 +263059,10 @@
         "attachment": true,
         "canonical_model_id": "google/gemini-3.8-flash",
         "cost": {
-          "cache_read": 0.15,
-          "input": 1.5,
-          "input_audio": 1.5,
-          "output": 7.5
+          "cache_read": 0.075,
+          "input": 0.75,
+          "input_audio": 0.75,
+          "output": 3.75
         },
         "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
         "family": "gemini-flash",
@@ -265106,6 +266092,49 @@
         "temperature": true,
         "tool_call": true
       },
+      "longcat-2.5-free": {
+        "attachment": true,
+        "canonical_model_id": "meituan/longcat-2.5",
+        "cost": {
+          "cache_read": 0,
+          "input": 0,
+          "output": 0
+        },
+        "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
+        "family": "longcat",
+        "id": "longcat-2.5-free",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-11-02",
+        "limit": {
+          "context": 1000000,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "LongCat 2.5 Free",
+        "open_weights": false,
+        "provider": {
+          "api": "https://opencode.ai/inference/openai/v1"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "release_date": "2026-11-02",
+        "temperature": false,
+        "tool_call": true
+      },
       "longcat-2.5-preview-free": {
         "attachment": true,
         "canonical_model_id": "meituan/longcat-2.5-preview",
@@ -265687,7 +266716,6 @@
           }
         ],
         "release_date": "2026-10-19",
-        "status": "deprecated",
         "temperature": true,
         "tool_call": true
       },
@@ -265733,6 +266761,59 @@
           }
         ],
         "release_date": "2026-10-06",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "muse-ember-1.0": {
+        "attachment": true,
+        "canonical_model_id": "meta/muse-ember-1.0",
+        "cost": {
+          "cache_read": 0.004,
+          "cache_write": 0,
+          "input": 0.1,
+          "output": 0.5
+        },
+        "description": "Reasoning model from Meta with text, image, video and PDF input and tool use",
+        "family": "muse",
+        "id": "muse-ember-1.0",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048576,
+          "output": 270000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Muse Ember 1.0",
+        "open_weights": false,
+        "provider": {
+          "api": "https://opencode.ai/inference/openai/v1",
+          "npm": "@ai-sdk/openai"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -266997,6 +268078,7 @@
           }
         ],
         "release_date": "2026-11-03",
+        "status": "deprecated",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -267824,7 +268906,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro",
         "interleaved": {
@@ -267906,6 +268988,49 @@
         ],
         "release_date": "2026-06-30",
         "temperature": true,
+        "tool_call": true
+      },
+      "longcat-2.5-free": {
+        "attachment": true,
+        "canonical_model_id": "meituan/longcat-2.5",
+        "cost": {
+          "cache_read": 0,
+          "input": 0,
+          "output": 0
+        },
+        "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
+        "family": "longcat",
+        "id": "longcat-2.5-free",
+        "interleaved": {
+          "field": "reasoning_content"
+        },
+        "last_updated": "2026-11-02",
+        "limit": {
+          "context": 1000000,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "LongCat 2.5 Free",
+        "open_weights": false,
+        "provider": {
+          "api": "https://opencode.ai/inference/go/openai/v1"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "release_date": "2026-11-02",
+        "temperature": false,
         "tool_call": true
       },
       "longcat-2.5-preview-free": {
@@ -269413,6 +270538,54 @@
           }
         ],
         "release_date": "2026-09-01",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
+      "anthropic/claude-fable-5.2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for creative writing, analysis, and controlled agent workflows",
+        "family": "claude-fable",
+        "id": "anthropic/claude-fable-5.2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "structured_output": true,
         "temperature": false,
         "tool_call": true
@@ -272685,9 +273858,9 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-26b-a4b-it",
         "cost": {
-          "cache_read": 0.0375,
-          "input": 0.0675,
-          "output": 0.225
+          "cache_read": 0.046,
+          "input": 0.08,
+          "output": 0.1
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -272695,7 +273868,7 @@
         "last_updated": "2026-04-02",
         "limit": {
           "context": 262144,
-          "output": 235929
+          "output": 128000
         },
         "modalities": {
           "input": [
@@ -273548,9 +274721,9 @@
         "attachment": false,
         "canonical_model_id": "meta/llama-3.3-70b-instruct",
         "cost": {
-          "cache_read": 0.295,
-          "input": 0.59,
-          "output": 0.79
+          "cache_read": 0.71,
+          "input": 0.71,
+          "output": 0.71
         },
         "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
         "family": "llama",
@@ -273559,7 +274732,7 @@
         "last_updated": "2024-12-06",
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -273675,6 +274848,55 @@
         "structured_output": false,
         "temperature": true,
         "tool_call": false
+      },
+      "meta/muse-ember": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.004,
+          "cache_write": 0.125,
+          "input": 0.1,
+          "output": 0.5
+        },
+        "description": "Open Llama multimodal model for image understanding and text reasoning",
+        "family": "muse",
+        "id": "meta/muse-ember",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048576,
+          "output": 943718
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf",
+            "audio"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Muse Ember",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
       },
       "meta/muse-glimmer-30b": {
         "attachment": true,
@@ -273971,7 +275193,7 @@
         "last_updated": "2026-10-15",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -274083,42 +275305,6 @@
         "temperature": true,
         "tool_call": false
       },
-      "minimax/minimax-m1": {
-        "attachment": false,
-        "cost": {
-          "input": 0.55,
-          "output": 2.2
-        },
-        "description": "MiniMax model for chat, coding, office work, and agentic tasks",
-        "family": "minimax",
-        "id": "minimax/minimax-m1",
-        "knowledge": "2024-06-30",
-        "last_updated": "2025-06-17",
-        "limit": {
-          "context": 1000000,
-          "output": 40000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "MiniMax M1",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ],
-        "release_date": "2025-06-17",
-        "structured_output": false,
-        "temperature": true,
-        "tool_call": true
-      },
       "minimax/minimax-m2.5": {
         "attachment": false,
         "canonical_model_id": "minimax/MiniMax-M2.5",
@@ -274135,7 +275321,7 @@
         },
         "last_updated": "2026-02-12",
         "limit": {
-          "context": 204800,
+          "context": 200000,
           "output": 58982
         },
         "modalities": {
@@ -274168,7 +275354,7 @@
         "id": "minimax/minimax-m2.7",
         "last_updated": "2026-03-18",
         "limit": {
-          "context": 204800,
+          "context": 196608,
           "output": 176947
         },
         "modalities": {
@@ -274875,8 +276061,9 @@
         "attachment": true,
         "canonical_model_id": "mistral/mistral-small-3.2-24b-instruct",
         "cost": {
-          "input": 0.075,
-          "output": 0.2
+          "cache_read": 0.01,
+          "input": 0.1,
+          "output": 0.3
         },
         "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
         "family": "mistral-small",
@@ -274885,7 +276072,7 @@
         "last_updated": "2025-06-20",
         "limit": {
           "context": 256000,
-          "output": 16384
+          "output": 26214
         },
         "modalities": {
           "input": [
@@ -275497,6 +276684,47 @@
         "temperature": true,
         "tool_call": true
       },
+      "nex-agi/nex-n2.6": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.024,
+          "input": 0.12,
+          "output": 0.4
+        },
+        "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+        "family": "agi",
+        "id": "nex-agi/nex-n2.6",
+        "last_updated": "2026-11-10",
+        "limit": {
+          "context": 262144,
+          "output": 235929
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Nex-N2.6",
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "medium",
+              "high"
+            ]
+          }
+        ],
+        "release_date": "2026-11-10",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
       "nousresearch/hermes-4-405b": {
         "attachment": false,
         "canonical_model_id": "nousresearch/hermes-4-405b",
@@ -275869,7 +277097,7 @@
         "cost": {
           "cache_read": 0.02,
           "input": 0.15,
-          "output": 0.5
+          "output": 0.47
         },
         "description": "Nemotron multimodal model for visual reasoning and agentic AI workflows",
         "family": "nemotron",
@@ -279439,8 +280667,8 @@
       "qwen/qwen3-14b": {
         "attachment": false,
         "cost": {
-          "input": 0.12,
-          "output": 0.24
+          "input": 0.1,
+          "output": 0.22
         },
         "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
         "family": "qwen",
@@ -279449,7 +280677,7 @@
         "last_updated": "2025-04-28",
         "limit": {
           "context": 40960,
-          "output": 16384
+          "output": 36864
         },
         "modalities": {
           "input": [
@@ -280699,7 +281927,7 @@
         "id": "qwen/qwen3.8-27b",
         "last_updated": "2026-08-14",
         "limit": {
-          "context": 1024000,
+          "context": 1048575,
           "output": 235929
         },
         "modalities": {
@@ -281133,10 +282361,15 @@
           ]
         },
         "name": "Ripple 65B Preview",
-        "open_weights": false,
-        "reasoning": false,
+        "open_weights": true,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
         "release_date": "2026-11-04",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": true,
         "tool_call": true
       },
@@ -281473,53 +282706,6 @@
         "temperature": false,
         "tool_call": false
       },
-      "stealth/crouton-alpha": {
-        "attachment": true,
-        "cost": {
-          "input": 0,
-          "output": 0
-        },
-        "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
-        "family": "alpha",
-        "id": "stealth/crouton-alpha",
-        "last_updated": "2026-11-03",
-        "limit": {
-          "context": 1048576,
-          "output": 943718
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video",
-            "pdf",
-            "audio"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Crouton Alpha",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "minimal",
-              "low",
-              "medium",
-              "high",
-              "xhigh",
-              "max"
-            ]
-          }
-        ],
-        "release_date": "2026-11-03",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "stepfun/step-3.5-flash": {
         "attachment": false,
         "canonical_model_id": "stepfun/step-3.5-flash",
@@ -281610,7 +282796,7 @@
         "id": "stepfun/step-5-preview",
         "last_updated": "2026-09-20",
         "limit": {
-          "context": 1048576,
+          "context": 1000000,
           "input": 1000000,
           "output": 64000
         },
@@ -282080,6 +283266,50 @@
           }
         ],
         "release_date": "2026-07-15",
+        "structured_output": false,
+        "temperature": true,
+        "tool_call": true
+      },
+      "thinkingmachines/inkling-2-small:free": {
+        "attachment": true,
+        "canonical_model_id": "thinkingmachines/inkling-2-small",
+        "cost": {
+          "input": 0,
+          "output": 0
+        },
+        "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+        "family": "ling",
+        "id": "thinkingmachines/inkling-2-small:free",
+        "last_updated": "2026-11-05",
+        "limit": {
+          "context": 1048576,
+          "output": 131072
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Inkling 2 Small (free)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-05",
         "structured_output": false,
         "temperature": true,
         "tool_call": true
@@ -282824,7 +284054,7 @@
         "knowledge": "2024-12",
         "last_updated": "2026-04-22",
         "limit": {
-          "context": 1050000,
+          "context": 1024000,
           "output": 235929
         },
         "modalities": {
@@ -283047,9 +284277,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-4.5-air",
         "cost": {
-          "cache_read": 0.025,
-          "input": 0.13,
-          "output": 0.85
+          "cache_read": 0.03,
+          "input": 0.2,
+          "output": 1.1
         },
         "description": "Lighter GLM-4.5 variant for fast coding assistance and cheaper agents",
         "family": "glm-air",
@@ -283491,8 +284721,8 @@
         "canonical_model_id": "zhipuai/glm-5.3-flash",
         "cost": {
           "cache_read": 0.03,
-          "input": 0.0335,
-          "output": 0.083
+          "input": 0.15,
+          "output": 0.5
         },
         "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
         "family": "glm-flash",
@@ -283500,7 +284730,7 @@
         "last_updated": "2026-08-26",
         "limit": {
           "context": 1048576,
-          "output": 131072
+          "output": 943717
         },
         "modalities": {
           "input": [
@@ -283699,10 +284929,10 @@
       "~anthropic/claude-fable-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.25,
-          "cache_write": 12.5,
-          "input": 10,
-          "output": 50
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
         },
         "description": "Claude model for creative writing, analysis, and controlled agent workflows",
         "family": "claude-fable",
@@ -302873,7 +304103,7 @@
         "last_updated": "2024-12-06",
         "limit": {
           "context": 131072,
-          "output": 32768
+          "output": 115200
         },
         "modalities": {
           "input": [
@@ -302905,7 +304135,7 @@
         "last_updated": "2026-10-15",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 131072
         },
         "modalities": {
           "input": [
@@ -303158,7 +304388,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -304696,10 +305926,10 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-5.3",
         "cost": {
-          "cache_read": 0.093,
-          "cache_write": 0.5,
-          "input": 0.5,
-          "output": 3.08
+          "cache_read": 0.0744,
+          "cache_write": 0.4,
+          "input": 0.4,
+          "output": 2.464
         },
         "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
         "family": "glm",
@@ -315756,7 +316986,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro",
         "last_updated": "2026-10-23",
@@ -315803,7 +317033,7 @@
           "input": 4,
           "output": 20
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3.1-pro-highspeed",
         "last_updated": "2026-10-23",
@@ -341406,7 +342636,7 @@
           "input": 4,
           "output": 20
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3-1-pro",
         "last_updated": "2026-10-23",
@@ -342334,7 +343564,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "moonshotai/Kimi-K3.1-Pro",
         "interleaved": {
@@ -346225,6 +347455,53 @@
         "temperature": false,
         "tool_call": true
       },
+      "claude-fable-5-2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for creative writing, analysis, and controlled agent workflows",
+        "family": "claude-fable",
+        "id": "claude-fable-5-2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "structured_output": true,
+        "temperature": false,
+        "tool_call": true
+      },
       "claude-haiku-5-5": {
         "attachment": true,
         "canonical_model_id": "anthropic/claude-haiku-5-5",
@@ -347698,6 +348975,7 @@
         "open_weights": true,
         "reasoning": false,
         "release_date": "2026-04-13",
+        "status": "deprecated",
         "structured_output": true,
         "tool_call": true
       },
@@ -348447,7 +349725,7 @@
           "input": 2,
           "output": 10
         },
-        "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+        "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
         "id": "kimi-k3-1-pro",
         "last_updated": "2026-10-23",
@@ -353484,6 +354762,100 @@
           }
         ],
         "release_date": "2026-09-01",
+        "temperature": false,
+        "tool_call": true
+      },
+      "anthropic/claude-fable-5.2": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.2,
+          "cache_write": 10,
+          "input": 8,
+          "output": 40
+        },
+        "description": "Claude model for creative writing, analysis, and controlled agent workflows",
+        "family": "claude-fable",
+        "id": "anthropic/claude-fable-5.2",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
+        "temperature": false,
+        "tool_call": true
+      },
+      "anthropic/claude-fable-5.2-fast": {
+        "attachment": true,
+        "canonical_model_id": "anthropic/claude-fable-5-2",
+        "cost": {
+          "cache_read": 0.4,
+          "cache_write": 20,
+          "input": 16,
+          "output": 80
+        },
+        "description": "Claude model for creative writing, analysis, and controlled agent workflows",
+        "family": "claude-fable",
+        "id": "anthropic/claude-fable-5.2-fast",
+        "knowledge": "2026-06",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1000000,
+          "output": 128000
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Claude Fable 5.2 (Fast)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "temperature": false,
         "tool_call": true
       },
@@ -358683,6 +360055,50 @@
         "reasoning": false,
         "release_date": "2025-04-05",
         "temperature": true,
+        "tool_call": true
+      },
+      "meta/muse-ember": {
+        "attachment": true,
+        "cost": {
+          "cache_read": 0.004,
+          "input": 0.1,
+          "output": 0.5
+        },
+        "description": "Open Llama multimodal model for image understanding and text reasoning",
+        "family": "muse",
+        "id": "meta/muse-ember",
+        "last_updated": "2026-11-09",
+        "limit": {
+          "context": 1048576,
+          "output": 1048576
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Muse Ember",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-11-09",
         "tool_call": true
       },
       "meta/muse-glimmer-30b": {
@@ -374118,7 +375534,7 @@
         "cost": {
           "cache_read": 0.02,
           "input": 0.15,
-          "output": 0.5
+          "output": 0.47
         },
         "description": "Nemotron 3.5 Super VL is a multimodal MoE model built for visual understanding, reasoning, and agentic workflows.",
         "family": "nemotron",
