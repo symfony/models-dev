@@ -6555,7 +6555,7 @@
         "canonical_model_id": "google/gemini-2.5-flash-image",
         "cost": {
           "input": 0.3,
-          "output": 30
+          "output": 2.5
         },
         "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
         "family": "gemini-flash",
@@ -15752,7 +15752,7 @@
         "cost": {
           "cache_read": 0.03,
           "input": 0.3,
-          "output": 30
+          "output": 2.499
         },
         "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
         "family": "gemini-flash",
@@ -15946,7 +15946,7 @@
         "canonical_model_id": "google/gemini-3-pro-image",
         "cost": {
           "input": 2,
-          "output": 120
+          "output": 12
         },
         "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
         "family": "gemini-pro",
@@ -18255,7 +18255,7 @@
         "canonical_model_id": "openai/gpt-image-1.5",
         "cost": {
           "input": 5,
-          "output": 32
+          "output": 10
         },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -18289,7 +18289,7 @@
         "cost": {
           "cache_read": 1.25,
           "input": 5,
-          "output": 30
+          "output": 10
         },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -18322,7 +18322,7 @@
         "cost": {
           "cache_read": 1.25,
           "input": 5,
-          "output": 30
+          "output": 10
         },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -18355,7 +18355,7 @@
         "cost": {
           "cache_read": 1.25,
           "input": 5,
-          "output": 30
+          "output": 10
         },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -56736,11 +56736,6 @@
       "gpt-image-1": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-1",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 40
-        },
         "description": "OpenAI image model for production generation, edits, and brand-safe visual workflows",
         "family": "gpt-image",
         "id": "gpt-image-1",
@@ -56803,11 +56798,6 @@
       "gpt-image-2": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "gpt-image-2",
@@ -56836,11 +56826,6 @@
       "gpt-image-2.5-flare": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2.5-flare",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "gpt-image-2.5-flare",
@@ -56869,11 +56854,6 @@
       "gpt-image-2.5-sunburst": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2.5-sunburst",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "gpt-image-2.5-sunburst",
@@ -61155,11 +61135,6 @@
       "gpt-image-1": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-1",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 40
-        },
         "description": "OpenAI image model for production generation, edits, and brand-safe visual workflows",
         "family": "gpt-image",
         "id": "gpt-image-1",
@@ -61222,11 +61197,6 @@
       "gpt-image-2": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "gpt-image-2",
@@ -61255,11 +61225,6 @@
       "gpt-image-2.5-flare": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2.5-flare",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "gpt-image-2.5-flare",
@@ -61288,11 +61253,6 @@
       "gpt-image-2.5-sunburst": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2.5-sunburst",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "gpt-image-2.5-sunburst",
@@ -98241,11 +98201,6 @@
       "openai-gpt-image-1": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-1",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 40
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "openai-gpt-image-1",
@@ -98309,8 +98264,9 @@
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2",
         "cost": {
-          "input": 8,
-          "output": 30
+          "cache_read": 1.25,
+          "input": 5,
+          "output": 0
         },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
@@ -134513,7 +134469,7 @@
         "cost": {
           "cache_read": 0.075,
           "input": 0.3,
-          "output": 30
+          "output": 2.5
         },
         "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
         "family": "gemini-flash",
@@ -134765,7 +134721,7 @@
         "canonical_model_id": "google/gemini-3-pro-image",
         "cost": {
           "input": 2,
-          "output": 120
+          "output": 12
         },
         "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
         "family": "gemini-pro",
@@ -134808,7 +134764,7 @@
         "canonical_model_id": "google/gemini-3.1-flash-image",
         "cost": {
           "input": 0.5,
-          "output": 60
+          "output": 3
         },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gemini-flash",
@@ -134901,7 +134857,7 @@
         "canonical_model_id": "google/gemini-3.1-flash-lite-image",
         "cost": {
           "input": 0.25,
-          "output": 30
+          "output": 1.5
         },
         "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
         "family": "gemini-flash-lite",
@@ -137134,7 +137090,7 @@
         "canonical_model_id": "google/gemini-2.5-flash-image",
         "cost": {
           "input": 0.3,
-          "output": 30
+          "output": 2.5
         },
         "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
         "family": "gemini-flash",
@@ -137396,7 +137352,7 @@
         "cost": {
           "cache_read": 0.2,
           "input": 2,
-          "output": 120
+          "output": 12
         },
         "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
         "family": "gemini-pro",
@@ -137433,7 +137389,7 @@
         "cost": {
           "cache_read": 0.05,
           "input": 0.5,
-          "output": 60
+          "output": 3
         },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gemini-flash",
@@ -137528,7 +137484,7 @@
         "cost": {
           "cache_read": 0.025,
           "input": 0.25,
-          "output": 30
+          "output": 1.5
         },
         "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
         "family": "gemini-flash-lite",
@@ -138122,7 +138078,7 @@
         "cost": {
           "cache_read": 0.15,
           "input": 1.5,
-          "output": 30
+          "output": 7.5
         },
         "description": "Image model for prompt-driven generation, multi-turn editing, and visual design workflows",
         "family": "gemini-flash",
@@ -155376,7 +155332,7 @@
         "cost": {
           "cache_read": 0.19,
           "cache_write": 0,
-          "input": 0.7985,
+          "input": 0.7995,
           "output": 3.75
         },
         "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
@@ -170522,16 +170478,17 @@
         "attachment": false,
         "canonical_model_id": "deepseek/deepseek-r1-0528",
         "cost": {
-          "input": 0.571,
-          "output": 2.286
+          "cache_read": 0.35,
+          "input": 0.5,
+          "output": 2.15
         },
         "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
         "family": "deepseek-thinking",
         "id": "deepseek/deepseek-r1-0528",
         "last_updated": "2025-05-28",
         "limit": {
-          "context": 128000,
-          "output": 32000
+          "context": 163840,
+          "output": 32768
         },
         "modalities": {
           "input": [
@@ -170995,7 +170952,7 @@
         "last_updated": "2026-10-17",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 384000
         },
         "modalities": {
           "input": [
@@ -172685,8 +172642,8 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-3-27b-it",
         "cost": {
-          "input": 0.08,
-          "output": 0.16
+          "input": 0.064,
+          "output": 0.128
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -172752,9 +172709,9 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-26b-a4b-it",
         "cost": {
-          "cache_read": 0.009,
-          "input": 0.019,
-          "output": 0.056
+          "cache_read": 0.01,
+          "input": 0.021,
+          "output": 0.062
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -173014,88 +172971,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "inception/mercury-2": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.025,
-          "input": 0.25,
-          "output": 0.75
-        },
-        "description": "A diffusion-based reasoning LLM that generates text via parallel refinement (not token-by-token), delivering real-time latency with ~1k tokens/sec plus 128K context and built-in tool/JSON support.",
-        "family": "mercury",
-        "id": "inception/mercury-2",
-        "last_updated": "2026-02-24",
-        "limit": {
-          "context": 128000,
-          "output": 128000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury 2 (retires Nov 15)",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2026-02-24",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "inception/mercury-2.5": {
-        "attachment": false,
-        "cost": {
-          "cache_read": 0.004,
-          "input": 0.04,
-          "output": 0.15
-        },
-        "description": "Mercury 2.5 is Inception’s diffusion-based reasoning model for chat, agents, and structured workflows, with tool calling, structured outputs, and a 260K context window.",
-        "family": "mercury",
-        "id": "inception/mercury-2.5",
-        "last_updated": "2026-09-08",
-        "limit": {
-          "context": 260000,
-          "output": 65536
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury 2.5 (retires Nov 15)",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2026-09-08",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "inception/mercury-3": {
         "attachment": false,
         "cost": {
@@ -173133,36 +173008,6 @@
           }
         ],
         "release_date": "2026-10-19",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "inception/mercury-coder-small": {
-        "attachment": false,
-        "cost": {
-          "input": 0.25,
-          "output": 1
-        },
-        "description": "Mercury Coder Small is ideal for code generation, debugging, and refactoring tasks with minimal latency.",
-        "family": "mercury",
-        "id": "inception/mercury-coder-small",
-        "last_updated": "2025-02-26",
-        "limit": {
-          "context": 32000,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury Coder Small Beta (retires Nov 15)",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-02-26",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -176480,9 +176325,9 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k3.1-pro",
         "cost": {
-          "cache_read": 0.2,
-          "input": 2,
-          "output": 10
+          "cache_read": 0.23,
+          "input": 2.3,
+          "output": 11.5
         },
         "description": "Kimi K3.1 Pro is Moonshot AI's flagship open-weight multimodal reasoning model and a post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon coding, 3D...",
         "family": "kimi-k3",
@@ -177182,8 +177027,8 @@
         "id": "nvidia/nemotron-3.5-super-vl",
         "last_updated": "2026-10-15",
         "limit": {
-          "context": 1048576,
-          "output": 943718
+          "context": 262144,
+          "output": 235929
         },
         "modalities": {
           "input": [
@@ -180671,7 +180516,7 @@
         "last_updated": "2025-08-05",
         "limit": {
           "context": 131072,
-          "output": 117964
+          "output": 65536
         },
         "modalities": {
           "input": [
@@ -182223,7 +182068,7 @@
         "open_weights": true,
         "reasoning": false,
         "release_date": "2025-07-31",
-        "structured_output": true,
+        "structured_output": false,
         "temperature": true,
         "tool_call": true
       },
@@ -182473,45 +182318,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "qwen/qwen3-vl-30b-a3b-thinking": {
-        "attachment": true,
-        "cost": {
-          "input": 0.29,
-          "output": 1
-        },
-        "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-        "family": "qwen",
-        "id": "qwen/qwen3-vl-30b-a3b-thinking",
-        "last_updated": "2025-10-06",
-        "limit": {
-          "context": 262144,
-          "output": 235929
-        },
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Qwen: Qwen3 VL 30B A3B Thinking (retires Nov 15)",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2025-10-06",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "qwen/qwen3-vl-8b-instruct": {
         "attachment": true,
         "cost": {
@@ -182716,9 +182522,9 @@
         "attachment": true,
         "canonical_model_id": "alibaba/qwen3.5-9b",
         "cost": {
-          "cache_read": 0.057,
-          "input": 0.063,
-          "output": 0.093
+          "cache_read": 0.152,
+          "input": 0.169,
+          "output": 0.248
         },
         "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
         "family": "qwen",
@@ -184255,46 +184061,6 @@
         "temperature": true,
         "tool_call": true
       },
-      "stepfun/step-3.5-flash": {
-        "attachment": false,
-        "canonical_model_id": "stepfun/step-3.5-flash",
-        "cost": {
-          "input": 0.1,
-          "output": 0.3
-        },
-        "description": "StepFun flash model for efficient multimodal reasoning, coding, and tool use",
-        "family": "step",
-        "id": "stepfun/step-3.5-flash",
-        "knowledge": "2025-01",
-        "last_updated": "2026-02-13",
-        "limit": {
-          "context": 262144,
-          "output": 65536
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Step 3.5 Flash",
-        "open_weights": true,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2026-01-29",
-        "structured_output": false,
-        "temperature": true,
-        "tool_call": true
-      },
       "stepfun/step-3.7-flash": {
         "attachment": true,
         "canonical_model_id": "stepfun/step-3.7-flash",
@@ -184383,45 +184149,6 @@
         "structured_output": true,
         "temperature": true,
         "tool_call": true
-      },
-      "tencent/hunyuan-a13b-instruct": {
-        "attachment": false,
-        "cost": {
-          "input": 0.14,
-          "output": 0.57
-        },
-        "description": "Tencent Hy reasoning model for coding, instruction following, and agent tasks",
-        "family": "hunyuan",
-        "id": "tencent/hunyuan-a13b-instruct",
-        "last_updated": "2025-07-08",
-        "limit": {
-          "context": 131072,
-          "output": 117964
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Tencent: Hunyuan A13B Instruct (retires Nov 15)",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2025-07-08",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": false
       },
       "tencent/hy-mt2-1.8b": {
         "attachment": false,
@@ -186071,9 +185798,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-4.5-air",
         "cost": {
-          "cache_read": 0.03,
-          "input": 0.2,
-          "output": 1.1
+          "cache_read": 0.025,
+          "input": 0.13,
+          "output": 0.85
         },
         "description": "Efficient GLM model for fast reasoning, coding, and agent workflows",
         "family": "glm-air",
@@ -186242,9 +185969,9 @@
         "attachment": false,
         "canonical_model_id": "zhipuai/glm-4.7",
         "cost": {
-          "cache_read": 0.11,
-          "input": 0.6,
-          "output": 2.2
+          "cache_read": 0.08,
+          "input": 0.4,
+          "output": 1.75
         },
         "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
         "family": "glm",
@@ -186252,7 +185979,7 @@
         "knowledge": "2025-04",
         "last_updated": "2025-12-22",
         "limit": {
-          "context": 204800,
+          "context": 202752,
           "output": 131072
         },
         "modalities": {
@@ -187061,9 +186788,9 @@
       "~deepseek/deepseek-flash-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.01,
-          "input": 0.038,
-          "output": 0.5
+          "cache_read": 0.007,
+          "input": 0.02,
+          "output": 0.108
         },
         "description": "This model always redirects to the latest model in the DeepSeek Flash family.",
         "family": "deepseek-flash",
@@ -187071,7 +186798,7 @@
         "last_updated": "2026-09-14",
         "limit": {
           "context": 1048576,
-          "output": 943718
+          "output": 384000
         },
         "modalities": {
           "input": [
@@ -192704,7 +192431,7 @@
         "attachment": true,
         "canonical_model_id": "deepseek/deepseek-v4.1-flash",
         "cost": {
-          "cache_read": 0.0027,
+          "cache_read": 0.007,
           "input": 0.135,
           "output": 0.54
         },
@@ -200061,6 +199788,53 @@
         "temperature": true,
         "tool_call": true
       },
+      "sakana-namazu": {
+        "attachment": true,
+        "canonical_model_id": "sakana/sakana-namazu",
+        "cost": {
+          "cache_read": 0.15,
+          "input": 0.95,
+          "output": 4
+        },
+        "description": "Japanese-specialized reasoning model based on Kimi K2.6 and tuned for Japanese language, culture, and business workflows",
+        "family": "sakana-namazu",
+        "id": "sakana-namazu",
+        "last_updated": "2026-08-03",
+        "limit": {
+          "context": 262144,
+          "output": 65536
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Sakana Namazu",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-08-03",
+        "temperature": true,
+        "tool_call": true
+      },
       "seed-2-0-code-preview-260328": {
         "attachment": true,
         "cost": {
@@ -202859,7 +202633,7 @@
           }
         ],
         "release_date": "2026-06-09",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -202907,7 +202681,7 @@
           }
         ],
         "release_date": "2026-09-01",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -202955,7 +202729,7 @@
           }
         ],
         "release_date": "2026-11-09",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -203100,7 +202874,7 @@
           }
         ],
         "release_date": "2026-10-07",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -203196,7 +202970,6 @@
               "low",
               "medium",
               "high",
-              "xhigh",
               "max"
             ]
           }
@@ -203251,7 +203024,7 @@
           }
         ],
         "release_date": "2026-04-16",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -203300,7 +203073,7 @@
           }
         ],
         "release_date": "2026-05-28",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -203349,7 +203122,7 @@
           }
         ],
         "release_date": "2026-07-24",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -203397,7 +203170,7 @@
           }
         ],
         "release_date": "2026-09-22",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -203605,7 +203378,7 @@
           }
         ],
         "release_date": "2026-06-30",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -203653,7 +203426,7 @@
           }
         ],
         "release_date": "2026-09-28",
-        "structured_output": false,
+        "structured_output": true,
         "temperature": false,
         "tool_call": true
       },
@@ -217282,6 +217055,54 @@
           }
         ],
         "release_date": "2026-09-11",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "sakana/sakana-namazu": {
+        "attachment": true,
+        "canonical_model_id": "sakana/sakana-namazu",
+        "cost": {
+          "cache_read": 0.15,
+          "input": 0.95,
+          "output": 4
+        },
+        "description": "Japanese-specialized reasoning model based on Kimi K2.6 and tuned for Japanese language, culture, and business workflows",
+        "family": "sakana-namazu",
+        "id": "sakana/sakana-namazu",
+        "last_updated": "2026-08-03",
+        "limit": {
+          "context": 262144,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Sakana Namazu (Sakana AI)",
+        "open_weights": false,
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "release_date": "2026-08-03",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -249048,7 +248869,7 @@
         "tool_call": true
       },
       "deepseek-ai/DeepSeek-V3.1": {
-        "attachment": true,
+        "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v3.1",
         "cost": {
           "cache_read": 0.1,
@@ -249066,8 +248887,7 @@
         },
         "modalities": {
           "input": [
-            "text",
-            "pdf"
+            "text"
           ],
           "output": [
             "text"
@@ -249240,7 +249060,7 @@
         "tool_call": false
       },
       "deepseek-chat": {
-        "attachment": true,
+        "attachment": false,
         "canonical_model_id": "deepseek/deepseek-chat",
         "cost": {
           "cache_read": 0.05,
@@ -249259,8 +249079,7 @@
         },
         "modalities": {
           "input": [
-            "text",
-            "pdf"
+            "text"
           ],
           "output": [
             "text"
@@ -249350,7 +249169,7 @@
         "tool_call": true
       },
       "deepseek/deepseek-v3.2": {
-        "attachment": true,
+        "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v3.2",
         "cost": {
           "cache_read": 0.13,
@@ -249369,8 +249188,7 @@
         },
         "modalities": {
           "input": [
-            "text",
-            "pdf"
+            "text"
           ],
           "output": [
             "text"
@@ -249385,7 +249203,7 @@
         "tool_call": true
       },
       "deepseek/deepseek-v3.2:thinking": {
-        "attachment": true,
+        "attachment": false,
         "canonical_model_id": "deepseek/deepseek-v3.2",
         "cost": {
           "cache_read": 0.13,
@@ -249404,8 +249222,7 @@
         },
         "modalities": {
           "input": [
-            "text",
-            "pdf"
+            "text"
           ],
           "output": [
             "text"
@@ -250793,9 +250610,7 @@
           "input": [
             "text",
             "image",
-            "video",
-            "audio",
-            "pdf"
+            "audio"
           ],
           "output": [
             "text"
@@ -251819,7 +251634,8 @@
             "text",
             "image",
             "video",
-            "audio"
+            "audio",
+            "pdf"
           ],
           "output": [
             "text"
@@ -251915,7 +251731,8 @@
             "text",
             "image",
             "video",
-            "audio"
+            "audio",
+            "pdf"
           ],
           "output": [
             "text"
@@ -251953,7 +251770,8 @@
           "input": [
             "text",
             "image",
-            "audio"
+            "audio",
+            "pdf"
           ],
           "output": [
             "text"
@@ -252533,7 +252351,8 @@
             "text",
             "image",
             "video",
-            "audio"
+            "audio",
+            "pdf"
           ],
           "output": [
             "text"
@@ -252633,9 +252452,9 @@
         "attachment": true,
         "canonical_model_id": "google/gemma-4-26b-a4b-it",
         "cost": {
-          "cache_read": 0.01,
-          "input": 0.019,
-          "output": 0.058
+          "cache_read": 0.009,
+          "input": 0.018,
+          "output": 0.054
         },
         "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
         "family": "gemma",
@@ -254115,7 +253934,7 @@
         "tool_call": true
       },
       "meta-llama/llama-3.2-3b-instruct": {
-        "attachment": true,
+        "attachment": false,
         "canonical_model_id": "meta/llama-3.2-3b-instruct",
         "cost": {
           "cache_read": 0.025,
@@ -254134,8 +253953,7 @@
         },
         "modalities": {
           "input": [
-            "text",
-            "pdf"
+            "text"
           ],
           "output": [
             "text"
@@ -256371,10 +256189,10 @@
         "attachment": true,
         "canonical_model_id": "moonshotai/kimi-k3.1-pro",
         "cost": {
-          "cache_read": 0.2,
-          "cache_write": 2,
-          "input": 2,
-          "output": 10
+          "cache_read": 0.14,
+          "cache_write": 1.4,
+          "input": 1.4,
+          "output": 7
         },
         "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
         "family": "kimi-k3",
@@ -256460,10 +256278,10 @@
       "moonshotai/kimi-latest": {
         "attachment": true,
         "cost": {
-          "cache_read": 0.2,
-          "cache_write": 2,
-          "input": 2,
-          "output": 10
+          "cache_read": 0.14,
+          "cache_write": 1.4,
+          "input": 1.4,
+          "output": 7
         },
         "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
         "family": "kimi",
@@ -257308,7 +257126,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -257566,7 +257385,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -257612,7 +257432,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -257793,7 +257614,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -257887,7 +257709,8 @@
         "modalities": {
           "input": [
             "text",
-            "image"
+            "image",
+            "pdf"
           ],
           "output": [
             "text"
@@ -292236,11 +292059,6 @@
       "gpt-image-2": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "gpt-image-2",
@@ -301509,6 +301327,62 @@
           }
         ],
         "release_date": "2026-08-03",
+        "structured_output": true,
+        "temperature": true,
+        "tool_call": true
+      },
+      "qwen4-max": {
+        "attachment": true,
+        "canonical_model_id": "alibaba/qwen4-max",
+        "cost": {
+          "cache_read": 0.075,
+          "cache_write": 1.875,
+          "input": 1.5,
+          "output": 4.5
+        },
+        "description": "Flagship multimodal model for coding, office productivity, frontend design, and complex agentic tasks",
+        "family": "qwen4-max",
+        "id": "qwen4-max",
+        "last_updated": "2026-11-16",
+        "limit": {
+          "context": 1000000,
+          "output": 262144
+        },
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "name": "Qwen4 Max",
+        "open_weights": false,
+        "provider": {
+          "api": "https://opencode.ai/inference/go/anthropic/v1",
+          "npm": "@ai-sdk/anthropic"
+        },
+        "reasoning": true,
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          },
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "high",
+              "xhigh"
+            ]
+          },
+          {
+            "max": 262144,
+            "type": "budget_tokens"
+          }
+        ],
+        "release_date": "2026-11-16",
         "structured_output": true,
         "temperature": true,
         "tool_call": true
@@ -399275,91 +399149,6 @@
         "release_date": "2026-11-06",
         "tool_call": true
       },
-      "inception/mercury-2": {
-        "attachment": false,
-        "canonical_model_id": "inception/mercury-2",
-        "cost": {
-          "cache_read": 0.025,
-          "input": 0.25,
-          "output": 0.75
-        },
-        "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
-        "family": "mercury",
-        "id": "inception/mercury-2",
-        "last_updated": "2026-02-24",
-        "limit": {
-          "context": 128000,
-          "output": 50000
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury 2",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2026-02-24",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
-      "inception/mercury-2.5": {
-        "attachment": false,
-        "canonical_model_id": "inception/mercury-2.5",
-        "cost": {
-          "cache_read": 0.004,
-          "input": 0.04,
-          "output": 0.15
-        },
-        "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
-        "family": "mercury",
-        "id": "inception/mercury-2.5",
-        "last_updated": "2026-09-08",
-        "limit": {
-          "context": 260000,
-          "output": 65536
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury 2.5",
-        "open_weights": false,
-        "reasoning": true,
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "none",
-              "low",
-              "medium",
-              "high"
-            ]
-          }
-        ],
-        "release_date": "2026-09-08",
-        "structured_output": true,
-        "temperature": true,
-        "tool_call": true
-      },
       "inception/mercury-3": {
         "attachment": false,
         "cost": {
@@ -399388,35 +399177,6 @@
         "reasoning": true,
         "reasoning_options": [],
         "release_date": "2026-10-19",
-        "tool_call": true
-      },
-      "inception/mercury-coder-small": {
-        "attachment": false,
-        "cost": {
-          "input": 0.25,
-          "output": 1
-        },
-        "description": "Coding model for repository understanding, refactors, and agentic engineering tasks",
-        "family": "mercury",
-        "id": "inception/mercury-coder-small",
-        "last_updated": "2025-02-26",
-        "limit": {
-          "context": 32000,
-          "output": 16384
-        },
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "name": "Mercury Coder Small Beta",
-        "open_weights": false,
-        "reasoning": false,
-        "release_date": "2025-02-26",
-        "temperature": true,
         "tool_call": true
       },
       "inclusionai/ling-3.0-flash": {
@@ -400668,10 +400428,6 @@
       },
       "microsoft/mai-image-2.6": {
         "attachment": true,
-        "cost": {
-          "input": 5,
-          "output": 38
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "mai",
         "id": "microsoft/mai-image-2.6",
@@ -400703,10 +400459,6 @@
       },
       "microsoft/mai-image-2.6-flash": {
         "attachment": true,
-        "cost": {
-          "input": 1.75,
-          "output": 19
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "mai",
         "id": "microsoft/mai-image-2.6-flash",
@@ -405515,11 +405267,6 @@
       "openai/gpt-image-1-mini": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-1-mini",
-        "cost": {
-          "cache_read": 0.2,
-          "input": 2,
-          "output": 8
-        },
         "description": "Cost-efficient GPT Image 1 variant for image generation and editing",
         "family": "gpt-image",
         "id": "openai/gpt-image-1-mini",
@@ -405552,11 +405299,6 @@
       "openai/gpt-image-1.5": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-1.5",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 32
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "openai/gpt-image-1.5",
@@ -405589,11 +405331,6 @@
       "openai/gpt-image-2": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "openai/gpt-image-2",
@@ -405626,11 +405363,6 @@
       "openai/gpt-image-2.5-flare": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2.5-flare",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "openai/gpt-image-2.5-flare",
@@ -405663,11 +405395,6 @@
       "openai/gpt-image-2.5-sunburst": {
         "attachment": true,
         "canonical_model_id": "openai/gpt-image-2.5-sunburst",
-        "cost": {
-          "cache_read": 1.25,
-          "input": 5,
-          "output": 30
-        },
         "description": "Image model for prompt-driven generation, editing, and visual design workflows",
         "family": "gpt-image",
         "id": "openai/gpt-image-2.5-sunburst",
